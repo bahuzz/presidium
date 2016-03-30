@@ -1,0 +1,163 @@
+@media (max-width: 1260px) {
+	.some-title {
+		font-size: 21px;
+	}
+	.inner-logo {
+		margin-right: 0;
+	}
+	.search-form {
+		.form-control {
+			width: 52%;
+			padding-right: 5px;
+			padding-left: 21px;
+			font-size: 12px;
+			position: relative;
+			top: 2px;
+		}
+	}
+	.user-top-block {
+		width: 55%;
+	}
+} 
+@media (max-width: 1080px) {
+	.weather {
+		font-size: 23px;
+		position: relative;
+		top: 7px;
+		i {
+			font-size: 27px;
+			top: 3px;
+		}
+	}
+	.location {
+		font-size: 14px;
+		padding-top: 22px;
+	}
+	.ask {
+		padding-top: 21px;
+	}
+	.sidemenu {
+		font-size: 14px;
+	}
+	.sidebar {
+		padding-left: 0;
+	}
+	.page-top h1 {
+		font-size: 25px;
+		padding-top: 8px;
+	}
+}
+@media (max-width: 1023px) {
+	.ask {
+		font-size: 14px;
+		padding-top: 23px;
+	}
+	.user-top-block {
+		width: 57%;
+	}
+	.ctt-text {
+		float: none;
+	}
+	.c-top-link {
+		float: none;
+	}
+	.pt-bot {
+		overflow: hidden;
+		clear: both;
+	}
+	.login-block {
+		top: 150px;
+	}
+}
+
+@media (max-width: 767px) {
+	.sidebar {
+		position: relative;
+		padding-top: 10px;
+		min-height: 1px;
+	}
+	.wrapper {
+		position: relative;
+		display: block;
+	}
+	.search-form {
+		padding-bottom: 10px;
+		.form-control {
+			font-size: 14px;
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		.search-adv {
+			float: left;
+			margin-left: 10px;
+		}
+	}
+	h1 {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: 21px;
+	}
+	.table {
+		font-size: 13px;
+		th {
+			width: 40%;
+		}
+	} 
+	.menu-btn {
+		position: absolute;
+		right: 20px;
+		top: 15px;
+		font-size: 40px;
+		display: block;
+		cursor: pointer;
+	}
+	.sidebar {
+		display: none;
+	}
+	.maindrop {
+		top: 175px;
+	}
+	.search-form-audit {
+		margin-bottom: 20px;
+	}
+	.utp-dropdown {
+		padding-top: 185px;
+	}
+	.os-form {
+		.form-group {
+			width: 41%;
+			margin-right: 15px;
+		}
+	}
+	.logo {
+		width: 70%;
+		height: 135px;
+		display: block;
+		margin: auto;
+		-webkit-background-size: 100% auto !important;
+		     -o-background-size: 100% auto !important;
+		        background-size: 100% auto !important;
+		background: url(../img/icons/logo.png) 0 0 no-repeat;
+	}
+	.login-block {
+		top: 10px;
+	}
+	.md-table-wrapper {
+		width: 100%;
+		-ms-overflow-x: scroll;
+		    overflow-x: scroll;
+	}
+} 
+@media (max-width: 480px) {
+	.btn-wrapper {
+		text-align: center;
+		nav {
+			float: none;
+		}
+		.btn {
+			float: none;
+		}
+	}
+} 
+
