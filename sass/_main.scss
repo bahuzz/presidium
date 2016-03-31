@@ -616,6 +616,8 @@ textarea.form-control {
 
 ///////// add document //////
 .panel-add-document{
+	display: none;
+
 	.dropdown-wrapper {
 		position: relative;
 
@@ -630,6 +632,17 @@ textarea.form-control {
 		.selected-file {
 			margin-bottom: 20px;
 		}
+	}
+}
+
+.if-edit-vendor {
+	display: none;
+
+	@at-root .if-edit-vendor-true {
+		display: block;
+	}
+	@at-root i.if-edit-vendor-true {
+		display: inline-block;
 	}
 }
 

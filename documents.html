@@ -263,7 +263,7 @@
                     </h1>
                 </div><!-- col-md-12 -->
 
-                <div class="panel-add-document col-md-3">
+                <div class="panel-add-document if-edit-vendor col-md-3">
                     <div class="btn-wrapper clearfix">
                         <button class="btn btn-primary pull-left btn-add-document">Add document <i
                                 class="zmdi zmdi-file-add"></i>
@@ -300,6 +300,7 @@
                                 <td class="col-md-7">description</td>
                                 <td>name</td>
                                 <td></td>
+                                <td></td>
                             </tr>
                             </thead>
 
@@ -310,14 +311,14 @@
 
                                     <span class="field-value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</span>
                                     <textarea
-                                            type="text"
-                                            class="edit-field auto-size"
+                                            class="edit-field auto-size ds-field"
                                             placeholder="enter new description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</textarea>
                                 </td>
                                 <td><a href="#">some-file.doc</a></td>
+                                <td><div class="btn-group-sm if-edit-vendor"><button class="btn btn-primary btn-sm save" disabled>Save</button></div></td>
                                 <td>
                                     <i class="zmdi zmdi-download inline-btn"></i>
-                                    <i class="zmdi zmdi-delete inline-btn"></i>
+                                    <i class="zmdi zmdi-delete inline-btn if-edit-vendor"></i>
                                 </td>
                             </tr>
                             <tr>
@@ -326,14 +327,14 @@
 
                                     <span class="field-value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</span>
                                     <textarea
-                                            type="text"
-                                            class="edit-field auto-size"
+                                            class="edit-field auto-size ds-field"
                                             placeholder="enter new description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</textarea>
                                 </td>
                                 <td><a href="#">some-file.doc</a></td>
+                                <td><div class="btn-group-sm if-edit-vendor"><button class="btn btn-primary btn-sm save" disabled>Save</button></div></td>
                                 <td>
                                     <i class="zmdi zmdi-download inline-btn"></i>
-                                    <i class="zmdi zmdi-delete inline-btn"></i>
+                                    <i class="zmdi zmdi-delete inline-btn if-edit-vendor"></i>
                                 </td>
                             </tr>
                             <tr>
@@ -342,18 +343,42 @@
 
                                     <span class="field-value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</span>
                                     <textarea
-                                            type="text"
-                                            class="edit-field auto-size"
+                                            class="edit-field auto-size ds-field"
                                             placeholder="enter new description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</textarea>
                                 </td>
                                 <td><a href="#">some-file.doc</a></td>
+                                <td><div class="btn-group-sm if-edit-vendor"><button class="btn btn-primary btn-sm save" disabled>Save</button></div></td>
                                 <td>
                                     <i class="zmdi zmdi-download inline-btn"></i>
-                                    <i class="zmdi zmdi-delete inline-btn"></i>
+                                    <i class="zmdi zmdi-delete inline-btn if-edit-vendor"></i>
                                 </td>
                             </tr>
+
                             </tbody>
                         </table>
+
+                        <div class="btn-wrapper clearfix">
+                            <nav class="">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!-- clearfix -->
+
                     </div>
 
                     <div class="btn-wrapper clearfix">

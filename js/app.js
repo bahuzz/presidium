@@ -39,12 +39,13 @@ $(document).ready(function() {
 	 	$('.maindrop').slideToggle();
 	 });
 
-	   $('.edit-vendor').click(function(){
-		 	$('.field-value').addClass('field-value-hidden');
-		 	$('.edit-field').addClass('edit-field-show');
-		 	$(".edit-check input").removeAttr("disabled");
-	 		return false
-	 	});
+  $('.edit-vendor').click(function(){
+		$('.field-value').addClass('field-value-hidden');
+		$('.edit-field').addClass('edit-field-show');
+		$(".edit-check input").removeAttr("disabled");
+		$('.if-edit-vendor').addClass('if-edit-vendor-true');
+	 	return false
+	});
 
 	    $('#check-save').click(function(){
 		 	$(".edit-check input").attr("disabled",'true');
@@ -76,6 +77,7 @@ $(document).ready(function() {
 
 	// document. add document panel
 	$('textarea.auto-size').textareaAutoSize();
+
   $('.btn-add-document').click(function(){
 		var panel = $(this).parents('.panel-add-document');
 		var fileName = $(panel).find('input').val();
@@ -115,6 +117,10 @@ $(document).ready(function() {
 			$(panel).removeClass('selected').find('.file-name').text('');
 			$(panel).find('.save').prop('disabled', true);
 		}
+	});
+
+	$('.ds-field').change(function(){
+		$(this).parents('tr').find('button.save').prop('disabled', false)
 	});
 
 	$(".custom-select").selectBox();

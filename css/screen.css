@@ -248,9 +248,14 @@ textarea.form-control { resize: none; width: 100%; }
 
 .h-drop { margin-bottom: 20px; }
 
+.panel-add-document { display: none; }
 .panel-add-document .dropdown-wrapper { position: relative; }
 .panel-add-document .dropdown-wrapper .dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
 .panel-add-document .dropdown-wrapper .selected-file { margin-bottom: 20px; }
+
+.if-edit-vendor { display: none; }
+.if-edit-vendor-true { display: block; }
+i.if-edit-vendor-true { display: inline-block; }
 
 .inline-btn { padding: 2px 5px; cursor: pointer; margin: 0 3px 0 0; }
 
