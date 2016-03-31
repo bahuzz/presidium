@@ -74,7 +74,50 @@ $(document).ready(function() {
 	 	$('.utp-block3').slideToggle();
 	 });
 
-	  $(".custom-select").selectBox();
+	// document. add document panel
+	$('textarea.auto-size').textareaAutoSize();
+  $('.btn-add-document').click(function(){
+		var panel = $(this).parents('.panel-add-document');
+		var fileName = $(panel).find('input').val();
+
+		$(panel).find('.dropdown').slideToggle();
+		$(panel).find('.file-name').text(fileName);
+
+		if (fileName){
+			$(panel).addClass('selected');
+			$(panel).find('.save').prop('disabled', false);
+		}else{
+			$(panel).find('.save').prop('disabled', true);
+			$(panel).removeClass('selected');
+		}
+
+    return false
+	});
+
+	$('.panel-add-document .cancel').click(function(){
+		var panel = $(this).parents('.panel-add-document');
+
+		$(panel).find('.dropdown').slideToggle();
+		$(panel).find('form').get(0).reset();
+		$(panel).removeClass('selected').find('.file-name').text('');
+
+		return false
+	});
+
+	$('.panel-add-document input[type="file"]').bind('change', function(){
+		var fileName = $(this).val();
+		var panel = $(this).parents('.panel-add-document');
+
+		if (fileName){
+			$(panel).addClass('selected').find('.file-name').text(fileName);
+			$(panel).find('.save').prop('disabled', false);
+		}else{
+			$(panel).removeClass('selected').find('.file-name').text('');
+			$(panel).find('.save').prop('disabled', true);
+		}
+	});
+
+	$(".custom-select").selectBox();
 
 });
 
