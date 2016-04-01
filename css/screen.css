@@ -258,8 +258,9 @@ textarea.form-control { resize: none; width: 100%; }
 .h-drop { margin-bottom: 20px; }
 
 .panel-add-document .dropdown-wrapper { position: relative; }
-.panel-add-document .dropdown-wrapper .dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
+.panel-add-document .dropdown-wrapper .ps-dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
 .panel-add-document .dropdown-wrapper .selected-file { margin-bottom: 20px; }
+.panel-add-document.ps-dropup .ps-dropdown { bottom: 0; }
 
 .if-edit-vendor { display: none; }
 .if-edit-vendor-true { display: block; }
@@ -271,6 +272,9 @@ i.if-edit-vendor-true { display: inline-block; }
 .btn-file input[type=file] { position: absolute; top: 0; right: 0; min-width: 100%; min-height: 100%; font-size: 100px; text-align: right; filter: alpha(opacity=0); opacity: 0; outline: none; background: white; cursor: inherit; display: block; }
 
 .auto-size { min-height: 28px; max-height: 84px; box-sizing: border-box; overflow-x: hidden; }
+
+.row-fields { display: table; width: 100%; }
+.row-fields .field-name { display: table-cell; vertical-align: middle; }
 
 /* Dropdown control */
 .selectBox-dropdown { padding-right: 30px; height: 37px; line-height: 37px; width: 100%; font-size: 16px; cursor: pointer; color: #333; position: relative; }

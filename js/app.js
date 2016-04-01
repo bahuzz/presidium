@@ -90,7 +90,7 @@ $(document).ready(function() {
 		var panel = $(this).parents('.panel-add-document');
 		var fileName = $(panel).find('input').val();
 
-		$(panel).find('.dropdown').slideToggle();
+		$(panel).find('.ps-dropdown').slideToggle();
 		$(panel).find('.file-name').text(fileName);
 
 		if (fileName){
@@ -107,7 +107,7 @@ $(document).ready(function() {
 	$('.panel-add-document .cancel').click(function(){
 		var panel = $(this).parents('.panel-add-document');
 
-		$(panel).find('.dropdown').slideToggle();
+		$(panel).find('.ps-dropdown').slideToggle();
 		$(panel).find('form').get(0).reset();
 		$(panel).removeClass('selected').find('.file-name').text('');
 

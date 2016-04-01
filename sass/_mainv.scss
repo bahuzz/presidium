@@ -1,0 +1,79 @@
+///////// add document //////
+.panel-add-document{
+	.dropdown-wrapper {
+		position: relative;
+
+		.ps-dropdown {
+			position: absolute;
+			display: none;
+			width: 100%;
+			z-index: 100;
+			border-radius: 0;
+			background: #F4F5F5;
+		}
+		.selected-file {
+			margin-bottom: 20px;
+		}
+	}
+	&.ps-dropup {
+		.ps-dropdown {
+			bottom: 0;
+		}
+	}
+}
+
+.if-edit-vendor {
+	display: none;
+
+	@at-root .if-edit-vendor-true {
+		display: block;
+	}
+	@at-root i.if-edit-vendor-true {
+		display: inline-block;
+	}
+}
+
+.inline-btn {
+	padding: 2px 5px;
+	cursor: pointer;
+	margin: 0 3px 0 0;
+}
+
+.btn-file {
+	position: relative;
+	overflow: hidden;
+
+	& input[type=file] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 100%;
+		min-height: 100%;
+		font-size: 100px;
+		text-align: right;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		outline: none;
+		background: white;
+		cursor: inherit;
+		display: block;
+	}
+}
+
+.auto-size {
+	$minHeight: 28px;
+	min-height: $minHeight;
+	max-height: $minHeight * 3;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.row-fields {
+	display: table;
+	width: 100%;
+
+	.field-name {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
