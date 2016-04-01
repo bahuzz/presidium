@@ -32,6 +32,13 @@ a {
 .fr {
 	float: right;
 }
+.cb {
+	clear: both;
+}
+.shad {
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.25);
+	        box-shadow: 0px 0px 5px rgba(0,0,0,.25);
+}
 ///////////////// btn ////////////////////
 .btn {
 	background: #007DC3;
@@ -321,6 +328,19 @@ label {
 }
 .ud-block {
 	margin-bottom: 15px;
+}
+.table-contacts {
+	.radio {
+		padding-left: 30px;
+	}
+	.checkbox {
+		padding-left: 8px;
+	}
+}
+.checkbox {
+	input[type="checkbox"] + label::before {
+		top: 4px;
+	} 
 }
 ///////////////////////  side  /////////////////////////////
 .sidebar {

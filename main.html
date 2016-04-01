@@ -294,16 +294,21 @@
 									</table>
 
 									<div class="btns tar clearfix">
-										<button class="btn btn-primary">Save</button>
+
+										<button class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
 										<button class="btn btn-primary">Cancel</button>
+
+										
 									</div><!-- clearfix -->
 
 									<h2 class="tac">Contacts</h2>
 
-									<table class="table">
+									<table class="table table-contacts">
 										<tr>
 											<th>Sales Manager</th>
-											<td>Robert Captain Hook <a href="#" class="cont-more pull-right">see more detailes</a>
+											<td>Robert Captain Hook 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
 												<div class="contact-more-block">
 												<form>
 													<div class="form-group">
@@ -327,7 +332,7 @@
 													</div><!-- form-group -->
 
 													<div class="form-group">
-														<label>Select 1</label>
+														<label>Contact Type</label>
 														<select class="form-control">
 															<option>Marketing</option>
 															<option>c. Purchasing</option>
@@ -364,20 +369,54 @@
 														</select>
 													</div><!-- form-group -->
 
+													<div class="form-group">
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails1" value="option1" checked>
+														          <input type="text" class="form-control" placeholder='Email 1'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails2" value="option2">
+														           <input type="text" class="form-control" placeholder='Email 2'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails3" value="option3">
+														           <input type="text" class="form-control" placeholder='Email 3'>
+														        </label>
+														</div><!-- radio -->
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<div class="checkbox">
+															<input type="checkbox" id="rfq1">
+															<label for="rfq1">RFQ recipient</label>
+														</div><!-- checkbox -->
+													</div><!-- form-group -->
+
+
 													<div class="form-group tar">
-														<button class="btn btn-primary">Reset</button>
-														<button class="btn btn-primary">Save</button>
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
 													</div><!-- form-group -->
 
 												</form>
 											</div><!-- contact-more-block -->
-											</td>
 
-											
+
+											</td>
 										</tr>
+
 										<tr>
 											<th>Sales Manager</th>
-											<td>Robert Captain Hook <a href="#" class="cont-more pull-right">see more detailes</a>
+											<td>Robert Captain Hook 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
 												<div class="contact-more-block">
 												<form>
 													<div class="form-group">
@@ -401,7 +440,7 @@
 													</div><!-- form-group -->
 
 													<div class="form-group">
-														<label>Select 1</label>
+														<label>Contact Type</label>
 														<select class="form-control">
 															<option>Marketing</option>
 															<option>c. Purchasing</option>
@@ -438,18 +477,50 @@
 														</select>
 													</div><!-- form-group -->
 
-													<div class="form-group tar">
-														<button class="btn btn-primary">Reset</button>
-														<button class="btn btn-primary">Save</button>
+													<div class="form-group">
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails1" value="option1" checked>
+														          <input type="text" class="form-control" placeholder='Email 1'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails2" value="option2">
+														           <input type="text" class="form-control" placeholder='Email 2'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails3" value="option3">
+														           <input type="text" class="form-control" placeholder='Email 3'>
+														        </label>
+														</div><!-- radio -->
 													</div><!-- form-group -->
 
-												</form>
+													<div class="form-group">
+														<div class="checkbox">
+															<input type="checkbox" id="rfq2">
+															<label for="rfq2">RFQ recipient</label>
+														</div><!-- checkbox -->
+													</div><!-- form-group -->
+
+													<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+												</form>	
 											</div><!-- contact-more-block -->
+													</div><!-- form-group -->
 											</td>
 										</tr>
 										<tr>
 											<th>Sales Manager</th>
-											<td>Robert Captain Hook <a href="#" class="cont-more pull-right">see more detailes</a>
+											<td>Robert Captain Hook 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
 												<div class="contact-more-block">
 												<form>
 													<div class="form-group">
@@ -473,7 +544,7 @@
 													</div><!-- form-group -->
 
 													<div class="form-group">
-														<label>Select 1</label>
+														<label>Contact Type</label>
 														<select class="form-control">
 															<option>Marketing</option>
 															<option>c. Purchasing</option>
@@ -510,9 +581,41 @@
 														</select>
 													</div><!-- form-group -->
 
+													<div class="form-group">
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails1" value="option1" checked>
+														          <input type="text" class="form-control" placeholder='Email 1'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails2" value="option2">
+														           <input type="text" class="form-control" placeholder='Email 2'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails3" value="option3">
+														           <input type="text" class="form-control" placeholder='Email 3'>
+														        </label>
+														</div><!-- radio -->
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<div class="checkbox">
+															<input type="checkbox" id="rfq3">
+															<label for="rfq3">RFQ recipient</label>
+														</div><!-- checkbox -->
+													</div><!-- form-group -->
+
+													
+
 													<div class="form-group tar">
-														<button class="btn btn-primary">Reset</button>
-														<button class="btn btn-primary">Save</button>
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
 													</div><!-- form-group -->
 
 												</form>
@@ -521,6 +624,355 @@
 										</tr>
 										
 									</table>
+
+									<div class="btn-wrapper clearfix">
+										<button class="btn btn-primary open-hidden-block-btn add-contact-btn">Add Contact</button>
+										<div class="hidden-block add-contact-block cb clearfix">
+											<form>
+												<div class="form-group">
+														<label>Contact First Name</label>
+														<input type="text" class="form-control" placeholder="Contact First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Contact Last Name</label>
+														<input type="text" class="form-control" placeholder="Contact Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Contact Type</label>
+														<select class="form-control">
+															<option>Marketing</option>
+															<option>c. Purchasing</option>
+															<option>d. Owner</option>
+														</select>
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Contact Title</label>
+														<input type="text" class="form-control" placeholder="Contact Title">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Contact Role</label>
+														<input type="text" class="form-control" placeholder="Contact Role">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Contact Phone</label>
+														<input type="text" class="form-control" placeholder="Contact Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Contact Fax</label>
+														<input type="text" class="form-control" placeholder="Contact Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Select 2</label>
+														<select class="form-control">
+															<option> Contact Preferred Method of Communication</option>
+															<option> Contact Preferred Method of Communication</option>
+															<option> Contact Preferred Method of Communication
+														</select>
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails1" value="option1" checked>
+														          <input type="text" class="form-control" placeholder='Email 1'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														          <input type="radio" name="optionsEmails" id="optionsEmails2" value="option2">
+														           <input type="text" class="form-control" placeholder='Email 2'>
+														        </label>
+														</div><!-- radio -->
+
+														<div class="radio">
+														  <label>
+														  		<input type="radio" name="optionsEmails" id="optionsEmails3" value="option3">
+														   		<input type="text" class="form-control" placeholder='Email 3'>
+														   </label>
+														</div><!-- radio -->
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<div class="checkbox">
+															<input type="checkbox" id="rfq3">
+															<label for="rfq3">RFQ recipient</label>
+														</div><!-- checkbox -->
+													</div><!-- form-group -->
+
+													<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+											</form>
+										</div><!-- hidden-block -->
+									</div><!-- clearfix -->
+
+									<h2 class="tac">Distributors</h2>
+
+									<table class="table table-contacts table-distributors">
+										<tr>
+											<th>Distributor</th>
+											<td>Captain Jack 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
+												<div class="contact-more-block">
+												<form>
+													<div class="form-group">
+														<label>Distributor First Name</label>
+														<input type="text" class="form-control" placeholder="Distributor First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Distributor Last Name</label>
+														<input type="text" class="form-control" placeholder="Distributor Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" class="form-control" placeholder="Distributor Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Fax</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Email</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+
+													<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+
+												</form>
+											</div><!-- contact-more-block -->
+											</td>
+										</tr>
+
+										<tr>
+											<th>Distributor</th>
+											<td>Captain Jack 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
+												<div class="contact-more-block">
+												<form>
+													<div class="form-group">
+														<label>Distributor First Name</label>
+														<input type="text" class="form-control" placeholder="Distributor First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Distributor Last Name</label>
+														<input type="text" class="form-control" placeholder="Distributor Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" class="form-control" placeholder="Distributor Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Fax</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Email</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+
+													<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+
+												</form>
+											</div><!-- contact-more-block -->
+											</td>
+										</tr>
+
+										<tr>
+											<th>Distributor</th>
+											<td>Captain Jack 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
+												<div class="contact-more-block">
+												<form>
+													<div class="form-group">
+														<label>Distributor First Name</label>
+														<input type="text" class="form-control" placeholder="Distributor First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Distributor Last Name</label>
+														<input type="text" class="form-control" placeholder="Distributor Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" class="form-control" placeholder="Distributor Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Fax</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Email</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+
+												<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+
+												</form>
+											</div><!-- contact-more-block -->
+											</td>
+										</tr>
+
+										<tr>
+											<th>Distributor</th>
+											<td>Captain Jack 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
+												<div class="contact-more-block">
+												<form>
+													<div class="form-group">
+														<label>Distributor First Name</label>
+														<input type="text" class="form-control" placeholder="Distributor First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Distributor Last Name</label>
+														<input type="text" class="form-control" placeholder="Distributor Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" class="form-control" placeholder="Distributor Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Fax</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Email</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+
+												<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+
+												</form>
+											</div><!-- contact-more-block -->
+											</td>
+										</tr>
+
+										<tr>
+											<th>Distributor</th>
+											<td>Captain Jack 
+												<i class="zmdi zmdi-delete row-del pull-right"></i>
+												<a href="#" class="cont-more pull-right">see more detailes</a>
+												<div class="contact-more-block">
+												<form>
+													<div class="form-group">
+														<label>Distributor First Name</label>
+														<input type="text" class="form-control" placeholder="Distributor First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Distributor Last Name</label>
+														<input type="text" class="form-control" placeholder="Distributor Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" class="form-control" placeholder="Distributor Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Fax</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Email</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+
+												<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+
+												</form>
+											</div><!-- contact-more-block -->
+											</td>
+										</tr>
+									</table>
+
+
+									<div class="btn-wrapper clearfix">
+										<button class="btn btn-primary open-hidden-block-btn add-contact-btn">Add Distributor</button>
+										<div class="hidden-block add-contact-block cb clearfix">
+											<form>
+													<div class="form-group">
+														<label>Distributor First Name</label>
+														<input type="text" class="form-control" placeholder="Distributor First Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Distributor Last Name</label>
+														<input type="text" class="form-control" placeholder="Distributor Last Name">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" class="form-control" placeholder="Distributor Phone">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Fax</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group">
+														<label>Email</label>
+														<input type="text" class="form-control" placeholder="Distributor Fax">
+													</div><!-- form-group -->
+
+													<div class="form-group tar">
+														<button type="reset" class="btn btn-primary">Reset</button>
+														<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveModal">Save</button>
+													</div><!-- form-group -->
+													
+												</form>
+										</div><!-- hidden-block -->
+									</div><!-- clearfix -->
+
 
 									<h2 class="tac">News</h2>
 
@@ -686,6 +1138,27 @@
 									    </div>
 									  </div>
 									</div><!--  modal  -->
+
+									<!-- Modal -->
+									<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									      </div>
+									      <div class="modal-body">
+									         Please enter a general reason for modifying this vendor at this time
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									        <button type="button" class="btn btn-primary">Save changes</button>
+									      </div>
+									    </div>
+									  </div>
+									</div><!--  modal  -->
+
+									
 
 								</div><!-- col-md-12 -->
 							</div><!-- row -->

@@ -15,6 +15,11 @@ $(document).ready(function() {
 	 	return false
 	 });
 
+	 $('.open-hidden-block-btn').click(function(){
+	 	$(this).next('.hidden-block').slideToggle();
+	 	return false
+	 });
+
 
 	 $('.more-link').click(function(){
 	 	$(this).parents('td').find('.more-block').slideToggle();

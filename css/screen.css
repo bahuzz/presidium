@@ -57,6 +57,10 @@ a:hover { text-decoration: none; }
 
 .fr { float: right; }
 
+.cb { clear: both; }
+
+.shad, .add-contact-block { -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); }
+
 .btn { background: #007DC3; color: #fff; text-transform: uppercase; padding: 10px 16px; -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); border: none; -webkit-border-radius: 2px; border-radius: 2px; cursor: pointer; }
 
 .btn-tn { text-transform: none; }
@@ -151,6 +155,11 @@ label { cursor: pointer; }
 .ud-title { text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 15px; color: #353535; }
 
 .ud-block { margin-bottom: 15px; }
+
+.table-contacts .radio { padding-left: 30px; }
+.table-contacts .checkbox { padding-left: 8px; }
+
+.checkbox input[type="checkbox"] + label::before { top: 4px; }
 
 .sidebar { padding-top: 70px; }
 
@@ -248,20 +257,13 @@ textarea.form-control { resize: none; width: 100%; }
 
 .h-drop { margin-bottom: 20px; }
 
-.panel-add-document .dropdown-wrapper { position: relative; }
-.panel-add-document .dropdown-wrapper .dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
-.panel-add-document .dropdown-wrapper .selected-file { margin-bottom: 20px; }
+.add-contact-block { background: #FFF; padding: 20px; }
 
-.if-edit-vendor { display: none; }
-.if-edit-vendor-true { display: block; }
-i.if-edit-vendor-true { display: inline-block; }
+label { margin-bottom: 10px; display: inline-block; }
 
-.inline-btn { padding: 2px 5px; cursor: pointer; margin: 0 3px 0 0; }
+.open-hidden-block-btn { margin-bottom: 20px; }
 
-.btn-file { position: relative; overflow: hidden; }
-.btn-file input[type=file] { position: absolute; top: 0; right: 0; min-width: 100%; min-height: 100%; font-size: 100px; text-align: right; filter: alpha(opacity=0); opacity: 0; outline: none; background: white; cursor: inherit; display: block; }
-
-.auto-size { min-height: 28px; max-height: 84px; box-sizing: border-box; overflow-x: hidden; }
+.hidden-block { display: none; }
 
 /* Dropdown control */
 .selectBox-dropdown { padding-right: 30px; height: 37px; line-height: 37px; width: 100%; font-size: 16px; cursor: pointer; color: #333; position: relative; }
