@@ -666,6 +666,11 @@ textarea.form-control {
 .hidden {
 	display: none;
 }
+.add-contact-block {
+	background: #FFF;
+	@extend .shad;
+	padding: 30px;
+}
 ///////// add document //////
 .panel-add-document{
 	.dropdown-wrapper {
