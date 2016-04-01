@@ -523,6 +523,9 @@ label {
 	.btn {
 		margin: 3px;
 		width: 80px;
+		&.btn-auto-w {
+			width: auto;
+		}
 	}
 }
 .modal-dialog {

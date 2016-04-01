@@ -215,6 +215,7 @@ label { cursor: pointer; }
 
 .btns { margin-bottom: 20px; }
 .btns .btn { margin: 3px; width: 80px; }
+.btns .btn.btn-auto-w { width: auto; }
 
 .modal-dialog { z-index: 1100; }
 
@@ -300,6 +301,8 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .row-fields { display: table; width: 100%; }
 .row-fields .field-name { display: table-cell; vertical-align: middle; }
+
+.ntfs-success { color: #007DC3; }
 
 /* Dropdown control */
 .selectBox-dropdown { padding-right: 30px; height: 37px; line-height: 37px; width: 100%; font-size: 16px; cursor: pointer; color: #333; position: relative; }
