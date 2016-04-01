@@ -126,6 +126,7 @@ label { cursor: pointer; }
 
 .contact-more-block { display: none; padding-top: 20px; max-width: 600px; }
 .contact-more-block label { display: inline-block; padding-bottom: 5px; padding-left: 5px; font-size: 14px; }
+.contact-more-block .form-group { padding-bottom: 5px; }
 
 .news-full { padding: 10px 0; display: none; }
 
@@ -220,6 +221,11 @@ label { cursor: pointer; }
 textarea.form-control { resize: none; width: 100%; }
 
 .edit-field { width: 100%; }
+
+.field-value label { color: #757575; display: block; font-size: 12px; padding-bottom: 0px; }
+.field-value .fv-val { padding-left: 5px; }
+
+.main-edit-check label { font-size: 16px; color: #222; }
 
 .maindrop { position: absolute; right: 0; top: 64px; background: #fff; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); z-index: 99; padding-top: 36px; padding-bottom: 30px; display: none; }
 

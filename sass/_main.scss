@@ -230,6 +230,11 @@ label {
 		padding-bottom: 5px;
 		padding-left: 5px;
 		font-size: 14px;
+		//border-bottom: 1px solid #ddd;
+	}
+	.form-group {
+		
+		padding-bottom: 5px;
 	}
 }
 .news-full {
@@ -530,6 +535,23 @@ textarea.form-control {
 .edit-field {
 	width: 100%;
 }
+.field-value {
+	label {
+		color: #757575;
+		display: block;
+		font-size: 12px;
+		padding-bottom: 0px;
+		}
+	.fv-val {
+		padding-left: 5px;
+	}
+}
+.main-edit-check {
+		label {
+			font-size: 16px;
+			color: #222;
+		}
+	}
 /////////////// maindrop ///////////////
 .maindrop {
 	position: absolute;
