@@ -49,6 +49,9 @@ $(document).ready(function() {
 		$('.edit-field').addClass('edit-field-show');
 		$(".edit-check input").removeAttr("disabled");
 		$('.if-edit-vendor').addClass('if-edit-vendor-true');
+		$('.open-hidden-block-btn').removeClass('hidden');
+		$('.btns.hidden').removeClass('hidden');
+		$('.row-del.hidden').removeClass('hidden');
 	 	return false
 	});
 
@@ -100,8 +103,7 @@ $(document).ready(function() {
 			$(panel).find('.save').prop('disabled', true);
 			$(panel).removeClass('selected');
 		}
-
-    return false
+    	return false
 	});
 
 	$('.panel-add-document .cancel').click(function(){
@@ -110,7 +112,6 @@ $(document).ready(function() {
 		$(panel).find('.ps-dropdown').slideToggle();
 		$(panel).find('form').get(0).reset();
 		$(panel).removeClass('selected').find('.file-name').text('');
-
 		return false
 	});
 
