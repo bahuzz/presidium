@@ -81,7 +81,10 @@ $(document).ready(function() {
 	 });
 
 	// document. add document panel
-	$('textarea.auto-size').textareaAutoSize();
+	var autoSizes = $('textarea.auto-size');
+	if (autoSizes.length){
+		$(autoSizes).textareaAutoSize();
+	}
 
   $('.btn-add-document').click(function(){
 		var panel = $(this).parents('.panel-add-document');
