@@ -672,9 +672,13 @@ textarea.form-control {
 	padding: 30px;
 }
 .radio {
-	em {
-		position: relative;
-		top: -20px;	
+	em {	
+	}
+	&.preferred {
+		label {
+			float: left;
+			margin-right: 10px;
+		}
 	}
 }
 ///////// add document //////
