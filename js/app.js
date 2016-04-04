@@ -134,6 +134,11 @@ $(document).ready(function() {
 
 	$(".custom-select").selectBox();
 
+	 $("input[type='radio']").focus(function(){
+	 	$(this).next('.input-email').tooltip();
+	 });
+
+	
 });
 
 $("body").click(function (event) {
