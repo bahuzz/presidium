@@ -671,6 +671,12 @@ textarea.form-control {
 	@extend .shad;
 	padding: 30px;
 }
+.radio {
+	em {
+		position: relative;
+		top: -20px;	
+	}
+}
 ///////// add document //////
 .panel-add-document{
 	.dropdown-wrapper {
