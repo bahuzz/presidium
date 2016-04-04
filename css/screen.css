@@ -275,9 +275,6 @@ textarea.form-control { resize: none; width: 100%; }
 
 .add-contact-block { background: #FFF; padding: 30px; }
 
-.radio label { padding-left: 0; }
-.radio.preferred label { float: left; margin-right: 10px; }
-
 .open-hidden-block-btn { margin-bottom: 20px; }
 
 .checkbox label { padding-left: 0; }

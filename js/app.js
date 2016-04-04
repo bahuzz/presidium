@@ -44,7 +44,7 @@ $(document).ready(function() {
 	 	$('.maindrop').slideToggle();
 	 });
 
-  $('.edit-vendor').click(function(){
+  //$('.edit-vendor').click(function(){
 		$('.field-value').addClass('field-value-hidden');
 		$('.edit-field').addClass('edit-field-show');
 		$(".edit-check input").removeAttr("disabled");
@@ -53,7 +53,7 @@ $(document).ready(function() {
 		$('.btns.hidden').removeClass('hidden');
 		$('.row-del.hidden').removeClass('hidden');
 	 	return false
-	});
+	//});
 
 	    $('#check-save').click(function(){
 		 	$(".edit-check input").attr("disabled",'true');
@@ -134,8 +134,8 @@ $(document).ready(function() {
 
 	$(".custom-select").selectBox();
 
-	 $("input[type='radio']").focus(function(){
-	 	$(this).next('.input-email').tooltip();
+	 $("input[type='radio']").click(function(){
+	 	$(this).parents('.radio').children('.email-tooltip').slideToggle();;
 	 });
 
 	

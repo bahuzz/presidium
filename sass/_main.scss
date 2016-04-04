@@ -693,19 +693,7 @@ textarea.form-control {
 	@extend .shad;
 	padding: 30px;
 }
-.radio {
-	em {	
-	}
-	label {
-		padding-left: 0;
-	}
-	&.preferred {
-		label {
-			float: left;
-			margin-right: 10px;
-		}
-	}
-}
+
 .open-hidden-block-btn {
 	margin-bottom: 20px;
 }
