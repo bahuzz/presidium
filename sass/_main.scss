@@ -544,6 +544,14 @@ textarea.form-control {
 		}
 	.fv-val {
 		padding-left: 5px;
+		display: block;
+		margin-bottom: 5px;
+		
+		&.pref {
+			background: #eee;
+			padding-top: 5px;
+			padding-bottom: 8px;
+		}
 	}
 }
 .main-edit-check {
