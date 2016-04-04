@@ -166,13 +166,12 @@ $(document).ready(function() {
 	var vendorDetailsDrw = function(showFlag){
 		var el = $('.vendor-details-drw-dependency');
 		showFlag ? el.removeClass('hidden') : el.addClass('hidden');
-		console.log('vendor-details', showFlag);
 	};
 
 	vendorDetailsDrw($('.vendor-details-drw-check').change(function(){
 		vendorDetailsDrw($(this).prop('checked'))
 	}).prop('checked'));
-	
+
 });
 
 $("body").click(function (event) {
