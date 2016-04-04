@@ -52,7 +52,7 @@ $(document).ready(function() {
 		$('.open-hidden-block-btn').removeClass('hidden');
 		$('.btns.hidden').removeClass('hidden');
 		$('.row-del.hidden').removeClass('hidden');
-	 	return false
+	 	//return false
 	//});
 
 	    $('#check-save').click(function(){
@@ -134,8 +134,9 @@ $(document).ready(function() {
 
 	$(".custom-select").selectBox();
 
-	 $("input[type='radio']").click(function(){
-	 	$(this).parents('.radio').children('.email-tooltip').slideToggle();;
+	 $('input[type="radio"]').change(function(){
+		 $(this).parents('.edit-mail-wrapper').find('.email-tooltip').hide();
+		 $(this).parents('.radio').find('.email-tooltip').show();
 	 });
 
 	
