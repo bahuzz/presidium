@@ -223,10 +223,15 @@ textarea.form-control { resize: none; width: 100%; }
 .edit-field { width: 100%; }
 
 .field-value label { color: #757575; display: block; font-size: 12px; padding-bottom: 0px; }
-.field-value .fv-val { padding-left: 5px; display: block; margin-bottom: 5px; }
-.field-value .fv-val.pref { background: #eee; padding-top: 5px; padding-bottom: 8px; }
+.field-value .fv-val { display: block; margin-bottom: 5px; position: relative; padding-left: 10px; }
+.field-value .fv-val.pref i { color: green; font-size: 19px; position: absolute; top: 3px; left: 0px; }
+.field-value .fv-val.pref em { color: #0346cd; padding-left: 10px; }
+.field-value .fv-val-mail { padding-left: 25px; }
 
 .main-edit-check label { font-size: 16px; color: #222; }
+.main-edit-check input[type="checkbox"] + label::before { top: 3px; }
+
+.edit-mail-wrapper { padding-left: 20px; }
 
 .maindrop { position: absolute; right: 0; top: 64px; background: #fff; -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); z-index: 99; padding-top: 36px; padding-bottom: 30px; display: none; }
 
