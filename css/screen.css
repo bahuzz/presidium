@@ -367,6 +367,8 @@ textarea.form-control { resize: none; width: 100%; }
 
 .md-table-wrapper { width: 100%; }
 
+.email-tooltip { display: none; }
+
 .more-block { display: none; }
 
 .row-del { margin-left: 10px; cursor: pointer; padding: 5px 10px; }
