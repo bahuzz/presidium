@@ -134,12 +134,17 @@ $(document).ready(function() {
 
 	$(".custom-select").selectBox();
 
-	 $('input[type="radio"]').change(function(){
+	// email radio buttons
+	$('input[type="radio"]').change(function(){
 		 $(this).parents('.edit-mail-wrapper').find('.email-tooltip').hide();
 		 $(this).parents('.radio').find('.email-tooltip').show();
-	 });
-
-	
+	 }).each(function(){
+		if ($(this).prop('checked')){
+			$(this).parents('.radio').find('.email-tooltip').show();
+		}else{
+			$(this).parents('.radio').find('.email-tooltip').hide();
+		}
+	})
 });
 
 $("body").click(function (event) {
