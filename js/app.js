@@ -44,7 +44,7 @@ $(document).ready(function() {
 	 	$('.maindrop').slideToggle();
 	 });
 
-  //$('.edit-vendor').click(function(){
+  $('.edit-vendor').click(function(){
 		$('.field-value').addClass('field-value-hidden');
 		$('.edit-field').addClass('edit-field-show');
 		$(".edit-check input").removeAttr("disabled");
@@ -52,8 +52,8 @@ $(document).ready(function() {
 		$('.open-hidden-block-btn').removeClass('hidden');
 		$('.btns.hidden').removeClass('hidden');
 		$('.row-del.hidden').removeClass('hidden');
-	 	//return false
-	//});
+	 	return false
+	});
 
 	    $('#check-save').click(function(){
 		 	$(".edit-check input").attr("disabled",'true');
@@ -144,7 +144,35 @@ $(document).ready(function() {
 		}else{
 			$(this).parents('.radio').find('.email-tooltip').hide();
 		}
-	})
+	});
+
+	$('.datepicker').datepicker({
+		autoclose: true,
+		format: 'dd-mm-yyyy'
+	});
+
+	/* vendor-details check box dependencies */
+	// Inspection at their location Format
+	var vendorDetailsInsp = function(showFlag){
+		var el = $('.vendor-details-insp-dependency');
+		showFlag ? el.removeClass('hidden') : el.addClass('hidden');
+	};
+
+	vendorDetailsInsp($('.vendor-details-insp-check').change(function(){
+		vendorDetailsInsp($(this).prop('checked'))
+	}).prop('checked'));
+
+	// Drawing / Inspection Charge
+	var vendorDetailsDrw = function(showFlag){
+		var el = $('.vendor-details-drw-dependency');
+		showFlag ? el.removeClass('hidden') : el.addClass('hidden');
+		console.log('vendor-details', showFlag);
+	};
+
+	vendorDetailsDrw($('.vendor-details-drw-check').change(function(){
+		vendorDetailsDrw($(this).prop('checked'))
+	}).prop('checked'));
+	
 });
 
 $("body").click(function (event) {
