@@ -159,5 +159,17 @@
 			float: none;
 		}
 	}
+	.radio {
+		label {
+			display: block;
+			text-align: left;
+		}
+		&.preferred {
+		label {
+			float: none;
+			margin-right: 0px;
+			}
+		}
+	}
 } 
 

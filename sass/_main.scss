@@ -336,9 +336,6 @@ label {
 	margin-bottom: 15px;
 }
 .table-contacts {
-	.radio {
-		padding-left: 30px;
-	}
 	.checkbox {
 		padding-left: 8px;
 	}
@@ -674,12 +671,18 @@ textarea.form-control {
 .radio {
 	em {	
 	}
+	label {
+		padding-left: 0;
+	}
 	&.preferred {
 		label {
 			float: left;
 			margin-right: 10px;
 		}
 	}
+}
+.open-hidden-block-btn {
+	margin-bottom: 20px;
 }
 ///////// add document //////
 .panel-add-document{

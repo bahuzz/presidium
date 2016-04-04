@@ -157,7 +157,6 @@ label { cursor: pointer; }
 
 .ud-block { margin-bottom: 15px; }
 
-.table-contacts .radio { padding-left: 30px; }
 .table-contacts .checkbox { padding-left: 8px; }
 
 .checkbox input[type="checkbox"] + label::before { top: 4px; }
@@ -270,7 +269,10 @@ textarea.form-control { resize: none; width: 100%; }
 
 .add-contact-block { background: #FFF; padding: 30px; }
 
+.radio label { padding-left: 0; }
 .radio.preferred label { float: left; margin-right: 10px; }
+
+.open-hidden-block-btn { margin-bottom: 20px; }
 
 .panel-add-document .dropdown-wrapper { position: relative; }
 .panel-add-document .dropdown-wrapper .dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
@@ -386,4 +388,6 @@ i.if-edit-vendor-true { display: inline-block; }
   .md-table-wrapper { width: 100%; -ms-overflow-x: scroll; overflow-x: scroll; } }
 @media (max-width: 480px) { .btn-wrapper { text-align: center; }
   .btn-wrapper nav { float: none; }
-  .btn-wrapper .btn { float: none; } }
+  .btn-wrapper .btn { float: none; }
+  .radio label { display: block; text-align: left; }
+  .radio.preferred label { float: none; margin-right: 0px; } }
