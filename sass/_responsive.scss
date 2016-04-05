@@ -149,6 +149,21 @@
 		    overflow-x: scroll;
 	}
 } 
+@media (max-width: 600px) {
+	.radio {
+		.label {
+				float: none;
+				display: block;
+			}
+		}
+		.email-tooltip {
+			&:before {
+				content: "";
+				top: -5px;
+				left: 10px;
+			}
+		}
+	}
 @media (max-width: 480px) {
 	.btn-wrapper {
 		text-align: center;
