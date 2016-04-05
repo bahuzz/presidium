@@ -22,6 +22,14 @@
   }
 }
 
+.dropdown-menu > li > a {
+  cursor: pointer;
+  &.selected {
+    background: #007DC3 !important;
+    color: #fff !important;
+  }
+}
+
 .if-edit-vendor {
   display: none;
 
@@ -94,8 +102,29 @@
 .vd-page th {
   width: 300px;
 }
+
 .vd-page {
-  .label{
+  .label {
     padding-left: 0;
+  }
+}
+
+.btns {
+  .notes-range,
+  .dropdown {
+    display: inline-block;
+  }
+}
+
+///////////// vendor notes /////////////
+.cont-more-block {
+  .note-wrapper {
+    padding: 0.3em;
+    background: #F4F5F5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  &.cont-more-block-hidden {
+    display: none;
   }
 }

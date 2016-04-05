@@ -146,10 +146,16 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.datepicker').datepicker({
-		autoclose: true,
-		format: 'dd/mm/yyyy'
-	});
+	var dateFormat = 'dd/mm/yyyy';
+	var datepicker = $('.datepicker');
+
+	if (datepicker.length){
+		$(datepicker).datepicker({
+			autoclose: true,
+			format: dateFormat
+		});
+	}
+
 
 	/* vendor-details check box dependencies */
 	// Inspection at their location Format
@@ -172,6 +178,63 @@ $(document).ready(function() {
 		vendorDetailsDrw($(this).prop('checked'))
 	}).prop('checked'));
 
+	// date range
+	var noteRange = $('.notes-range');
+	if (noteRange.length){
+		$(noteRange).datepicker({
+			inputs: $('.notes-range input'),
+			format: dateFormat
+		});
+	}
+
+
+	var dateDelta = 3;
+	var noteRangeStart = $('.notes-range .range-start');
+	var noteRangeEnd = $('.notes-range .range-end');
+	noteRangeStart.length && $(noteRangeStart).datepicker('setDate', new Date((new Date()) - dateDelta * 864*1e5));
+	noteRangeEnd.length && $(noteRangeEnd).datepicker('setDate', new Date());
+
+	// vendor notes. "see more"
+	$('.cont-more').click(function(){
+		$(this).parents('tr').find('.cont-more-block').slideToggle();
+		return false
+	});
+
+	var dropdowns = $('.dropdown');
+	$(dropdowns).each(function(){
+		this.dropdownReset = function(){
+			var selectedEl = $(this).find('[data-selected]');
+			$(this).find('[data-option]').removeClass('selected');
+			$(selectedEl).addClass('selected');
+			$(this).find('input[type=hidden]').val($(selectedEl).data('option'));
+			$(this).find('.value').html($(selectedEl).html());
+			console.log(this)
+			return this
+		};
+
+		this.dropdownSetOption = function(option){
+			var selector = '[data-option='+ option + ']';
+			var selectedEl = $(this).find(selector);
+			$(this).find('[data-option]').removeClass('selected');
+			$(selectedEl).addClass('selected');
+			$(this).find('input[type=hidden]').val($(selectedEl).data('option'));
+			$(this).find('.value').html($(selectedEl).html());
+			$(this).addClass('selected');
+			console.log(this)
+			return this
+		}
+	}).find('[data-option]').click(function(){
+		var parent = $(this).parents('.dropdown')[0];
+		$(parent).find('[data-option]').removeClass('selected');
+		$(this).addClass('selected');
+		$(parent).find('input[type=hidden]').val($(this).data('option'));
+		$(parent).find('.value').html($(this).html());
+		//return false;
+	});
+	$(dropdowns).each(function(){
+		this.dropdownReset();
+		//this.dropdownSetOption('role4');
+	});
 });
 
 $("body").click(function (event) {
