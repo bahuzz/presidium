@@ -315,7 +315,8 @@ $(document).ready(function(){
       statusbar: false,
       theme_advanced_resizing_min_height : 500,
       min_height: 200,
-      toolbar: 'insertfile undo redo | styleselect | bold italic | bullist numlist outdent indent | link image | forecolor backcolor emoticons',
+      //toolbar: 'insertfile undo redo | styleselect | bold italic | bullist numlist outdent indent | link image | forecolor backcolor emoticons',
+      toolbar: 'insertfile undo redo styleselect bold italic bullist numlist outdent indent  link image  forecolor backcolor emoticons',
       content_css: [
         '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
         '//www.tinymce.com/css/codepen.min.css'

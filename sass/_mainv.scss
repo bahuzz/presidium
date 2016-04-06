@@ -145,3 +145,13 @@ em {
 textarea {
   height: 500px !important;
 }
+
+.mce-btn-group > * {
+  white-space: normal !important;
+}
+
+.notes{
+  table {
+    min-width: 800px;
+  }
+}

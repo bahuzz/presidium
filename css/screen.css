@@ -449,6 +449,12 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .filter-item { display: inline-block; }
 
+textarea { height: 500px !important; }
+
+.mce-btn-group > * { white-space: normal !important; }
+
+.notes table { min-width: 800px; }
+
 /* Dropdown control */
 .selectBox-dropdown { padding-right: 30px; height: 37px; line-height: 37px; width: 100%; font-size: 16px; cursor: pointer; color: #333; position: relative; }
 
