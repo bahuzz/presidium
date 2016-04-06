@@ -318,6 +318,7 @@ label { cursor: pointer; }
 .table { margin-bottom: 30px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
 .table th { width: 195px; background: #f4f5f5; }
 .table td { background: #fff; }
+.table thead td { background: #f4f5f5; }
 
 .pagination { margin-bottom: 30px; margin-top: 0; }
 .pagination a { -webkit-border-radius: 50%; border-radius: 50%; border: none !important; background: none !important; color: #333 !important; }
@@ -407,6 +408,8 @@ textarea.form-control { resize: none; width: 100%; }
 .open-hidden-block-btn { margin-bottom: 20px; }
 
 .checkbox label { padding-left: 0; }
+
+.td { width: 20%; display: inline-block; text-align: center; }
 
 em { font-style: italic; }
 

@@ -492,7 +492,11 @@ label {
 	td {
 		background: #fff;
 	}
-	
+	thead {
+		td {
+			background: #f4f5f5;
+		}
+	}
 }
 .pagination {
 	margin-bottom: 30px;
@@ -761,4 +765,9 @@ textarea.form-control {
 		padding-left: 0;
 	}
 }
-////////////////////////// address ////////////////////////
+////////////////////////// vendor products ////////////////////////
+.td {
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
