@@ -283,6 +283,8 @@ label { cursor: pointer; }
 
 .checkbox input[type="checkbox"] + label::before { top: 4px; }
 
+.c-comp-link { padding: 5px 0; }
+
 .sidebar { padding-top: 70px; }
 
 .sidemenu { padding-top: 30px; }
