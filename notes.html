@@ -270,24 +270,18 @@
                             <span>From: </span><input type="button" class="range-start btn btn-default btn-auto-w"
                                                       value="">
                             <span>To: </span><input type="button" class="range-end btn btn-default btn-auto-w" value="">
+
+                            <div class="filter-item">
+                                <select class="form-control">
+                                    <option>type</option>
+                                    <option>date</option>
+                                    <option>user</option>
+                                    <option>text</option>
+                                </select>
+                            </div><!-- form-group -->
                         </div>
 
-                        <div class="dropdown">
-                            <input type="hidden">
-                            <button class="btn btn-default btn-auto-w dropdown-toggle" type="button"
-                                    data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                <span class="value">choose TYPE OF NOTE</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a data-option="">choose TYPE OF NOTE</a></li>
-                                <li><a data-option="role1" data-selected="">type</a></li>
-                                <li><a data-option="role2">date</a></li>
-                                <li><a data-option="role3">user</a></li>
-                                <li><a data-option="role4">text</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
 
@@ -307,10 +301,24 @@
 
                             <tbody>
                             <tr>
-                                <td>INTERNAL</td>
+                                <td>
+                                    <span class="field-value">type</span>
+                                    <div class="form-group  edit-field">
+                                        <select class="form-control">
+                                            <option>type</option>
+                                            <option>date</option>
+                                            <option>user</option>
+                                            <option>text</option>
+                                        </select>
+                                    </div><!-- form-group -->
+                                </td>
                                 <td>10.08.2016</td>
                                 <td class="news-title">
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?</div>
+                                    <span class="field-value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?</span>
+                                    <input class="edit-field"
+                                           placeholder="some text" type="text"
+                                           value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?">
+
                                     <div class="cont-more-block cont-more-block-hidden">
                                         <div class="note-wrapper">
                                             <div>
@@ -326,32 +334,46 @@
                                                     ipsa, optio qui quia quos rerum. Delectus iste possimus similique
                                                     totam!</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="edit-block hidden">
-                                        <textarea name="" id="vendor-note-1" class="editor-source" cols="30" rows="10">
-                                        </textarea>
-                                        <div class="btns tar clearfix">
-                                            <button class="btn btn-primary save">Save</button>
-                                            <button class="btn btn-primary cancel">Cancel</button>
-                                        </div>
-                                    </div>
+                                        </div><!-- note-wrapper -->
+                                        <div class="edit-block hidden">
+                                            <textarea name="" id="vendor-note-1" class="editor-source" cols="30"
+                                                      rows="10">
+                                            </textarea>
 
+                                            <div class="btns tar clearfix">
+                                                <button class="btn btn-primary save">Save</button>
+                                                <button class="btn btn-primary cancel">Cancel</button>
+                                            </div>
+                                        </div><!-- edit-block -->
+                                    </div>
 
                                 </td>
                                 <td><a href="#" class="cont-more">see more detailes</a></td>
                                 <td class="text-center">User</td>
                                 <td class="text-center">
-                                    <span class="vendor-note-edit"><i class="zmdi zmdi-edit inline-btn if-edit-vendor"></i></span>
                                     <i class="zmdi zmdi-delete inline-btn if-edit-vendor"></i>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>INTERNAL</td>
+                                <td>
+                                    <span class="field-value">type</span>
+                                    <div class="form-group  edit-field">
+                                        <select class="form-control">
+                                            <option>type</option>
+                                            <option>date</option>
+                                            <option>user</option>
+                                            <option>text</option>
+                                        </select>
+                                    </div><!-- form-group -->
+                                </td>
                                 <td>10.08.2016</td>
                                 <td class="news-title">
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?</div>
+                                    <span class="field-value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?</span>
+                                    <input class="edit-field"
+                                           placeholder="some text" type="text"
+                                           value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quod?">
+
                                     <div class="cont-more-block cont-more-block-hidden">
                                         <div class="note-wrapper">
                                             <div>
@@ -368,22 +390,20 @@
                                                     totam!</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="edit-block hidden">
+                                        <div class="edit-block hidden">
                                         <textarea name="" id="vendor-note-2" class="editor-source" cols="30" rows="10">
                                         </textarea>
-                                        <div class="btns tar clearfix">
-                                            <button class="btn btn-primary save">Save</button>
-                                            <button class="btn btn-primary cancel">Cancel</button>
+
+                                            <div class="btns tar clearfix">
+                                                <button class="btn btn-primary save">Save</button>
+                                                <button class="btn btn-primary cancel">Cancel</button>
+                                            </div>
                                         </div>
                                     </div>
-
-
                                 </td>
                                 <td><a href="#" class="cont-more">see more detailes</a></td>
                                 <td class="text-center">User</td>
                                 <td class="text-center">
-                                    <span class="vendor-note-edit"><i class="zmdi zmdi-edit inline-btn if-edit-vendor"></i></span>
                                     <i class="zmdi zmdi-delete inline-btn if-edit-vendor"></i>
                                 </td>
                             </tr>
@@ -411,8 +431,60 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="panel-add-document pull-right ps-dropup if-edit-vendor col-lg-4 col-md-5 col-sm-6 col-xs-8 ">
+                                <div class="btn-wrapper clearfix pull-right">
+                                    <button class="btn btn-primary pull-left btn-add-item">Add note <i
+                                            class="zmdi zmdi-account-add"></i>
+                                    </button>
+                                </div>
+                            </div><!-- panel-add-document -->
                         </div><!-- clearfix -->
 
+                    </div>
+
+                    <div class="note-add-container hide-block add-contact-block col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label>Type</label>
+                                <select class="form-control">
+                                    <option>type</option>
+                                    <option>date</option>
+                                    <option>user</option>
+                                    <option>text</option>
+                                </select>
+                            </div><!-- form-group -->
+
+                            <div class="form-group">
+                                <label>Date</label>
+
+                                <div class="btn-group-sm date datepicker datepicker-custom">
+                                    <input class="btn btn-default" value="04/13/2016" type="button">
+                                </div>
+                            </div><!-- form-group -->
+
+                            <div class="form-group">
+                                <label>User</label>
+                                <input type="text" class="form-control" placeholder="Contact Title">
+                            </div><!-- form-group -->
+
+                            <div class="form-group">
+                                <label>Title</label>
+                                <input type="text" class="form-control" placeholder="Contact Title">
+                            </div><!-- form-group -->
+
+                            <div class="form-group">
+                                <label>Note</label>
+                                <textarea name="" id="vendor-note-add" class="form-control" rows="10">
+                                </textarea>
+                            </div><!-- form-group -->
+
+                            <div class="form-group btns tar">
+                                <button type="reset" class="btn btn-primary">Reset</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#saveModal">Save
+                                </button>
+                            </div><!-- form-group -->
+                        </form>
                     </div>
 
                     <div class="btn-wrapper clearfix">
@@ -458,7 +530,7 @@
 </div><!-- container -->
 
 </body>
-<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/parsley.min.js"></script>

@@ -1,3 +1,7 @@
+em {
+  font-style: italic;
+}
+
 ///////// add document //////
 .panel-add-document {
   .dropdown-wrapper {
@@ -127,4 +131,13 @@
   &.cont-more-block-hidden {
     display: none;
   }
+}
+
+/////
+
+.hide-block {
+  display: none;
+}
+.filter-item {
+  display: inline-block;
 }

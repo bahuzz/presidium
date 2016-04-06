@@ -197,6 +197,8 @@ $(document).ready(function(){
     return false
   });
 
+
+  //////// dropdowns ///////////
   var dropdowns = $('.dropdown');
   $(dropdowns).each(function(){
     this.dropdownReset = function(){
@@ -232,6 +234,7 @@ $(document).ready(function(){
   });
 
   // vendor notes editor
+  /*
   var getVendNoteEdConfig = function(id){
     return {
       mode: "exact",
@@ -262,7 +265,7 @@ $(document).ready(function(){
     editor.show();
 
     $(noteCell).find('.edit-block').removeClass('hidden');
-  })
+  });
 
   $('.edit-block .save').click(function(){
     var noteCell = $(this).parents('td');
@@ -293,6 +296,51 @@ $(document).ready(function(){
     tinymce.get(id).remove();
 
   });
+  */
+
+  var copyNotesIntoTextareas = function(){
+    $('.note-wrapper').each(function(){
+      $(this).parents('td').find('.editor-source').val($(this).html());
+    })
+  };
+  $('.edit-vendor').click(function(){
+    console.log('venfor click');
+    copyNotesIntoTextareas();
+    tinyMCE.init({
+      selector: 'textarea.editor-source',
+      plugins: [
+        'advlist autolink lists link image charmap print preview anchor',
+        'searchreplace visualblocks code fullscreen',
+        'insertdatetime media table contextmenu paste code'
+      ],
+      toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+      content_css: [
+        '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+        '//www.tinymce.com/css/codepen.min.css'
+      ]
+    });
+
+    $('.cont-more-block').hide().find('.note-wrapper').addClass('hidden');
+    $('.edit-block').removeClass('hidden');
+    $('.cont-more-block').show();
+  });
+
+  $('.btn-add-item').click(function(){
+    tinyMCE.init({
+      selector: 'textarea#vendor-note-add',
+      plugins: [
+        'advlist autolink lists link image charmap print preview anchor',
+        'searchreplace visualblocks code fullscreen',
+        'insertdatetime media table contextmenu paste code'
+      ],
+      toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+      content_css: [
+        '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+        '//www.tinymce.com/css/codepen.min.css'
+      ]
+    });
+    $('.note-add-container').show()
+  })
 
 });
 

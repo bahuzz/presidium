@@ -406,6 +406,8 @@ textarea.form-control { resize: none; width: 100%; }
 
 .checkbox label { padding-left: 0; }
 
+em { font-style: italic; }
+
 .panel-add-document .dropdown-wrapper { position: relative; }
 .panel-add-document .dropdown-wrapper .ps-dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
 .panel-add-document .dropdown-wrapper .selected-file { margin-bottom: 20px; }
@@ -440,6 +442,10 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .cont-more-block .note-wrapper { padding: 0.3em; background: #F4F5F5; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
 .cont-more-block.cont-more-block-hidden { display: none; }
+
+.hide-block { display: none; }
+
+.filter-item { display: inline-block; }
 
 /* Dropdown control */
 .selectBox-dropdown { padding-right: 30px; height: 37px; line-height: 37px; width: 100%; font-size: 16px; cursor: pointer; color: #333; position: relative; }
