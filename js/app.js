@@ -303,22 +303,31 @@ $(document).ready(function(){
       $(this).parents('td').find('.editor-source').val($(this).html());
     })
   };
-  $('.edit-vendor').click(function(){
-    console.log('venfor click');
-    copyNotesIntoTextareas();
-    tinyMCE.init({
-      selector: 'textarea.editor-source',
+  var getEditorConf = function(){
+    return {
+      selector: 'textarea',
       plugins: [
         'advlist autolink lists link image charmap print preview anchor',
         'searchreplace visualblocks code fullscreen',
-        'insertdatetime media table contextmenu paste code'
+        'insertdatetime media table contextmenu paste code textcolor colorpicker '
       ],
-      toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+      menubar: false,
+      statusbar: false,
+      theme_advanced_resizing_min_height : 500,
+      min_height: 200,
+      toolbar: 'insertfile undo redo | styleselect | bold italic | bullist numlist outdent indent | link image | forecolor backcolor emoticons',
       content_css: [
         '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
         '//www.tinymce.com/css/codepen.min.css'
       ]
-    });
+    }
+  };
+  $('.edit-vendor').click(function(){
+    console.log('venfor click');
+    copyNotesIntoTextareas();
+    var conf = getEditorConf();
+    conf.selector = 'textarea.editor-source';
+    tinyMCE.init(conf);
 
     $('.cont-more-block').hide().find('.note-wrapper').addClass('hidden');
     $('.edit-block').removeClass('hidden');
@@ -326,19 +335,11 @@ $(document).ready(function(){
   });
 
   $('.btn-add-item').click(function(){
-    tinyMCE.init({
-      selector: 'textarea#vendor-note-add',
-      plugins: [
-        'advlist autolink lists link image charmap print preview anchor',
-        'searchreplace visualblocks code fullscreen',
-        'insertdatetime media table contextmenu paste code'
-      ],
-      toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-      content_css: [
-        '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
-        '//www.tinymce.com/css/codepen.min.css'
-      ]
-    });
+    var conf = getEditorConf();
+    conf.min_height = 300;
+    conf.selector = 'textarea#vendor-note-add';
+
+    tinyMCE.init(conf);
     $('.note-add-container').show()
   })
 
