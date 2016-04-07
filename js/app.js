@@ -352,3 +352,8 @@ $("body").click(function(event){
     $(".ct-tag").removeClass('active');
   }
 });
+
+///// overview redirect /////////
+$('.table-overview tbody').click(function(){
+  window.location = 'main.html'
+});

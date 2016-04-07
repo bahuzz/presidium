@@ -158,3 +158,11 @@ textarea {
     min-width: 10%;
   }
 }
+
+.table-overview {
+  tbody {
+    tr {
+      cursor: pointer;
+    }
+  }
+}

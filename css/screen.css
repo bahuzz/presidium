@@ -239,6 +239,7 @@ label { cursor: pointer; }
 .search-form .form-control { border: none; -webkit-border-radius: 0; border-radius: 0; border-bottom: 1px solid  #E1E1E1; height: 40px; line-height: 40; padding: 0 40px 0 15px; width: 66%; -webkit-box-shadow: none; box-shadow: none; float: left; }
 .search-form .form-control:focus { border: 1px solid  #E1E1E1; }
 .search-form .input-group-btn { position: relative; left: -35px; bottom: -5px; width: auto; }
+.search-form .input-group-btn-os { position: absolute; top: 5px; right: 1px; width: auto; }
 .search-form .btn-search { margin: 2px 0 0 !important; background: transparent; box-shadow: none; border-width: 0 0 0 1px; border-style: none none none solid; border-image: none; padding: 0 8px 0 10px; border-left: solid 1px #ccc; }
 .search-form i { color: #969C9C; font-size: 24px; }
 
@@ -469,6 +470,8 @@ textarea { height: 500px !important; }
 .notes table { min-width: 900px; }
 .notes .see-more { min-width: 10%; }
 
+.table-overview tbody tr { cursor: pointer; }
+
 /* Dropdown control */
 .selectBox-dropdown { padding-right: 30px; height: 37px; line-height: 37px; width: 100%; font-size: 16px; cursor: pointer; color: #333; position: relative; }
 
@@ -513,6 +516,8 @@ textarea { height: 500px !important; }
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .inner-logo { margin-right: 0; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
+  .search-form.os-form .form-control { padding-right: 40px; }
+  .search-form.os-form .input-group-btn-os { top: 7px; }
   .user-top-block { width: 55%; } }
 @media (max-width: 1080px) { .weather { font-size: 23px; position: relative; top: 7px; }
   .weather i { font-size: 27px; top: 3px; }
@@ -531,6 +536,7 @@ textarea { height: 500px !important; }
   .wrapper { position: relative; display: block; }
   .search-form { padding-bottom: 10px; }
   .search-form .form-control { font-size: 14px; padding-left: 5px; padding-right: 35px; }
+  .search-form.os-form .form-control { padding-right: 40px; }
   .search-form .search-adv { float: left; margin-left: 10px; }
   h1 { font-size: 25px; }
   h2 { font-size: 21px; }
