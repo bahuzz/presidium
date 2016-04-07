@@ -323,7 +323,7 @@
 
 								<div class="col-md-12">
 
-									<table class="table table-contacts table-distributors">
+									<table class="table table-contacts table-vp">
 										<thead>
 											<tr>
 												<td>Product name</td>
@@ -338,7 +338,7 @@
 
 										<tbody>
 											<tr>
-											<td>Product name</td>
+											<th>Product name</th>
 											<td>
 												<span class="td">Price</span>
 												<span class="td">NSN</span>
@@ -347,41 +347,54 @@
 												<i class="zmdi zmdi-delete row-del hidden pull-right"></i>
 												<a href="#" class="cont-more pull-right">View full info</a>
 												<div class="contact-more-block">
-												<form>
+												<form class="vp-options">
 													<h3>Price Breaks</h3>
-													<div class="form-group">
-														<span class="field-value">
-															<label>Quantity Threshold</label>
-															<span class="fv-val">some text</span>
-														</span>
-														<span class="edit-field">
-															<label>Quantity Threshold</label>
-															<input type="text" class="form-control" placeholder="Quantity Threshold">
-														</span>
-													</div><!-- form-group -->
+													<div class="form-group-wrapper clearfix">
+														<div class="form-group">
+															<span class="field-value">
+																<label>Quantity Threshold</label>
+																<span class="fv-val">some text</span>
+															</span>
+															<span class="edit-field">
+																<label>Quantity Threshold</label>
+																<input type="text" class="form-control" placeholder="Quantity Threshold">
+															</span>
+														</div><!-- form-group -->
+
+														<div class="form-group">
+															<span class="field-value">
+																<label>Break values</label>
+																<span class="fv-val">some text</span>
+															</span>
+															<span class="edit-field">
+																<label>Break values</label>
+																<input type="text" class="form-control" placeholder="Break values">
+															</span>
+														</div><!-- form-group -->
+
+														<div class="form-group">
+															<span class="field-value">
+																<label>Classifier</label>
+																<span class="fv-val">5%</span>
+															</span>
+															<span class="edit-field">
+																<label>Classifier</label>
+																<select>
+																	<option>5</option>
+																	<option>10</option>
+																	<option>15</option>
+																	<option>20</option>
+																</select> %
+															</span>
+														</div><!-- form-group -->
+
+														<button type="button" class="btn btn-primary">Add</button>
+													</div><!-- form-group-wrapper -->
+
 
 													<div class="form-group">
 														<span class="field-value">
-															<label>Break values</label>
-															<span class="fv-val">some text</span>
-														</span>
-														<span class="edit-field">
-															<label>Break values</label>
-															<input type="text" class="form-control" placeholder="Break values">
-
-															<select>
-																<option>5</option>
-																<option>10</option>
-																<option>15</option>
-																<option>20</option>
-															</select> %
-														</span>
-													</div><!-- form-group -->
-
-													<h3>Discount</h3>
-
-													<div class="form-group">
-														<span class="field-value">
+															<label>Discount</label>
 															<span class="fv-val">some text</span>
 														</span>
 														<span class="edit-field">
@@ -389,16 +402,10 @@
 														</span>
 													</div><!-- form-group -->
 
-													<h3>Early Pay Break</h3>
-
-													<div class="form-group">
-														<span class="field-value">
-															<span class="fv-val">some text</span>
-														</span>
-														<span class="edit-field">
-															<input type="text" class="form-control" placeholder="Early Pay Break">
-														</span>
-													</div><!-- form-group -->
+													<div class="check edit-check">
+														<input type="checkbox" id="rd-check-1" disabled>
+														<label for="rd-check-1" class="label check-label">Early Pay Break</label>
+													</div><!-- check -->
 
 													<div class="form-group btns hidden tar">
 														<button type="reset" class="btn btn-primary">Reset</button>
@@ -417,7 +424,7 @@
 
 
 									<div class="btn-wrapper clearfix">
-										<button class="btn btn-primary open-hidden-block-btn hidden add-contact-btn">Add Distributor</button>
+										<button class="btn btn-primary open-hidden-block-btn hidden add-contact-btn">Add Vendor</button>
 										<div class="hidden-block add-contact-block cb clearfix">
 											<form>
 													<div class="form-group">

@@ -771,3 +771,24 @@ textarea.form-control {
 	display: inline-block;
 	text-align: center;
 }
+.table-vp {
+	tbody {
+		th {
+			background: #FFF;
+		}
+	}
+}
+.form-group-wrapper {
+	.form-group {
+		float: left;
+		margin-right: 50px;
+	}
+}
+.vp-options {
+	position: relative;
+	left: -136px;
+}
+.check-label {
+	color: #222;
+	font-weight: normal;
+}

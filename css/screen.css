@@ -411,6 +411,14 @@ textarea.form-control { resize: none; width: 100%; }
 
 .td { width: 20%; display: inline-block; text-align: center; }
 
+.table-vp tbody th { background: #FFF; }
+
+.form-group-wrapper .form-group { float: left; margin-right: 50px; }
+
+.vp-options { position: relative; left: -136px; }
+
+.check-label { color: #222; font-weight: normal; }
+
 em { font-style: italic; }
 
 .panel-add-document .dropdown-wrapper { position: relative; }
