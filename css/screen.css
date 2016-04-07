@@ -244,7 +244,7 @@ label { cursor: pointer; }
 
 .form-group { position: relative; }
 
-.search-adv { font-size: 12px; color: #969c9c; float: right; position: relative; left: 36px; top: -21px; }
+.search-adv { font-size: 12px; color: #969c9c; position: absolute; left: 45px; top: 8px; }
 
 .search-form-adv { display: none; position: absolute; right: 0; top: 45px; background: #FFF; z-index: 100; padding: 20px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
 
