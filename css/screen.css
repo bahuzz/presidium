@@ -1180,7 +1180,8 @@ textarea.form-control {
 .more-block {
   display: none; }
 
-.row-del {
+.row-del,
+.rowdiv-del {
   margin-left: 10px;
   cursor: pointer;
   padding: 5px 10px; }
@@ -1370,6 +1371,22 @@ textarea {
 
 .table-overview tbody tr {
   cursor: pointer; }
+
+.tb-div {
+  display: table; }
+  .tb-div .tb-row {
+    display: table-row; }
+    .tb-div .tb-row .tb-th,
+    .tb-div .tb-row .tb-td {
+      display: table-cell;
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #dddddd; }
+
+.tb-div.table-pb .tb-th {
+  background: #f4f5f5;
+  width: 130px; }
 
 .table-vp {
   min-width: 705px;
@@ -1655,7 +1672,8 @@ textarea {
   .vp-options .products-full {
     margin-right: 0;
     margin-left: 0; }
-    .vp-options .products-full .table th {
+    .vp-options .products-full .table th,
+    .vp-options .products-full .table .tb-th {
       width: 105px; }
 
   .table-vp {
@@ -1692,3 +1710,4 @@ textarea {
     float: none;
     margin-right: 0px; } }
 
+/*# sourceMappingURL=screen.css.map */
