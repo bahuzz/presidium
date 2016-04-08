@@ -2,6 +2,10 @@ em {
   font-style: italic;
 }
 
+.sidebar {
+  z-index: 1;
+}
+
 ///////// add document //////
 .panel-add-document {
   .dropdown-wrapper {
@@ -170,12 +174,17 @@ textarea {
 
 //////// Vendor Products //////////////
 .table-vp {
+  min-width: 705px;
+  z-index: 0;
+
   .contact-more-block{
     min-width: 650px;
+    margin-left: -130px;
   }
 }
 
 .vp-options {
+  left: 0;
   .products-full {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     padding: 20px 10px 10px;

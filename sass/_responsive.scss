@@ -76,6 +76,13 @@
 	.login-block {
 		top: 150px;
 	}
+
+	//
+	.table-vp {
+		.vp-th {
+			width: 155px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -161,7 +168,37 @@
 		-ms-overflow-x: scroll;
 		    overflow-x: scroll;
 	}
-} 
+}
+
+@media (max-width: 702px){
+	.vp-options {
+		.products-full {
+			margin-right: 0;
+			margin-left: 0;
+			.table {
+				th {
+					width: 105px;
+				}
+			}
+		}
+	}
+	.table-vp {
+		min-width: 620px;
+		.vp-th {
+			width: 130px;
+		}
+		.contact-more-block{
+			padding-top: 10px;
+			min-width: 500px;
+
+			.products-full {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
 @media (max-width: 600px) {
 	.radio {
 		.label {

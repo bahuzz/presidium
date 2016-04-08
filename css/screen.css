@@ -424,6 +424,8 @@ textarea.form-control { resize: none; width: 100%; }
 
 em { font-style: italic; }
 
+.sidebar { z-index: 1; }
+
 .panel-add-document .dropdown-wrapper { position: relative; }
 .panel-add-document .dropdown-wrapper .ps-dropdown { position: absolute; display: none; width: 100%; z-index: 100; border-radius: 0; background: #F4F5F5; }
 .panel-add-document .dropdown-wrapper .selected-file { margin-bottom: 20px; }
@@ -472,8 +474,10 @@ textarea { height: 500px !important; }
 
 .table-overview tbody tr { cursor: pointer; }
 
-.table-vp .contact-more-block { min-width: 650px; }
+.table-vp { min-width: 705px; z-index: 0; }
+.table-vp .contact-more-block { min-width: 650px; margin-left: -130px; }
 
+.vp-options { left: 0; }
 .vp-options .products-full { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); padding: 20px 10px 10px; margin-bottom: 10px; background: #dddddd; }
 .vp-options .products-full .table { margin-bottom: 15px; }
 .vp-options .products-full .table th { background: #f4f5f5; width: 130px; }
@@ -540,7 +544,8 @@ textarea { height: 500px !important; }
   .ctt-text { float: none; }
   .c-top-link { float: none; }
   .pt-bot { overflow: hidden; clear: both; }
-  .login-block { top: 150px; } }
+  .login-block { top: 150px; }
+  .table-vp .vp-th { width: 155px; } }
 @media (max-width: 767px) { .sidebar { position: relative; padding-top: 10px; min-height: 1px; }
   .wrapper { position: relative; display: block; }
   .search-form { padding-bottom: 10px; }
@@ -560,6 +565,12 @@ textarea { height: 500px !important; }
   .logo { width: 70%; height: 135px; display: block; margin: auto; -webkit-background-size: 100% auto !important; -o-background-size: 100% auto !important; background-size: 100% auto !important; background: url(../img/icons/logo.png) 0 0 no-repeat; }
   .login-block { top: 10px; }
   .md-table-wrapper { width: 100%; -ms-overflow-x: scroll; overflow-x: scroll; } }
+@media (max-width: 702px) { .vp-options .products-full { margin-right: 0; margin-left: 0; }
+  .vp-options .products-full .table th { width: 105px; }
+  .table-vp { min-width: 620px; }
+  .table-vp .vp-th { width: 130px; }
+  .table-vp .contact-more-block { padding-top: 10px; min-width: 500px; }
+  .table-vp .contact-more-block .products-full { margin-right: 0; margin-left: 0; } }
 @media (max-width: 600px) { .radio .label { float: none; display: block; }
   .email-tooltip:before { content: ""; top: -5px; left: 10px; } }
 @media (max-width: 480px) { .btn-wrapper { text-align: center; }
