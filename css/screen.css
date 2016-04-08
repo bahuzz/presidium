@@ -1318,7 +1318,8 @@ em {
   min-height: 28px;
   max-height: 84px;
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  resize: none; }
 
 .row-fields {
   display: table;

@@ -82,6 +82,7 @@ em {
   max-height: $minHeight * 3;
   box-sizing: border-box;
   overflow-x: hidden;
+  resize: none;
 }
 
 .row-fields {
