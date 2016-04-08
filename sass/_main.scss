@@ -63,7 +63,7 @@ a {
 	text-indent: -9000px;
 	display: inline-block;
 	margin-bottom: 40px;
-} 
+}
 .login-block {
 	max-width: 380px;
 	margin: auto;
@@ -93,7 +93,7 @@ a {
 }
 input[type="checkbox"],
 input[type="radio"] {
-    display:none;            
+    display:none;
 }
 input[type="radio"] + label::before {
 	content: "";
@@ -386,7 +386,7 @@ label {
 .checkbox {
 	input[type="checkbox"] + label::before {
 		top: 4px;
-	} 
+	}
 }
 .c-comp-link {
 	padding: 5px 0;
@@ -434,7 +434,7 @@ label {
 	background: #FFF;
 	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,.2);
 	        box-shadow: 0 3px 3px rgba(0,0,0,.2);
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .ctt {
 	min-height: 54px;
@@ -531,7 +531,7 @@ label {
 	}
 	.active a {
 		background: #007DC3 !important;
-		color: #fff !important; 
+		color: #fff !important;
 	}
 }
 .btn-wrapper {
@@ -622,7 +622,7 @@ textarea.form-control {
 		}
 		input[type="checkbox"] + label::before {
 			top: 3px;
-		} 
+		}
 	}
 .edit-mail-wrapper {
 	padding-left: 20px;
