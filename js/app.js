@@ -197,7 +197,6 @@ $(document).ready(function(){
     return false
   });
 
-
   //////// dropdowns ///////////
   var dropdowns = $('.dropdown');
   $(dropdowns).each(function(){
@@ -313,7 +312,7 @@ $(document).ready(function(){
       ],
       menubar: false,
       statusbar: false,
-      theme_advanced_resizing_min_height : 500,
+      theme_advanced_resizing_min_height: 500,
       min_height: 200,
       //toolbar: 'insertfile undo redo | styleselect | bold italic | bullist numlist outdent indent | link image | forecolor backcolor emoticons',
       toolbar: 'insertfile undo redo styleselect bold italic bullist numlist outdent indent  link image  forecolor backcolor emoticons',
@@ -324,15 +323,16 @@ $(document).ready(function(){
     }
   };
   $('.edit-vendor').click(function(){
-    console.log('vendor click');
-    copyNotesIntoTextareas();
-    var conf = getEditorConf();
-    conf.selector = 'textarea.editor-source';
-    tinyMCE.init(conf);
-  
-    $('.cont-more-block').hide().find('.note-wrapper').addClass('hidden');
-    $('.edit-block').removeClass('hidden');
-    $('.cont-more-block').show();
+    if (typeof tinyMCE !== 'undefined'){
+      copyNotesIntoTextareas();
+      var conf = getEditorConf();
+      conf.selector = 'textarea.editor-source';
+      tinyMCE.init(conf);
+
+      $('.cont-more-block').hide().find('.note-wrapper').addClass('hidden');
+      $('.edit-block').removeClass('hidden');
+      $('.cont-more-block').show();
+    }
   });
 
   $('.btn-add-item').click(function(){
@@ -345,11 +345,15 @@ $(document).ready(function(){
   });
 
   ///// add price breaks ////////
+  $('.rowdiv-del').click(function(){
+    $(this).parents('.tb-row')[0].remove();
+
+  });
   $('.add-pb').click(function(){
     var template = $('#price-breaks-template').html();
-    var target = $(this).parents('.products-full').find('.table-pb tbody');
+    var target = $(this).parents('.products-full').find('.table-pb');
     var row = $(template).appendTo(target);
-    $(row).find('.row-del').click(function(){
+    $(row).find('.rowdiv-del').click(function(){
       $(row).remove();
     });
   });

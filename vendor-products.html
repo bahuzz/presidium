@@ -344,17 +344,19 @@
 
                 <div class="col-md-12">
                     <script type="text/template" id="price-breaks-template">
-                        <tr>
-                            <th>Price Breaks</th>
-                            <td>
+                        <form class="tb-row">
+                            <div class="tb-th">
+                                Price Breaks
+                            </div>
+                            <div class="tb-td pb-qt-cell">
                                 <input class="edit-field edit-field-show" value=""
                                        placeholder="Quantity Threshold" type="text">
-                            </td>
-                            <td>
+                            </div>
+                            <div class="tb-td">
                                 <input class="edit-field edit-field-show" value=""
                                        placeholder="Break values" type="text">
-                            </td>
-                            <td class="pbc-cell">
+                            </div>
+                            <div class="tb-td pbc-cell">
                                 <span class="edit-field edit-field-show">
                                      Classifier:
                                     <select>
@@ -364,9 +366,9 @@
                                         <option>20</option>
                                     </select> %
                                 </span>
-                            </td>
-                            <td><i class="zmdi zmdi-delete row-del pull-right"></i></td>
-                        </tr>
+                            </div>
+                            <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del"></i></div>
+                        </form>
                     </script>
 
                     <table class="table table-responsive table-contacts table-vp">
@@ -403,25 +405,26 @@
                                 <a href="#" class="cont-more pull-right">View full info</a>
 
                                 <div class="contact-more-block">
-                                    <form class="vp-options">
+                                    <div class="vp-options">
                                         <div style="" class="row products-full">
                                             <div class="col-md-12">
 
-                                                <table class="table table-pb">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>Price Breaks</th>
-                                                        <td class="pb-qt-cell">
+                                                <div class="table table-pb tb-div">
+                                                    <form class="tb-row">
+                                                        <div class="tb-th">
+                                                            Price Breaks
+                                                        </div>
+                                                        <div class="tb-td pb-qt-cell">
                                                             <span class="field-value">some text</span>
                                                             <input class="edit-field" value=""
                                                                    placeholder="Quantity Threshold" type="text">
-                                                        </td>
-                                                        <td>
+                                                        </div>
+                                                        <div class="tb-td">
                                                             <span class="field-value">some text</span>
                                                             <input class="edit-field" value=""
                                                                    placeholder="Break values" type="text">
-                                                        </td>
-                                                        <td class="pbc-cell">
+                                                        </div>
+                                                        <div class="tb-td pbc-cell">
                                                             <span class="field-value">
                                                                  Classifier:
 																<span>5</span>%
@@ -435,12 +438,11 @@
                                                                     <option>20</option>
                                                                 </select> %
 															</span>
-                                                        </td>
-                                                        <td><i class="zmdi zmdi-delete row-del"></i></td>
-                                                    </tr>
-
-                                                    </tbody>
-                                                </table>
+                                                        </div>
+                                                        <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del"></i></div>
+                                                    </form>
+                                                </div>
+                                                
                                                 <div class="btn-wrapper clearfix if-edit-vendor">
                                                     <button type="button" class="btn btn-primary add-pb">
                                                         add
@@ -478,7 +480,7 @@
                                                     data-target="#saveModal">Save
                                             </button>
                                         </div><!-- form-group -->
-                                    </form>
+                                    </div>
                                 </div><!-- contact-more-block -->
                             </td>
                         </tr>
