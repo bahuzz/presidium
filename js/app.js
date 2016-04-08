@@ -43,16 +43,16 @@ $(document).ready(function(){
     $('.maindrop').slideToggle();
   });
 
-  $('.edit-vendor').click(function(){
-    $('.field-value').addClass('field-value-hidden');
-    $('.edit-field').addClass('edit-field-show');
-    $(".edit-check input").removeAttr("disabled");
-    $('.if-edit-vendor').addClass('if-edit-vendor-true');
-    $('.open-hidden-block-btn').removeClass('hidden');
-    $('.btns.hidden').removeClass('hidden');
-    $('.row-del.hidden').removeClass('hidden');
-    return false
-  });
+  // $('.edit-vendor').click(function(){
+  //   $('.field-value').addClass('field-value-hidden');
+  //   $('.edit-field').addClass('edit-field-show');
+  //   $(".edit-check input").removeAttr("disabled");
+  //   $('.if-edit-vendor').addClass('if-edit-vendor-true');
+  //   $('.open-hidden-block-btn').removeClass('hidden');
+  //   $('.btns.hidden').removeClass('hidden');
+  //   $('.row-del.hidden').removeClass('hidden');
+  //   return false
+  // });
 
   $('#check-save').click(function(){
     $(".edit-check input").attr("disabled", 'true');
@@ -323,17 +323,17 @@ $(document).ready(function(){
       ]
     }
   };
-  $('.edit-vendor').click(function(){
-    console.log('venfor click');
-    copyNotesIntoTextareas();
-    var conf = getEditorConf();
-    conf.selector = 'textarea.editor-source';
-    tinyMCE.init(conf);
-
-    $('.cont-more-block').hide().find('.note-wrapper').addClass('hidden');
-    $('.edit-block').removeClass('hidden');
-    $('.cont-more-block').show();
-  });
+  // $('.edit-vendor').click(function(){
+  //   console.log('venfor click');
+  //   copyNotesIntoTextareas();
+  //   var conf = getEditorConf();
+  //   conf.selector = 'textarea.editor-source';
+  //   tinyMCE.init(conf);
+  // 
+  //   $('.cont-more-block').hide().find('.note-wrapper').addClass('hidden');
+  //   $('.edit-block').removeClass('hidden');
+  //   $('.cont-more-block').show();
+  // });
 
   $('.btn-add-item').click(function(){
     var conf = getEditorConf();
