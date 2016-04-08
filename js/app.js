@@ -26,7 +26,7 @@ $(document).ready(function(){
   });
 
   $('.row-del').click(function(){
-    $(this).parents('tr').remove();
+    $(this).parents('tr')[0].remove();
 
   });
 
@@ -342,8 +342,17 @@ $(document).ready(function(){
 
     tinyMCE.init(conf);
     $('.note-add-container').show()
-  })
+  });
 
+  ///// add price breaks ////////
+  $('.add-pb').click(function(){
+    var template = $('#price-breaks-template').html();
+    var target = $(this).parents('.products-full').find('.table-pb tbody');
+    var row = $(template).appendTo(target);
+    $(row).find('.row-del').click(function(){
+      $(row).remove();
+    });
+  });
 });
 
 $("body").click(function(event){
