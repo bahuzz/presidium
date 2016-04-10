@@ -83,10 +83,12 @@ $(document).ready(function(){
   });
 
   // document. add document panel
-  var autoSizes = $('textarea.auto-size');
-  if (autoSizes.length){
-    $(autoSizes).textareaAutoSize();
-  }
+  $('.edit-vendor').click(function(){
+    var autoSizes = $('textarea.auto-size');
+    if (autoSizes.length){
+      $(autoSizes).textareaAutoSize();
+    }
+  });
 
   $('.btn-add-document').click(function(){
     var panel = $(this).parents('.panel-add-document');
@@ -154,6 +156,22 @@ $(document).ready(function(){
       format: dateFormat
     });
   }
+
+  // Email settings
+  var emailTypes = $('.email-select-type');
+  if (emailTypes){
+    var current = $(emailTypes[0]).val();
+    var selectType = function(type){
+      $('.email-type').hide();
+      $('.' + type).show();
+    };
+    selectType(current);
+
+    $(emailTypes).change(function(){
+      selectType($(this).val());
+    });
+  }
+
 
   /* vendor-details check box dependencies */
   // Inspection at their location Format

@@ -30,6 +30,12 @@ em {
   }
 }
 
+.vd-docx-block {
+  .table {
+    min-width: 650px;
+  }
+}
+
 .dropdown-menu > li > a {
   cursor: pointer;
   &.selected {
@@ -127,6 +133,8 @@ em {
 
 ///////////// vendor notes /////////////
 .cont-more-block {
+  padding-top: 10px;
+
   .note-wrapper {
     padding: 0.3em;
     background: #F4F5F5;
@@ -148,17 +156,18 @@ em {
   display: inline-block;
 }
 
-textarea {
-  height: 500px !important;
-}
-
 .mce-btn-group > * {
   white-space: normal !important;
 }
 
 .notes {
+
   table {
     min-width: 900px;
+    .btn-default {
+      color: #333;
+      background-color: #fff;
+    }
   }
   .see-more {
     min-width: 10%;
