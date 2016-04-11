@@ -374,136 +374,276 @@
                             <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del"></i></div>
                         </form>
                     </script>
+                    
+                    <div class="forms-wrapper">
+                        <form action="#">
+                            <table class="table table-responsive table-contacts table-vp">
+                                <thead>
+                                <tr>
+                                    <td class="vp-th">Product name</td>
+                                    <td>
+                                        <span class="td">Price</span>
+                                        <span class="td">NSN</span>
+                                        <span class="td">Part Number</span>
+                                    </td>
 
-                    <table class="table table-responsive table-contacts table-vp">
-                        <thead>
-                        <tr>
-                            <td class="vp-th">Product name</td>
-                            <td>
-                                <span class="td">Price</span>
-                                <span class="td">NSN</span>
-                                <span class="td">Part Number</span>
-                            </td>
+                                </tr>
+                                </thead>
 
-                        </tr>
-                        </thead>
+                                <tbody>
+                                <tr>
+                                    <th class="vp-th">Product name</th>
+                                    <td>
+                                        <span class="td">
+                                            <span class="field-value">some text</span>
+                                            <input class="edit-field" value="" placeholder="name" type="text">
+                                        </span>
+                                        <span class="td">
+                                            <span class="field-value">some text</span>
+                                            <input class="edit-field" value="" placeholder="NSN" type="text">
+                                        </span>
+                                        <span class="td">
+                                            <span class="field-value">some text</span>
+                                            <input class="edit-field" value="" placeholder="part" type="text">
+                                        </span>
 
-                        <tbody>
-                        <tr>
-                            <th class="vp-th">Product name</th>
-                            <td>
-                                <span class="td">
-                                    <span class="field-value">some text</span>
-                                    <input class="edit-field" value="" placeholder="name" type="text">
-                                </span>
-                                <span class="td">
-                                    <span class="field-value">some text</span>
-                                    <input class="edit-field" value="" placeholder="NSN" type="text">
-                                </span>
-                                <span class="td">
-                                    <span class="field-value">some text</span>
-                                    <input class="edit-field" value="" placeholder="part" type="text">
-                                </span>
+                                        <i class="zmdi zmdi-delete row-del hidden pull-right"></i>
+                                        <a href="#" class="cont-more pull-right">View full info</a>
 
-                                <i class="zmdi zmdi-delete row-del hidden pull-right"></i>
-                                <a href="#" class="cont-more pull-right">View full info</a>
+                                        <div class="contact-more-block">
+                                            <div class="vp-options">
+                                                <div style="" class="row products-full">
+                                                    <div class="col-md-12">
 
-                                <div class="contact-more-block">
-                                    <div class="vp-options">
-                                        <div style="" class="row products-full">
-                                            <div class="col-md-12">
-
-                                                <div class="table table-pb tb-div">
-                                                    <div class="tb-row">
-                                                        <div class="tb-th">
-                                                            Price Breaks
+                                                        <div class="table table-pb tb-div">
+                                                            <div class="tb-row">
+                                                                <div class="tb-th">
+                                                                    Price Breaks
+                                                                </div>
+                                                                <div class="tb-td pb-qt-cell">
+                                                                    <span class="field-value">some text</span>
+                                                                    <input class="edit-field" value=""
+                                                                           placeholder="Quantity Threshold" type="text">
+                                                                </div>
+                                                                <div class="tb-td">
+                                                                    <span class="field-value">some text</span>
+                                                                    <input class="edit-field" value=""
+                                                                           placeholder="Break values" type="text">
+                                                                </div>
+                                                                <div class="tb-td pbc-cell">
+                                                                    <span class="field-value">
+                                                                         Classifier:
+        																<span>%</span>
+        															</span>
+        															<span class="edit-field">
+                                                                         Classifier:
+        																<select>
+                                                                            <option>%</option>
+                                                                            <option>$</option>
+                                                                        </select>
+        															</span>
+                                                                </div>
+                                                                <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del edit-field"></i></div>
+                                                            </div>
                                                         </div>
-                                                        <div class="tb-td pb-qt-cell">
-                                                            <span class="field-value">some text</span>
-                                                            <input class="edit-field" value=""
-                                                                   placeholder="Quantity Threshold" type="text">
+                                                        
+                                                        <div class="btn-wrapper clearfix if-edit-vendor">
+                                                            <button type="button" class="btn btn-primary add-pb">
+                                                                add
+                                                            </button>
                                                         </div>
-                                                        <div class="tb-td">
-                                                            <span class="field-value">some text</span>
-                                                            <input class="edit-field" value=""
-                                                                   placeholder="Break values" type="text">
-                                                        </div>
-                                                        <div class="tb-td pbc-cell">
-                                                            <span class="field-value">
-                                                                 Classifier:
-																<span>%</span>
-															</span>
-															<span class="edit-field">
-                                                                 Classifier:
-																<select>
-                                                                    <option>%</option>
-                                                                    <option>$</option>
-                                                                </select>
-															</span>
-                                                        </div>
-                                                        <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del edit-field"></i></div>
+                                                        <table class="table">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>Discount</th>
+                                                                <td>
+                                                                    <span class="field-value">some text</span>
+                                                                    <div class="edit-field">
+                                                                    <input value="some text"
+                                                                           placeholder="Discount" type="text">
+                                                                    <select>
+                                                                        <option>%</option>
+                                                                        <option>$</option>
+                                                                    </select>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Discount Description</th>
+                                                                <td>
+                                                                    <span class="field-value">some text</span>
+                                                                    <input class="edit-field" value="some text"
+                                                                           placeholder="Discount Description" type="text">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Early Pay Break</th>
+                                                                <td>
+                                                                    <div class="check edit-check">
+                                                                        <input id="rd-check-1" disabled="" type="checkbox">
+                                                                        <label for="rd-check-1"
+                                                                               class="label check-label"></label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="btn-wrapper clearfix if-edit-vendor">
-                                                    <button type="button" class="btn btn-primary add-pb">
-                                                        add
+
+                                                <div class="form-group btns hidden tar">
+                                                    <button type="reset" class="btn btn-primary">Reset</button>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                            data-target="#saveModal">Save
                                                     </button>
-                                                </div>
-                                                <table class="table">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>Discount</th>
-                                                        <td>
-                                                            <span class="field-value">some text</span>
-                                                            <input value="some text"
-                                                                   placeholder="Discount" type="text">
-                                                            <select>
-                                                                <option>%</option>
-                                                                <option>$</option>
-                                                            </select>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Discount Description</th>
-                                                        <td>
-                                                            <span class="field-value">some text</span>
-                                                            <input class="edit-field" value="some text"
-                                                                   placeholder="Discount Description" type="text">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Early Pay Break</th>
-                                                        <td>
-                                                            <div class="check edit-check">
-                                                                <input id="rd-check-1" disabled="" type="checkbox">
-                                                                <label for="rd-check-1"
-                                                                       class="label check-label"></label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-
-                                                    </tbody>
-                                                </table>
+                                                </div><!-- form-group -->
                                             </div>
-                                        </div>
-
-                                        <div class="form-group btns hidden tar">
-                                            <button type="reset" class="btn btn-primary">Reset</button>
-                                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target="#saveModal">Save
-                                            </button>
-                                        </div><!-- form-group -->
-                                    </div>
-                                </div><!-- contact-more-block -->
-                            </td>
-                        </tr>
+                                        </div><!-- contact-more-block -->
+                                    </td>
+                                </tr>
 
 
-                        </tbody>
+                                </tbody>
 
 
-                    </table>
+                            </table>
+                        </form>
+
+                        <form action="#">
+                            <table class="table table-responsive table-contacts table-vp">
+                                <thead>
+                                <tr>
+                                    <td class="vp-th"></td>
+                                    <td>
+                                        <span class="td"></span>
+                                        <span class="td"></span>
+                                        <span class="td"></span>
+                                    </td>
+
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <th class="vp-th">Product name</th>
+                                    <td>
+                                        <span class="td">
+                                            <span class="field-value">some text</span>
+                                            <input class="edit-field" value="" placeholder="name" type="text">
+                                        </span>
+                                        <span class="td">
+                                            <span class="field-value">some text</span>
+                                            <input class="edit-field" value="" placeholder="NSN" type="text">
+                                        </span>
+                                        <span class="td">
+                                            <span class="field-value">some text</span>
+                                            <input class="edit-field" value="" placeholder="part" type="text">
+                                        </span>
+
+                                        <i class="zmdi zmdi-delete row-del hidden pull-right"></i>
+                                        <a href="#" class="cont-more pull-right">View full info</a>
+
+                                        <div class="contact-more-block">
+                                            <div class="vp-options">
+                                                <div style="" class="row products-full">
+                                                    <div class="col-md-12">
+
+                                                        <div class="table table-pb tb-div">
+                                                            <div class="tb-row">
+                                                                <div class="tb-th">
+                                                                    Price Breaks
+                                                                </div>
+                                                                <div class="tb-td pb-qt-cell">
+                                                                    <span class="field-value">some text</span>
+                                                                    <input class="edit-field" value=""
+                                                                           placeholder="Quantity Threshold" type="text">
+                                                                </div>
+                                                                <div class="tb-td">
+                                                                    <span class="field-value">some text</span>
+                                                                    <input class="edit-field" value=""
+                                                                           placeholder="Break values" type="text">
+                                                                </div>
+                                                                <div class="tb-td pbc-cell">
+                                                                    <span class="field-value">
+                                                                         Classifier:
+                                                                        <span>%</span>
+                                                                    </span>
+                                                                    <span class="edit-field">
+                                                                         Classifier:
+                                                                        <select>
+                                                                            <option>%</option>
+                                                                            <option>$</option>
+                                                                        </select>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del edit-field"></i></div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="btn-wrapper clearfix if-edit-vendor">
+                                                            <button type="button" class="btn btn-primary add-pb">
+                                                                add
+                                                            </button>
+                                                        </div>
+                                                        <table class="table">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>Discount</th>
+                                                                <td>
+                                                                    <span class="field-value">some text</span>
+                                                                    <div class="edit-field">
+                                                                    <input value="some text"
+                                                                           placeholder="Discount" type="text">
+                                                                    <select>
+                                                                        <option>%</option>
+                                                                        <option>$</option>
+                                                                    </select>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Discount Description</th>
+                                                                <td>
+                                                                    <span class="field-value">some text</span>
+                                                                    <input class="edit-field" value="some text"
+                                                                           placeholder="Discount Description" type="text">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Early Pay Break</th>
+                                                                <td>
+                                                                    <div class="check edit-check">
+                                                                        <input id="rd-check-1" disabled="" type="checkbox">
+                                                                        <label for="rd-check-1"
+                                                                               class="label check-label"></label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group btns hidden tar">
+                                                    <button type="reset" class="btn btn-primary">Reset</button>
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                            data-target="#saveModal">Save
+                                                    </button>
+                                                </div><!-- form-group -->
+                                            </div>
+                                        </div><!-- contact-more-block -->
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+
+
+                            </table>
+                        </form>
+                    </div>
 
 
                     <div class="btn-wrapper clearfix">

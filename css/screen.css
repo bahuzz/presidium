@@ -160,6 +160,7 @@ form .table { box-shadow: none; margin-bottom: 0; }
 
 form + form thead { height: 0; }
 form + form thead td { padding: 0 8px !important; }
+form + form thead td span.td { display: none; }
 
 h1 { font-size: 39px; padding-bottom: 20px; }
 
