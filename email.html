@@ -260,11 +260,10 @@
 											<td>
 												<span class="field-value">type</span>
 												<span class="edit-field">
-													<select class="custom-select">
-														<option>type</option>
-														<option>type</option>
-														<option>type</option>
-														<option>type</option>
+													<select class="custom-select email-select-type">
+														<option value="type-1">type 1</option>
+														<option value="type-2">type 2</option>
+														<option value="type-3">type 3</option>
 													</select>
 												</span>
 											</td>
@@ -278,9 +277,17 @@
 											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-											<span class="edit-field">
-												<textarea class="form-control" placeholder="type something"></textarea>
-											</span>
+											<div class="edit-field email-container">
+												<div class="type-1 email-type">
+													<textarea class="form-control" placeholder="type something">form type: 1</textarea>
+												</div>
+												<div class="type-2 email-type">
+													<textarea class="form-control" placeholder="type something">form type: 2</textarea>
+												</div>
+												<div class="type-3 email-type">
+													<textarea class="form-control" placeholder="type something">form type: 3</textarea>
+												</div>
+											</div>
 
 												</td>
 										</tr>
@@ -288,7 +295,7 @@
 									
 									</table>
 
-									<div class="btns tar clearfix">
+									<div class="btns tar clearfix if-edit-vendor">
 										<button class="btn btn-primary">Save</button>
 										<button class="btn btn-primary">Cancel</button>
 									</div><!-- clearfix -->

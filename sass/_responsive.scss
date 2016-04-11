@@ -168,6 +168,12 @@
 		-ms-overflow-x: scroll;
 		    overflow-x: scroll;
 	}
+
+	.vd-docx-block {
+		.table {
+			min-width: 600px;
+		}
+	}
 }
 
 @media (max-width: 702px){
