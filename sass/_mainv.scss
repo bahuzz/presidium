@@ -176,6 +176,7 @@ textarea {
 //////// Vendor Products //////////////
 .tb-div {
   display: table;
+  width: 100%;
   .tb-row {
     display: table-row;
     .tb-th,
@@ -186,29 +187,25 @@ textarea {
       vertical-align: top;
       border-top: 1px solid #dddddd;
     }
-    .tb-th {
-
-    }
   }
 }
 
 .tb-div.table-pb {
-  .tb-row {
-    .tb-th,
-    .tb-td {
-    }
-  }
   .tb-th {
     background: #f4f5f5;
     width: 130px;
   }
 }
 
+.tb-wrapper {
+  margin-bottom: 0;
+}
+
 .table-vp {
   min-width: 705px;
   z-index: 0;
 
-  .contact-more-block{
+  .contact-more-block {
     min-width: 650px;
     margin-left: -130px;
   }
@@ -216,6 +213,7 @@ textarea {
 
 .vp-options {
   left: 0;
+  
   .products-full {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     padding: 20px 10px 10px;
