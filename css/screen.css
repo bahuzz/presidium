@@ -186,6 +186,8 @@ a:hover { text-decoration: none; }
 
 .btn { background: #007DC3; color: #fff; text-transform: uppercase; padding: 10px 16px; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25); border: none; border-radius: 2px; cursor: pointer; }
 
+.btn--white { background: #ffffff; color: #000000; }
+
 .btn-tn { text-transform: none; }
 
 .menu-btn { display: none; }
