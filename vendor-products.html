@@ -332,7 +332,7 @@
                 <div class="col-md-2 tac doc-status">
                     Locked by: <br>
                     John Doe <br>
-                    10.08.l2015 <br>
+                    10.08.2015 <br>
                     <a href="#" class="edit-vendor">Edit vendor</a>
                 </div><!-- col-md-2 -->
             </div><!-- row -->
@@ -367,11 +367,9 @@
                                 <span class="edit-field edit-field-show">
                                      Classifier:
                                     <select>
-                                        <option>5</option>
-                                        <option>10</option>
-                                        <option>15</option>
-                                        <option>20</option>
-                                    </select> %
+                                        <option>%</option>
+                                        <option>$</option>
+                                    </select>
                                 </span>
                             </div>
                             <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del"></i></div>
@@ -434,16 +432,14 @@
                                                         <div class="tb-td pbc-cell">
                                                             <span class="field-value">
                                                                  Classifier:
-																<span>5</span>%
+																<span>%</span>
 															</span>
 															<span class="edit-field">
                                                                  Classifier:
 																<select>
-                                                                    <option>5</option>
-                                                                    <option>10</option>
-                                                                    <option>15</option>
-                                                                    <option>20</option>
-                                                                </select> %
+                                                                    <option>%</option>
+                                                                    <option>$</option>
+                                                                </select>
 															</span>
                                                         </div>
                                                         <div class="tb-td"><i class="zmdi zmdi-delete rowdiv-del"></i></div>
@@ -460,9 +456,18 @@
                                                     <tr>
                                                         <th>Discount</th>
                                                         <td>
+                                                            <select>
+                                                                <option>10</option>
+                                                                <option>20</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Discount Description</th>
+                                                        <td>
                                                             <span class="field-value">some text</span>
                                                             <input class="edit-field" value="some text"
-                                                                   placeholder="Discount" type="text">
+                                                                   placeholder="Discount Description" type="text">
                                                         </td>
                                                     </tr>
                                                     <tr>
