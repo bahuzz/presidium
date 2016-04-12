@@ -171,7 +171,9 @@ label {
 /////////////////// main-page ///////////////////////////
 .inner-logo {
 	display: inline-block;
-	@include s(inner-logo);
+	width: 64px;
+	height: 64px;
+	background: url('../img/logo.svg') center center no-repeat;
 }
 .logo-block {
 	height: 64px;
@@ -184,6 +186,7 @@ label {
 	        box-shadow: 0 0 5px rgba(0,0,0,.3);
 	    z-index: 100;
 	    position: relative;
+	  text-align: center;
 }
 .red-card {
 	display: inline-block;

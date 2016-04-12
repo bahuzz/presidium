@@ -234,11 +234,11 @@ label { cursor: pointer; }
 
 .radio-wrapper { position: absolute; left: -17px; top: 9px; }
 
-.inner-logo { display: inline-block; background: url('../img/icons-s8c8cfbcf62.png') 0 -17px no-repeat; width: 65px; height: 64px; }
+.inner-logo { display: inline-block; width: 64px; height: 64px; background: url("../img/logo.svg") center center no-repeat; }
 
 .logo-block { height: 64px; overflow: hidden; }
 
-.header { min-height: 64px; background: #FFF; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); z-index: 100; position: relative; }
+.header { min-height: 64px; background: #FFF; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); z-index: 100; position: relative; text-align: center; }
 
 .red-card { display: inline-block; width: 30px; height: 20px; background: #F77B72; }
 
@@ -548,6 +548,17 @@ i.if-edit-vendor-true { display: inline-block; }
 .selectBox-inline.selectBox-disabled { color: #888 !important; }
 
 .selectBox-inline.selectBox-disabled .selectBox-options A { background-color: transparent !important; }
+
+.mail-logo-block { display: inline-block; width: 64px; height: 64px; position: absolute; top: 0; left: 0; }
+@media screen and (min-width: 480px) { .mail-logo-block { position: relative; float: left; margin-right: 24px; } }
+
+.logo--inner { display: block; width: 64px; height: 64px; background: url("../img/logo.svg") center center no-repeat; }
+
+.mail-title { font-size: 26px; color: #222222; height: 64px; line-height: 64px; }
+@media screen and (min-width: 480px) { .mail-title { font-size: 31px; float: left; } }
+
+.hui-img { float: left; margin-right: 15px; }
+.hui-img img { width: 40px; height: 40px; border-radius: 50%; }
 
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .inner-logo { margin-right: 0; }
