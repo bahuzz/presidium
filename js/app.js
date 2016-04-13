@@ -6,6 +6,10 @@ $(document).ready(function(){
     $('.sidebar').slideToggle();
   });
 
+  $('.btn-preloader').click(function(){
+    $('.global-preloader').fadeIn();
+  });
+
   $('.search-adv').click(function(){
     $('.search-form-adv').slideToggle();
   });
