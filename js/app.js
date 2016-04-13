@@ -7,7 +7,7 @@ $(document).ready(function(){
   });
 
   $('.btn-preloader').click(function(){
-    $('.global-preloader').fadeIn();
+    $('.preloader-wrapper').fadeIn();
   });
 
   $('.search-adv').click(function(){
