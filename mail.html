@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400, 500,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen" href="css/bootstrap.css">
     <link rel="stylesheet" media="screen" href="css/screen.css">
 </head>
@@ -33,7 +33,7 @@
                     <i class="zmdi zmdi-chevron-down"></i>
                 </div><!-- header-user-info -->
 			</header>
-            <div class="sidebar">
+            <div class="sidebar sidebar--mail">
                     <ul class="sidemenu">
                         <li><a href="#"><i class="zmdi zmdi-home"></i> <span>Dashboard</span></a></li>
                         <li><a href="#"><i class="zmdi zmdi-email active"></i> <span>Mail</span></a></li>
@@ -77,6 +77,24 @@
                 </div>
                 <button class="btn btn-default btn--compose" type="button">Contacts</button>
             </div>
+            <div class="mail-list">
+                <form action="#" class="mail__search">
+                    <i class="zmdi zmdi-search"></i>
+                    <input type="text" placeholder="Search contacts...">
+                </form>
+                <div class="mail-preview active-mail">
+                    <div class="mail-preview__header">
+                        <span class="from">Robert Smith</span>
+                        <span class="date">12:45am</span>
+                        <span class="mail-subject">I'm on my way</span>
+                    </div>
+                    <div class="mail-preview__content">
+                        <p>
+                            Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                        </p>
+                    </div>
+                </div><!-- end mail-preview -->
+            </div><!-- end mail-list -->
 		</div>
 	</div>
 </body>
