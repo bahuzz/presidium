@@ -388,3 +388,7 @@ $("body").click(function(event){
 $('.table-overview tbody').click(function(){
   window.location = 'main.html'
 });
+
+$('#myModal').on('shown.bs.modal', function (e) {
+  $('.modal-preloader').fadeOut();
+})
