@@ -14,7 +14,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -40px;
+	margin-top: -20px;
 	
 }
 .preloader-wrapper {
@@ -26,6 +26,12 @@
 	top: 0;
 	left: 0;
 	display: none;
+}
+.preloader-wrapper-local {
+	position: absolute;
+	left: 0;
+	top: 0;
+
 }
 .sk-fading-circle .sk-circle {
   width: 100%;
