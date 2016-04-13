@@ -378,6 +378,9 @@ $(document).ready(function(){
 });
 
 $("body").click(function(event){
+    if ($(event.target).hasClass('utp-dropdown')) {
+      return false;
+    } else
   if ($(event.target).closest(".ct-tag").length === 0){
     $(".utp-dropdown").slideUp();
     $(".ct-tag").removeClass('active');

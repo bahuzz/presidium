@@ -104,7 +104,7 @@
     padding: 24px 24px 0
     position: fixed
     left: 64px
-    top: 0
+    top: 64px
     @media screen and (min-width: 767px)
         left: 250px
     
@@ -139,10 +139,12 @@
     width: 100%
     max-width: 360px
     height: 100vh
+    overflow-y: scroll
     background: #FFF 
     position: fixed
     top: 64px
     left: 64px
+    padding-bottom: 64px
     
     @media screen and (min-width: 767px)
         left: 550px
@@ -160,6 +162,11 @@
 .mail-preview
     padding: 20px 18px 20px
     border-bottom: 1px solid #DDDDDD
+    position: relative
+    cursor: pointer
+    
+    &:hover
+        background: rgba(221, 221, 221, 0.35)
     
     .from
         font-size: 14px
@@ -175,12 +182,56 @@
     clear: both
     font-weight: 500
     padding-top: 5px
-    padding-bottom: 10px
+    padding-bottom: 5px
     
 .mail-preview__content
     font-size: 14px
+    line-height: 19px
     color: #969C9C 
     
+.attachment
+    display: inline-block
+    position: absolute
+    right: 18px
+    bottom: 20px
+    
+.active-mail
+    background: rgba(221, 221, 221, 0.35)
+    border-left: 3px solid #007CC1 
+    padding-left: 15px
+    
+.mail-full
+    width: 100%
+    position: fixed
+    top: 64px
+    left: 910px
+    padding: 24px
+    background: #FFF 
+    
+    @media screen and (min-width: 1200px)
+        width: calc(100% - 910px) 
+
+.mail-full__header
+    border-bottom: 1px solid #E5E6E6
+    padding-bottom: 5px
+    
+.mfh-from
+    float: left
+    
+.mfh-subject
+    font-size: 39px
+    display: block
+    margin-bottom: 10px
+    
+.mfh-from
+    font-size: 14px
+    
+.mfh-info
+    float: right
+    
+.mfh-date
+    display: block
+    margin-top: 19px   
 
 
 
