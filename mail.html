@@ -17,6 +17,12 @@
 				<div class="mail-logo-block">
 	                <a href="#" class="logo--inner"></a>
 	            </div><!-- logo-block  -->
+                <div class="mail-back-inbox">
+                    <a href="#"><i class="zmdi zmdi-chevron-left"></i> Inbox</a>
+                </div>
+                <div class="mail-back-mailboxes">
+                    <a href="#"><i class="zmdi zmdi-chevron-left"></i> Mailboxes</a>
+                </div>
 	            <div class="mail-title">
 					Mail
 				</div><!-- some-title -->
@@ -49,7 +55,9 @@
                         <li><a href="#"><i class="zmdi zmdi-chart"></i> <span>Reports</span></a></li>
                     </ul>
             </div><!-- sidebar -->
-            <div class="mailboxes">
+            <div class="mail-wrapper">
+                <div class="mail-container">
+                    <div class="mailboxes">
                 <button class="btn btn-default btn--compose" type="button">Compose</button>
                 <ul class="mailboxes__list">
                     <li class="mailbox"><i class="zmdi zmdi-download"></i>Inbox</li>
@@ -76,8 +84,8 @@
                     <a href="#" class="mailbox-link">+ Create New Reply Form</a>
                 </div>
                 <button class="btn btn-default btn--compose" type="button">Contacts</button>
-            </div>
-            <div class="mail-list">
+                    </div>
+                    <div class="mail-list">
                 <form action="#" class="mail__search">
                     <i class="zmdi zmdi-search"></i>
                     <input type="text" placeholder="Search contacts...">
@@ -233,8 +241,8 @@
                         <i class="zmdi zmdi-attachment-alt"></i>
                     </div>
                 </div><!-- end mail-preview -->
-            </div><!-- end mail-list -->
-            <div class="mail-full">
+                    </div><!-- end mail-list -->
+                    <div class="mail-full">
                 <div class="mail-full__header clearfix">
                     <div class="mfh-from">
                         <span class="mfh-subject">I'm on my way</span>
@@ -247,8 +255,37 @@
                         <i class="zmdi zmdi-delete"></i>
                         <span class="mfh-date">Today, 12:45 am</span>
                     </div>
+                    <div class="mfh-attachment">
+                        <i class="zmdi zmdi-attachment-alt"></i>
+                        Document_name.pdf
+                    </div>
                 </div>
-            </div><!-- end mail-full -->
+                <div class="mail-full__content">
+                    <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum. Etiam nisi ante, consectetur eget placerat a, tempus a neque. Donec ut elit urna. Etiam venenatis eleifend urna eget scelerisque. Aliquam in nunc quis dui sollicitudin ornare ac vitae lectus.</p>
+                </div>
+                <div class="mail-full__reply">
+                    <div class="mfr-data">
+                        <i class="zmdi zmdi-mail-reply-all"></i>
+                        <input type="text" value="Robert Smith(smith@company.com)">
+                    </div>
+                    <textarea name="" id="mail-reply" class="editor-source">
+                    </textarea>
+                    <div class="mfr-data mfr-data--bottom">
+                        <button type="button" class="btn">Send</button>
+                        <i class="zmdi zmdi-attachment-alt"></i>
+                        <i class="zmdi zmdi-delete"></i>
+                    </div>
+                </div>
+                    </div><!-- end mail-full -->
+                </div><!-- end mail-container -->
+            </div><!-- end mail-wrapper -->
+
+            <footer class="footer footer--mail">
+                <a href="#" class="options-btn"><i class="zmdi zmdi-settings"></i></a>
+                <div class="copy">
+                    <p>&copy; 2014 Copyrights here</p>
+                </div><!-- copy -->
+            </footer>
 		</div>
 	</div>
 </body>
@@ -256,5 +293,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/parsley.min.js"></script>
 <script src="js/jquery.selectbox.js"></script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script src="js/app.js"></script>
 </html>

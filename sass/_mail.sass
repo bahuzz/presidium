@@ -5,8 +5,10 @@
     position: absolute
     top: 0
     left: 0
+    display: none
     
-    @media screen and (min-width: 480px)
+    @media screen and (min-width: 1200px)
+        display: block
         position: relative
         float: left
         margin-right: 24px
@@ -18,12 +20,19 @@
     background: url('../img/logo.svg') center center no-repeat
     
 .mail-title
+    display: inline-block
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
     font-size: 26px
     color: #222222
     height: 64px
     line-height: 64px
     
-    @media screen and (min-width: 480px)
+    @media screen and (min-width: 1200px)
+        position: relative
+        left: auto
+        transform: none
         font-size: 31px
         float: left
 
@@ -72,7 +81,12 @@
         margin-top: -8px
         
 .sidebar.sidebar--mail
-    width: 250px
+    // width: 250px
+    display: block
+    width: 64px
+    height: 100%
+    transition: width .3s ease-in-out
+    // float: left
     @media screen and (max-width: 767px)
         display: block
         width: 64px
@@ -80,9 +94,18 @@
         float: left
         
     span
-        display: none
-        @media screen and (min-width: 767px)
-            display: block
+        // display: none
+        opacity: 0   
+        transition: all .3s ease-in-out
+        transition-delay: .2s
+        // @media screen and (min-width: 767px)
+        //     display: block
+        
+    &:hover
+        width: 250px
+        span
+            // display: block
+            opacity: 1 
                 
     .sidemenu
         @media screen and (min-width: 767px)
@@ -97,16 +120,30 @@
                     background: #FFF
                     color: #007dc3
                     
-.mailboxes
+.mail-wrapper
+    position: fixed
     width: calc(100% - 64px)
-    max-width: 300px
+    height: calc(100% - 64px)
+    top: 64px
+    left: 64px
+    overflow: hidden
+
+.mail-container
+    height: 100vh
+    float: left
+                    
+.mailboxes
+    width: calc(100vw - 64px)
+    height: 100vh
+    overflow-y: auto
     text-align: center
-    padding: 24px 24px 0
+    padding: 24px 24px 148px
     position: fixed
     left: 64px
     top: 64px
-    @media screen and (min-width: 767px)
-        left: 250px
+    z-index: 1
+    @media screen and (min-width: 724px)
+        width: 300px
     
 .btn--compose
     width: 100%
@@ -136,18 +173,20 @@
     margin-bottom: 20px
     
 .mail-list
-    width: 100%
-    max-width: 360px
+    width: calc(100vw - 64px)
     height: 100vh
-    overflow-y: scroll
+    overflow-y: auto
     background: #FFF 
     position: fixed
     top: 64px
-    left: 64px
-    padding-bottom: 64px
-    
-    @media screen and (min-width: 767px)
-        left: 550px
+    left: 364px
+    padding-bottom: 128px
+    transition: left .3s ease-in-out
+    z-index: 2
+    @media screen and (min-width: 724px)
+        width: calc(100vw - 64px - 300px)
+    @media screen and (min-width: 1200px)
+        width: 360px
         
 .mail__search
     padding: 30px 18px 7px 18px
@@ -201,15 +240,18 @@
     padding-left: 15px
     
 .mail-full
-    width: 100%
+    width: calc(100vw - 64px)
+    height: 100vh
+    overflow-y: auto
     position: fixed
     top: 64px
-    left: 910px
-    padding: 24px
+    left: 724px
+    padding: 24px 24px 148px
     background: #FFF 
-    
+    transition: left .3s ease-in-out
+    z-index: 3
     @media screen and (min-width: 1200px)
-        width: calc(100% - 910px) 
+        width: calc(100% - 724px) 
 
 .mail-full__header
     border-bottom: 1px solid #E5E6E6
@@ -228,10 +270,87 @@
     
 .mfh-info
     float: right
+    margin-top: 15px
+    text-align: right
+    
+    i:not(:first-child)
+        margin-left: 10px 
     
 .mfh-date
     display: block
-    margin-top: 19px   
+    margin-top: 19px
+    font-size: 12px
+    color: #969C9C
+    
+.mfh-attachment
+    clear: both
+    font-size: 12px
+    color: #969C9C
+    padding-top: 10px
+    cursor: pointer
+    
+.mail-full__content
+    padding: 24px 0 60px
+    line-height: 24px 
+    
+.mfr-data
+    padding: 15px 20px
+    font-size: 14px
+    font-weight: 500
+    border-top: 1px solid #969C9C
+    border-left: 1px solid #969C9C
+    border-right: 1px solid #969C9C
+    
+    input
+        width: 70%
+        border: none
+        outline: none
+        font-size: 14px
+        font-weight: 500
+        
+    
+    i
+        margin-right: 10px
+    
+.mfr-data--bottom
+    border-bottom: 1px solid #969C9C
+    border-top: none
+    padding: 0
+    
+    .btn
+        box-shadow: none
+        border-radius: 0
+        margin-right: 20px
+    
+    i
+        cursor: pointer
+        
+    .zmdi-delete
+        float: right
+        margin-top: 11px
+        
+.mail-back-inbox,
+.mail-back-mailboxes
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    display: none
+    a
+        color: #007DC3 
+        
+    i
+        font-size: 36px
+        vertical-align: middle
+        position: relative
+        top: -2px
+        
+.footer--mail
+    position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+    z-index: 9
 
 
 
