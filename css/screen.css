@@ -199,7 +199,7 @@ a:hover { text-decoration: none; }
 
 .logo { background: url('../img/icons-s8c8cfbcf62.png') 0 -91px no-repeat; width: 379px; height: 170px; text-indent: -9000px; display: inline-block; margin-bottom: 40px; }
 
-.login-block { max-width: 380px; margin: auto; position: relative; top: 195px; padding: 10px; }
+.login-block { max-width: 380px; margin: auto; padding: 20vh 10px 20vh; }
 .login-block input[type="checkbox"] + label::before { top: 4px; }
 
 .input-text { width: 100%; border: none; border-bottom: 1px solid #e1e1e1; padding: 10px 0; font-size: 14px; }
