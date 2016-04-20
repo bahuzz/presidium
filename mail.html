@@ -79,8 +79,37 @@
                     <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
                 </ul>
                 <div class="mailboxes__links">
-                    <a href="#" class="mailbox-link">+ Create New Folder</a>
-                    <a href="#" class="mailbox-link">+ Create New category</a>
+                    <div class="dropup">
+                        <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New Folder</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form action="#">
+                                    <input type="text" placeholder="Enter the name of the folder">
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropup">
+                        <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New category</a>
+                        <ul class="dropdown-menu category-dropup">
+                            <li>
+                                <form action="#">
+                                    <input type="text" placeholder="Enter the name of the category">
+                                </form>
+                            </li>
+                            <li>
+                                Select the color
+                                <div class="category-colors">
+                                    <span class="label-color1 js-color"></span>
+                                    <span class="label-color2 js-color"></span>
+                                    <span class="label-color3 js-color"></span>
+                                    <span class="label-color4 js-color"></span>
+                                    <span class="label-color5 js-color"></span>
+                                    <span class="label-color6 js-color"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <a href="#" class="mailbox-link">+ Create New Reply Form</a>
                 </div>
                 <button class="btn btn-default btn--compose" type="button">Contacts</button>

@@ -420,7 +420,7 @@ if($('.mail-wrapper').length) {
     }
   });
   $('.mail-preview').on('click', function() {
-    if(parseInt($('.mail-full').css('left'), 10) > 724) {
+    if(parseInt($('.mail-full').css('left'), 10) != 724) {
       $('.mail-full').css('left', '64px');
       $('.mail-back-mailboxes').fadeOut();
       $('.mail-back-inbox').fadeIn();
@@ -438,6 +438,10 @@ if($('.mail-wrapper').length) {
   $('.mail-back-mailboxes').on('click', function() {
     $(this).fadeOut();
     $('.mail-list').css('left', $('.mailboxes').outerWidth() + 64);
+  });
+  $('.js-color').on('click', function() {
+    $('.js-color').removeClass('checked');
+    $(this).addClass('checked');
   });
   tinymce.init({ selector:'.mail-wrapper textarea' });
 }
