@@ -86,6 +86,7 @@
     width: 64px
     height: 100%
     transition: width .3s ease-in-out
+    overflow-x: hidden
     // float: left
     @media screen and (max-width: 767px)
         display: block
@@ -242,8 +243,6 @@
     z-index: 2
     @media screen and (min-width: 724px)
         width: calc(100vw - 64px - 300px)
-    @media screen and (min-width: 1200px)
-        width: 360px
         
 .mail__search
     padding: 30px 18px 7px 18px
@@ -302,13 +301,12 @@
     overflow-y: auto
     position: fixed
     top: 64px
-    left: 724px
+    left: 64px
     padding: 24px 24px 148px
     background: #FFF 
-    transition: left .3s ease-in-out
     z-index: 3
-    @media screen and (min-width: 1200px)
-        width: calc(100% - 724px) 
+    // @media screen and (min-width: 1200px)
+    //     width: calc(100% - 724px) 
 
 .mail-full__header
     border-bottom: 1px solid #E5E6E6

@@ -574,7 +574,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .hui-links span { display: block; }
 .hui-links + .zmdi { position: absolute; top: 50%; right: 10px; margin-top: -8px; }
 
-.sidebar.sidebar--mail { display: block; width: 64px; height: 100%; -webkit-transition: width 0.3s ease-in-out; transition: width 0.3s ease-in-out; }
+.sidebar.sidebar--mail { display: block; width: 64px; height: 100%; -webkit-transition: width 0.3s ease-in-out; transition: width 0.3s ease-in-out; overflow-x: hidden; }
 @media screen and (max-width: 767px) { .sidebar.sidebar--mail { display: block; width: 64px; height: 100%; float: left; } }
 .sidebar.sidebar--mail span { opacity: 0; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
 .sidebar.sidebar--mail:hover { width: 250px; }
@@ -621,7 +621,6 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mail-list { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; background: #FFF; position: fixed; top: 64px; left: 364px; padding-bottom: 128px; -webkit-transition: left 0.3s ease-in-out; transition: left 0.3s ease-in-out; z-index: 2; }
 @media screen and (min-width: 724px) { .mail-list { width: calc(100vw - 64px - 300px); } }
-@media screen and (min-width: 1200px) { .mail-list { width: 360px; } }
 
 .mail__search { padding: 30px 18px 7px 18px; color: #969C9C; border-bottom: 1px solid #DDDDDD; }
 .mail__search input { font-size: 12px; border: none; outline: none; }
@@ -639,8 +638,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .active-mail { background: rgba(221, 221, 221, 0.35); border-left: 3px solid #007CC1; padding-left: 15px; }
 
-.mail-full { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; position: fixed; top: 64px; left: 724px; padding: 24px 24px 148px; background: #FFF; -webkit-transition: left 0.3s ease-in-out; transition: left 0.3s ease-in-out; z-index: 3; }
-@media screen and (min-width: 1200px) { .mail-full { width: calc(100% - 724px); } }
+.mail-full { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; position: fixed; top: 64px; left: 64px; padding: 24px 24px 148px; background: #FFF; z-index: 3; }
 
 .mail-full__header { border-bottom: 1px solid #E5E6E6; padding-bottom: 5px; }
 
