@@ -175,6 +175,8 @@
     
 .mailboxes__links
     position: relative
+    display: inline-block
+    text-align: left
     
 .dropdown-menu
     width: 250px
@@ -412,3 +414,41 @@
 
 .positive
     min-width: 99px
+    
+.mail-contacts
+    width: calc(100% - 364px)
+    position: fixed
+    left: 364px
+    top: 64px
+    height: 100%
+    background: #FFF 
+    
+    .btn-contact
+        float: right
+        margin-right: 18px
+        margin-top: 30px
+    
+    .forms-wrapper
+        max-width: 650px 
+        margin-left: 18px
+        padding: 24px
+    
+    h1
+        float: left
+        padding: 30px 28px
+        
+    table
+        -webkit-box-shadow: none 
+        box-shadow: none 
+    
+    td:not(:last-child),
+    th:not(:last-child)
+        border-right: 1px solid #969C9C
+    
+    .zmdi-delete
+        color: red
+        margin-left: 10px
+        
+.edit-buttons
+    text-align: right
+    display: none

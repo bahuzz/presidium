@@ -62,6 +62,15 @@ $(document).ready(function(){
     return false
   });
 
+  $('.edit-row').click(function(){
+    var parent = $(this).parents('tr')[0];
+    console.log(parent);
+    $(parent).find('.field-value').addClass('field-value-hidden');
+    $(parent).find('.edit-field').addClass('edit-field-show');
+    $(parent).next('.edit-buttons').slideDown();
+    return false
+  });
+
   $('#check-save').click(function(){
     $(".edit-check input").attr("disabled", 'true');
   });
@@ -445,6 +454,9 @@ if($('.mail-wrapper').length) {
   $('.js-color').on('click', function() {
     $('.js-color').removeClass('checked');
     $(this).addClass('checked');
+  });
+  $('.js-contacts').on('click', function() {
+    window.location = 'contacts.html'
   });
   tinymce.init({ selector:'.mail-wrapper textarea' });
 }
