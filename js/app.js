@@ -62,8 +62,8 @@ $(document).ready(function(){
     return false
   });
 
-  $('.edit-row').click(function(){
-    var parent = $(this).parents('tr')[0];
+  $('body').click('.edit-row', function(event){
+    var parent = $(event.target).parents('tr')[0];
     console.log(parent);
     $(parent).find('.field-value').addClass('field-value-hidden');
     $(parent).find('.edit-field').addClass('edit-field-show');
@@ -458,6 +458,20 @@ if($('.mail-wrapper').length) {
   $('.js-contacts').on('click', function() {
     window.location = 'contacts.html'
   });
+  $('.js-add-contact').on('click', function() {
+    var contactTemplate = $('.forms-wrapper form:last-child').html();
+    var form = '<form></form>';
+    $('.forms-wrapper').append("<form></form>");
+    $('form:last-child').html(contactTemplate);
+    $('form:last-child input').each(function() {
+      $(this).val('');
+    });
+    $('form:last-child').find('.edit-row').click();
+    $('form:last-child td:first-child input').focus();
+    $('html, body').animate({
+      scrollTop: $('form:last-child').offset().top
+    }, 1000);
+  })
   tinymce.init({ selector:'.mail-wrapper textarea' });
 }
 
