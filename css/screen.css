@@ -594,7 +594,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .btn--compose { width: 100%; }
 
-.mailboxes__list { text-align: left; margin-top: 63px; margin-bottom: 30px; }
+.mailboxes__list { text-align: left; margin-top: 24px; margin-bottom: 30px; }
 .mailboxes__list li { cursor: pointer; }
 .mailboxes__list i { margin-right: 10px; }
 
@@ -642,7 +642,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .active-mail { background: rgba(221, 221, 221, 0.35); border-left: 3px solid #007CC1; padding-left: 15px; }
 
-.mail-full { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; position: fixed; top: 64px; left: 64px; padding: 24px 24px 148px; background: #FFF; z-index: 3; }
+.mail-full { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; position: fixed; top: 64px; left: 64px; padding: 24px 24px 0; background: #FFF; z-index: 3; }
 
 .mail-full__header { border-bottom: 1px solid #E5E6E6; padding-bottom: 5px; }
 
@@ -658,9 +658,12 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mfh-date { display: block; margin-top: 19px; font-size: 12px; color: #969C9C; }
 
-.mfh-attachment { clear: both; font-size: 12px; color: #969C9C; padding-top: 10px; cursor: pointer; }
+.mfh-attachment { clear: both; font-size: 14px; color: #969C9C; padding-top: 10px; cursor: pointer; }
+.mfh-attachment .zmdi-delete { margin-left: 10px; color: #333333; }
 
 .mail-full__content { padding: 24px 0 60px; line-height: 24px; }
+
+.mail-full__reply { margin-bottom: 148px; }
 
 .mfr-data { padding: 15px 20px; font-size: 14px; font-weight: 500; border-top: 1px solid #969C9C; border-left: 1px solid #969C9C; border-right: 1px solid #969C9C; }
 .mfr-data input { width: 70%; border: none; outline: none; font-size: 14px; font-weight: 500; }
@@ -670,6 +673,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .mfr-data--bottom .btn { box-shadow: none; border-radius: 0; margin-right: 20px; }
 .mfr-data--bottom i { cursor: pointer; }
 .mfr-data--bottom .zmdi-delete { float: right; margin-top: 11px; }
+.mfr-data--bottom .mfr-draft { float: right; margin-right: 0; margin-left: 10px; }
 
 .mail-back-inbox, .mail-back-mailboxes { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; display: none; }
 .mail-back-inbox a, .mail-back-mailboxes a { color: #007DC3; }

@@ -151,7 +151,7 @@
         
 .mailboxes__list
     text-align: left
-    margin-top: 63px
+    margin-top: 24px
     margin-bottom: 30px
     
     li
@@ -307,7 +307,7 @@
     position: fixed
     top: 64px
     left: 64px
-    padding: 24px 24px 148px
+    padding: 24px 24px 0
     background: #FFF 
     z-index: 3
     // @media screen and (min-width: 1200px)
@@ -346,14 +346,21 @@
     
 .mfh-attachment
     clear: both
-    font-size: 12px
+    font-size: 14px
     color: #969C9C
     padding-top: 10px
     cursor: pointer
     
+    .zmdi-delete
+        margin-left: 10px
+        color: #333333 
+    
 .mail-full__content
     padding: 24px 0 60px
     line-height: 24px 
+    
+.mail-full__reply
+    margin-bottom: 148px
     
 .mfr-data
     padding: 15px 20px
@@ -390,6 +397,11 @@
     .zmdi-delete
         float: right
         margin-top: 11px
+        
+    .mfr-draft
+        float: right
+        margin-right: 0
+        margin-left: 10px
         
 .mail-back-inbox,
 .mail-back-mailboxes
