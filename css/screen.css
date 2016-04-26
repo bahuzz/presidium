@@ -622,13 +622,14 @@ i.if-edit-vendor-true { display: inline-block; }
 .dropdown-menu span.checked { border: 1px solid #000; }
 .dropdown-menu .category-colors { margin-top: 10px; font-size: 0; }
 
-.mail-list { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; background: #FFF; position: fixed; top: 64px; left: 364px; padding-bottom: 128px; -webkit-transition: left 0.3s ease-in-out; transition: left 0.3s ease-in-out; z-index: 2; }
+.mail-list { width: calc(100vw - 64px); height: 100vh; overflow-y: auto; background: #FFF; position: fixed; top: 64px; left: 364px; -webkit-transition: left 0.3s ease-in-out; transition: left 0.3s ease-in-out; z-index: 2; }
 @media screen and (min-width: 724px) { .mail-list { width: calc(100vw - 64px - 300px); } }
 
 .mail__search { padding: 30px 18px 7px 18px; color: #969C9C; border-bottom: 1px solid #DDDDDD; }
 .mail__search input { font-size: 12px; border: none; outline: none; }
 
 .mail-preview { padding: 20px 18px 20px; border-bottom: 1px solid #DDDDDD; position: relative; cursor: pointer; }
+.mail-preview:last-child { margin-bottom: 128px; }
 .mail-preview:hover { background: rgba(221, 221, 221, 0.35); }
 .mail-preview .from { font-size: 14px; float: left; }
 .mail-preview .date { float: right; font-size: 12px; color: #969C9C; }

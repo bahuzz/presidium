@@ -62,13 +62,13 @@ $(document).ready(function(){
     return false
   });
 
-  // $('body').click('.edit-row', function(event){
-  //   var parent = $(event.target).parents('tr')[0];
-  //   $(parent).find('.field-value').addClass('field-value-hidden');
-  //   $(parent).find('.edit-field').addClass('edit-field-show');
-  //   $(parent).next('.edit-buttons').slideDown();
-  //   return false
-  // });
+  $('.forms-wrapper').click('.edit-row', function(event){
+    var parent = $(event.target).parents('tr')[0];
+    $(parent).find('.field-value').addClass('field-value-hidden');
+    $(parent).find('.edit-field').addClass('edit-field-show');
+    $(parent).next('.edit-buttons').slideDown();
+    return false
+  });
 
   $('#check-save').click(function(){
     $(".edit-check input").attr("disabled", 'true');
