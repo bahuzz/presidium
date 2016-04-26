@@ -606,7 +606,10 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mailboxes__links { position: relative; display: inline-block; text-align: left; }
 
-.dropdown-menu { width: 250px; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); z-index: 2; padding: 15px 20px; border-radius: 0; }
+.dropdown-menu { width: 230px; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); z-index: 2; padding: 15px 20px; border-radius: 0; }
+.dropdown-menu .btn-wrapper { margin-top: 20px; text-align: center; margin-bottom: 0; }
+.dropdown-menu .btn-wrapper .btn { float: none; display: inline-block; }
+.dropdown-menu .btn-wrapper .btn:not(:last-child) { margin-right: 10px; }
 .dropdown-menu input[type="text"] { width: 200px; border: none; outline: none; border-bottom: 1px solid #979797; }
 .dropdown-menu li:not(:first-child) { margin-top: 15px; }
 .dropdown-menu span { display: inline-block; width: 15px; height: 15px; margin-right: 5px; background-clip: content-box; padding: 2px; cursor: pointer; }
