@@ -472,6 +472,10 @@ if($('.mail-wrapper').length) {
     }, 1000);
   })
 
+  $('.js-remove-attachment').on('click', function() {
+    $(this).parent().fadeOut();
+  });
+
   $( '.inputfile' ).each( function() {
     var $input   = $( this ),
       $label   = $input.next( 'label' ),
@@ -491,7 +495,7 @@ if($('.mail-wrapper').length) {
         $label.html( labelVal );
     });
   });
-  
+
   tinymce.init({ selector:'.mail-wrapper textarea' });
 }
 
