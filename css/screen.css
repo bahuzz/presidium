@@ -665,6 +665,8 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mail-full__reply { margin-bottom: 148px; }
 
+.inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
+
 .mfr-data { padding: 15px 20px; font-size: 14px; font-weight: 500; border-top: 1px solid #969C9C; border-left: 1px solid #969C9C; border-right: 1px solid #969C9C; }
 .mfr-data input { width: 70%; border: none; outline: none; font-size: 14px; font-weight: 500; }
 .mfr-data i { margin-right: 10px; }

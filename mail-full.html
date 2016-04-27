@@ -88,7 +88,11 @@
                         </textarea>
                         <div class="mfr-data mfr-data--bottom">
                             <button type="button" class="btn">Send</button>
-                            <i class="zmdi zmdi-attachment-alt"></i>
+                            <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple>
+                            <label for="file">
+                                <i class="zmdi zmdi-attachment-alt"></i>
+                                <span></span>
+                            </label>
                             <button type="button" class="btn mfr-draft">Cancel</button>
                             <button type="button" class="btn mfr-draft">Save</button>
                         </div>
