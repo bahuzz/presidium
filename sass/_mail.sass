@@ -300,10 +300,72 @@
     padding-top: 5px
     padding-bottom: 5px
     
+.mail-preview__header
+    padding-left: 20px
+    position: relative
+    
+    .zmdi
+        float: left
+        margin-left: -20px
+        color: #dddddd
+        cursor: pointer
+    
+    .select-category
+        width: 200px
+        background: #ffffff 
+        padding: 10px  
+        position: absolute
+        -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5) 
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5) 
+        z-index: 9
+        display: none
+        
+    .select-category__list
+        margin-top: 10px
+        
+        li
+            margin-bottom: 5px
+            padding-left: 15px
+            cursor: pointer
+            
+        .cat1
+            position: relative
+            &:before
+                content: ''
+                width: 10px
+                height: 10px
+                background: red
+                position: absolute
+                left: -15px
+                top: 6px 
+                
+        .cat2
+            position: relative
+            &:before
+                content: ''
+                width: 10px
+                height: 10px
+                background: green
+                position: absolute
+                left: -15px
+                top: 6px 
+                
+        .cat3
+            position: relative
+            &:before
+                content: ''
+                width: 10px
+                height: 10px
+                background: blue
+                position: absolute
+                left: -15px
+                top: 6px 
+    
 .mail-preview__content
     font-size: 14px
     line-height: 19px
     color: #969C9C 
+    padding-left: 20px
     
 .attachment
     display: inline-block

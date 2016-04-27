@@ -447,8 +447,34 @@ if($('.mail-wrapper').length) {
     $(this).fadeOut();
     $('.mail-list').css('left', $('.mailboxes').outerWidth() + 64);
   });
-  $('.mail-preview').click(function(){
-    window.location = 'mail-full.html'
+  $('.mail-preview').click(function(event){
+    var target = $(event.target);
+    if(target.is('span')) {
+      var cat = target.data('category');
+      var parent = target.parents('.mail-preview')[0];
+      var flag = $(parent).find('.zmdi');
+      if (cat == 'category1') {
+        flag.css({
+          color: 'red'
+        });
+      } else if (cat == 'category2') {
+        flag.css({
+          color: 'green'
+        });
+      } else {
+        flag.css({
+          color: 'blue'
+        });
+      }
+      $('.select-category').fadeOut();
+      return false;
+    } else if (target.is('i')) {
+      var parent = target.parents('.mail-preview')[0];
+      var dropup = $(parent).find('.select-category');
+      dropup.fadeIn();
+    } else {
+      window.location = 'mail-full.html'
+    }
   });
   $('.js-color').on('click', function() {
     $('.js-color').removeClass('checked');
@@ -495,6 +521,7 @@ if($('.mail-wrapper').length) {
         $label.html( labelVal );
     });
   });
+
 
   tinymce.init({ selector:'.mail-wrapper textarea' });
 }

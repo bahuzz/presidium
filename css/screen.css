@@ -640,7 +640,19 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mail-subject { display: block; clear: both; font-weight: 500; padding-top: 5px; padding-bottom: 5px; }
 
-.mail-preview__content { font-size: 14px; line-height: 19px; color: #969C9C; }
+.mail-preview__header { padding-left: 20px; position: relative; }
+.mail-preview__header .zmdi { float: left; margin-left: -20px; color: #dddddd; cursor: pointer; }
+.mail-preview__header .select-category { width: 200px; background: #ffffff; padding: 10px; position: absolute; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); z-index: 9; display: none; }
+.mail-preview__header .select-category__list { margin-top: 10px; }
+.mail-preview__header .select-category__list li { margin-bottom: 5px; padding-left: 15px; cursor: pointer; }
+.mail-preview__header .select-category__list .cat1 { position: relative; }
+.mail-preview__header .select-category__list .cat1:before { content: ""; width: 10px; height: 10px; background: red; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat2 { position: relative; }
+.mail-preview__header .select-category__list .cat2:before { content: ""; width: 10px; height: 10px; background: green; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat3 { position: relative; }
+.mail-preview__header .select-category__list .cat3:before { content: ""; width: 10px; height: 10px; background: blue; position: absolute; left: -15px; top: 6px; }
+
+.mail-preview__content { font-size: 14px; line-height: 19px; color: #969C9C; padding-left: 20px; }
 
 .attachment { display: inline-block; position: absolute; right: 18px; bottom: 20px; }
 
