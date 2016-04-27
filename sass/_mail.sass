@@ -12,6 +12,11 @@
         position: relative
         float: left
         margin-right: 24px
+        
+.mail-inner-header
+    .mail-logo-block
+        @media screen and (min-width: 1200px)
+            display: none
     
 .logo--inner
     display: block
@@ -35,7 +40,15 @@
         transform: none
         font-size: 31px
         float: left
-
+        
+.mail-inner-header
+    .mail-title
+        @media screen and (min-width: 1200px)
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 26px
+            
 .header-user-info
     position: absolute
     right: 0
@@ -184,15 +197,18 @@
     z-index: 2
     padding: 15px 20px
     border-radius: 0
+    text-align: center
     
     .btn-wrapper
-        margin-top: 20px
+        display: inline-block
+        margin: 20px auto 0
         text-align: center
         margin-bottom: 0
         
         .btn
             float: none
             display: inline-block
+            padding: 5px 8px 
         
         .btn:not(:last-child)
             margin-right: 10px
@@ -427,6 +443,20 @@
         position: relative
         top: -2px
         
+.contacts-back
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    a
+        color: #007DC3 
+        
+    i
+        font-size: 36px
+        vertical-align: middle
+        position: relative
+        top: -2px
+        
 .footer--mail
     position: fixed
     left: 0
@@ -439,19 +469,27 @@
     min-width: 99px
     
 .mail-contacts
-    width: calc(100% - 364px)
+    width: calc(100% - 64px)
     position: fixed
-    left: 364px
+    left: 64px
     top: 64px
     height: 100%
+    overflow-y: auto
     background: #FFF 
     
     .btn-contact
         float: right
         margin-right: 18px
-        margin-top: 30px
+        margin-top: 24px
+        
+        @media screen and (max-width: 360px)
+            float: none
+            display: block
+            margin: 0 auto 20px
+            width: 90%
     
     .forms-wrapper
+        width: 100%
         max-width: 650px 
         margin-left: 18px
         padding: 24px
@@ -459,6 +497,9 @@
     h1
         float: left
         padding: 30px 28px
+        
+        @media screen and (max-width: 360px)
+            padding: 20px 
         
     table
         -webkit-box-shadow: none 

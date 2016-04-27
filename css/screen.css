@@ -556,10 +556,14 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-logo-block { display: inline-block; width: 64px; height: 64px; position: absolute; top: 0; left: 0; display: none; }
 @media screen and (min-width: 1200px) { .mail-logo-block { display: block; position: relative; float: left; margin-right: 24px; } }
 
+@media screen and (min-width: 1200px) { .mail-inner-header .mail-logo-block { display: none; } }
+
 .logo--inner { display: block; width: 64px; height: 64px; background: url("../img/logo.svg") center center no-repeat; }
 
 .mail-title { display: inline-block; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); font-size: 26px; color: #222222; height: 64px; line-height: 64px; }
 @media screen and (min-width: 1200px) { .mail-title { position: relative; left: auto; -webkit-transform: none; transform: none; font-size: 31px; float: left; } }
+
+@media screen and (min-width: 1200px) { .mail-inner-header .mail-title { position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); font-size: 26px; } }
 
 .header-user-info { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 @media screen and (min-width: 480px) { .header-user-info { float: right; position: relative; right: auto; top: auto; -webkit-transform: none; transform: none; margin-top: 10px; margin-right: 14px; padding-right: 30px; } }
@@ -606,9 +610,9 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mailboxes__links { position: relative; display: inline-block; text-align: left; }
 
-.dropdown-menu { width: 230px; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); z-index: 2; padding: 15px 20px; border-radius: 0; }
-.dropdown-menu .btn-wrapper { margin-top: 20px; text-align: center; margin-bottom: 0; }
-.dropdown-menu .btn-wrapper .btn { float: none; display: inline-block; }
+.dropdown-menu { width: 230px; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); z-index: 2; padding: 15px 20px; border-radius: 0; text-align: center; }
+.dropdown-menu .btn-wrapper { display: inline-block; margin: 20px auto 0; text-align: center; margin-bottom: 0; }
+.dropdown-menu .btn-wrapper .btn { float: none; display: inline-block; padding: 5px 8px; }
 .dropdown-menu .btn-wrapper .btn:not(:last-child) { margin-right: 10px; }
 .dropdown-menu input[type="text"] { width: 200px; border: none; outline: none; border-bottom: 1px solid #979797; }
 .dropdown-menu li:not(:first-child) { margin-top: 15px; }
@@ -681,14 +685,20 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-back-inbox a, .mail-back-mailboxes a { color: #007DC3; }
 .mail-back-inbox i, .mail-back-mailboxes i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
 
+.contacts-back { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; }
+.contacts-back a { color: #007DC3; }
+.contacts-back i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
+
 .footer--mail { position: fixed; left: 0; bottom: 0; width: 100%; z-index: 9; }
 
 .positive { min-width: 99px; }
 
-.mail-contacts { width: calc(100% - 364px); position: fixed; left: 364px; top: 64px; height: 100%; background: #FFF; }
-.mail-contacts .btn-contact { float: right; margin-right: 18px; margin-top: 30px; }
-.mail-contacts .forms-wrapper { max-width: 650px; margin-left: 18px; padding: 24px; }
+.mail-contacts { width: calc(100% - 64px); position: fixed; left: 64px; top: 64px; height: 100%; overflow-y: auto; background: #FFF; }
+.mail-contacts .btn-contact { float: right; margin-right: 18px; margin-top: 24px; }
+@media screen and (max-width: 360px) { .mail-contacts .btn-contact { float: none; display: block; margin: 0 auto 20px; width: 90%; } }
+.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; margin-left: 18px; padding: 24px; }
 .mail-contacts h1 { float: left; padding: 30px 28px; }
+@media screen and (max-width: 360px) { .mail-contacts h1 { padding: 20px; } }
 .mail-contacts table { box-shadow: none; }
 .mail-contacts td:not(:last-child), .mail-contacts th:not(:last-child) { border-right: 1px solid #969C9C; }
 .mail-contacts .zmdi-delete { color: red; margin-left: 10px; }

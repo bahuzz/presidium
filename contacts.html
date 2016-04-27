@@ -13,7 +13,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="row wrapper">
-			<header class="header clearfix">
+			<header class="header clearfix mail-inner-header">
 				<div class="mail-logo-block">
 	                <a href="#" class="logo--inner"></a>
 	            </div><!-- logo-block  -->
@@ -22,6 +22,9 @@
                 </div>
                 <div class="mail-back-mailboxes">
                     <a href="#"><i class="zmdi zmdi-chevron-left"></i> Mailboxes</a>
+                </div>
+                <div class="contacts-back">
+                    <a href="mail.html"><i class="zmdi zmdi-chevron-left"></i> Mailboxes</a>
                 </div>
 	            <div class="mail-title">
 					Mail
@@ -57,63 +60,63 @@
             </div><!-- sidebar -->
             <div class="mail-wrapper">
                 <div class="mail-container">
-                    <div class="mailboxes">
-                <button class="btn btn-default btn--compose" type="button">Compose</button>
-                <ul class="mailboxes__list">
-                    <li class="mailbox"><i class="zmdi zmdi-download"></i>Inbox</li>
-                    <li class="mailbox--inner">Reports <span>(1)</span></li>
-                    <li class="mailbox--inner">Acknowledgements <span>(18)</span></li>
-                    <li class="mailbox--inner">Requests <span>(10)</span></li>
-                    <li class="mailbox--inner">Expedites <span>(18)</span></li>
-                    <li class="mailbox--inner">Kickouts</li>
-                    <li class="mailbox--inner">Problem Orders</li>
-                    <li class="mailbox--inner">Modification Checklists</li>
-                    <li class="mailbox--inner">Quality Support</li>
-                    <li class="mailbox--inner">Quality Material</li>
-                    <li class="mailbox--inner">Quality Received</li>
-                    <li class="mailbox--inner">Quality Nonconformity</li>
-                    <li class="mailbox--inner">Quality CPARs</li>
-                    <li class="mailbox--inner">Quality Product Nonconformity</li>
-                    <li class="mailbox"><i class="zmdi zmdi-upload"></i>Sent</li>
-                    <li class="mailbox"><i class="zmdi zmdi-format-align-center"></i>Drafts</li>
-                    <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
-                </ul>
-                <div class="mailboxes__links">
-                    <div class="dropup">
-                        <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New Folder</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <form action="#">
-                                    <input type="text" placeholder="Enter the name of the folder">
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="dropup">
-                        <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New category</a>
-                        <ul class="dropdown-menu category-dropup">
-                            <li>
-                                <form action="#">
-                                    <input type="text" placeholder="Enter the name of the category">
-                                </form>
-                            </li>
-                            <li>
-                                Select the color
-                                <div class="category-colors">
-                                    <span class="label-color1 js-color"></span>
-                                    <span class="label-color2 js-color"></span>
-                                    <span class="label-color3 js-color"></span>
-                                    <span class="label-color4 js-color"></span>
-                                    <span class="label-color5 js-color"></span>
-                                    <span class="label-color6 js-color"></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mailbox-link">+ Create New Reply Form</a>
-                    </div>
-                    <button class="btn btn-default btn--compose js-contacts" type="button">Contacts</button>
-                    </div>
+                <!-- <div class="mailboxes">
+                    <button class="btn btn-default btn--compose" type="button">Compose</button>
+                    <ul class="mailboxes__list">
+                        <li class="mailbox"><i class="zmdi zmdi-download"></i>Inbox</li>
+                        <li class="mailbox--inner">Reports <span>(1)</span></li>
+                        <li class="mailbox--inner">Acknowledgements <span>(18)</span></li>
+                        <li class="mailbox--inner">Requests <span>(10)</span></li>
+                        <li class="mailbox--inner">Expedites <span>(18)</span></li>
+                        <li class="mailbox--inner">Kickouts</li>
+                        <li class="mailbox--inner">Problem Orders</li>
+                        <li class="mailbox--inner">Modification Checklists</li>
+                        <li class="mailbox--inner">Quality Support</li>
+                        <li class="mailbox--inner">Quality Material</li>
+                        <li class="mailbox--inner">Quality Received</li>
+                        <li class="mailbox--inner">Quality Nonconformity</li>
+                        <li class="mailbox--inner">Quality CPARs</li>
+                        <li class="mailbox--inner">Quality Product Nonconformity</li>
+                        <li class="mailbox"><i class="zmdi zmdi-upload"></i>Sent</li>
+                        <li class="mailbox"><i class="zmdi zmdi-format-align-center"></i>Drafts</li>
+                        <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
+                    </ul>
+                    <div class="mailboxes__links">
+                        <div class="dropup">
+                            <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New Folder</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter the name of the folder">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropup">
+                            <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New category</a>
+                            <ul class="dropdown-menu category-dropup">
+                                <li>
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter the name of the category">
+                                    </form>
+                                </li>
+                                <li>
+                                    Select the color
+                                    <div class="category-colors">
+                                        <span class="label-color1 js-color"></span>
+                                        <span class="label-color2 js-color"></span>
+                                        <span class="label-color3 js-color"></span>
+                                        <span class="label-color4 js-color"></span>
+                                        <span class="label-color5 js-color"></span>
+                                        <span class="label-color6 js-color"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mailbox-link">+ Create New Reply Form</a>
+                        </div>
+                        <button class="btn btn-default btn--compose js-contacts" type="button">Contacts</button>
+                </div> -->
                     <div class="mail-contacts">
                         <form action="#" class="mail__search">
                             <i class="zmdi zmdi-search"></i>

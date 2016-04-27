@@ -500,10 +500,10 @@ if($('.mail-wrapper').length) {
 }
 
 function mailPanels() {
-  var mailboxesW = $('.mailboxes').outerWidth();
-  var mailListW = $('.mail-list').outerWidth();
-  var fullMailW = $('.mail-full').outerWidth();
-  $('.mail-container').css('width', mailboxesW + mailListW + fullMailW);
-  $('.mail-list').css('left', mailboxesW + 64);
+  var mailboxesW = $('.js-mail-panels .mailboxes').outerWidth();
+  var mailListW = $('.js-mail-panels .mail-list').outerWidth();
+  var fullMailW = $('.js-mail-panels .mail-full').outerWidth();
+  $('.js-mail-panels .mail-container').css('width', mailboxesW + mailListW + fullMailW);
+  $('.js-mail-panels .mail-list').css('left', mailboxesW + 64);
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
 }
