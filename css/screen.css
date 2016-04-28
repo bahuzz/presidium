@@ -334,7 +334,7 @@ label { cursor: pointer; }
 .table th { width: 195px; background: #f4f5f5; }
 .table td { background: #fff; }
 .table thead td { background: #f4f5f5; }
-.table tr:hover td { background: #f4f5f5; }
+.table.table-overview tr:hover td { background: #f4f5f5; }
 
 .pagination { margin-bottom: 30px; margin-top: 0; }
 .pagination a { border-radius: 50%; border: none !important; background: none !important; color: #333 !important; }
