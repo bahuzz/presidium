@@ -197,7 +197,7 @@ a:hover { text-decoration: none; }
 
 .menu-btn { display: none; }
 
-.logo { background: url('../img/icons-s8c8cfbcf62.png') 0 -91px no-repeat; width: 379px; height: 170px; text-indent: -9000px; display: inline-block; margin-bottom: 40px; }
+.logo { background: url('../img/icons-s150f302c85.png') 0 -91px no-repeat; width: 377px; height: 169px; text-indent: -9000px; display: inline-block; margin-bottom: 40px; }
 
 .login-block { max-width: 380px; margin: auto; padding: 20vh 10px 20vh; }
 .login-block input[type="checkbox"] + label::before { top: 4px; }
@@ -521,7 +521,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .selectBox-dropdown .selectBox-label { width: 100%; padding: .2em .3em; display: inline-block; white-space: nowrap; overflow: hidden; }
 
-.selectBox-dropdown .selectBox-arrow { position: absolute; top: 20px; right: 30px; background: url('../img/icons-s8c8cfbcf62.png') 0 0 no-repeat; width: 12px; height: 7px; display: inline-block; }
+.selectBox-dropdown .selectBox-arrow { position: absolute; top: 20px; right: 30px; background: url('../img/icons-s150f302c85.png') 0 0 no-repeat; width: 12px; height: 7px; display: inline-block; }
 
 /* Dropdown menu */
 .selectBox-dropdown-menu { position: absolute; z-index: 99999; max-height: 200px; border: solid 1px #BBB; /* should be the same border width as .selectBox-dropdown */ background: #FFF; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); overflow: auto; }
