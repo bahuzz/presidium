@@ -458,7 +458,7 @@ if($('.mail-wrapper').length) {
   });
   $('.mail-preview').click(function(event){
     var target = $(event.target);
-    if(target.is('span')) {
+    if(target.parent().is('li')) {
       var cat = target.data('category');
       var parent = target.parents('.mail-preview')[0];
       var flag = $(parent).find('.zmdi');
@@ -481,6 +481,8 @@ if($('.mail-wrapper').length) {
       var parent = target.parents('.mail-preview')[0];
       var dropup = $(parent).find('.select-category');
       dropup.fadeIn();
+    } else if (target.is('button')) {
+      $('.select-category').fadeOut();
     } else {
       window.location = 'mail-full.html'
     }

@@ -638,7 +638,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail__search input { font-size: 12px; border: none; outline: none; }
 
 .mail-preview { padding: 20px 18px 20px; border-bottom: 1px solid #DDDDDD; position: relative; cursor: pointer; }
-.mail-preview:last-child { margin-bottom: 128px; }
+.mail-preview:last-child { margin-bottom: 200px; }
 .mail-preview:hover { background: rgba(221, 221, 221, 0.35); }
 .mail-preview .from { font-size: 14px; float: left; }
 .mail-preview .date { float: right; font-size: 12px; color: #969C9C; }
@@ -648,6 +648,8 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-preview__header { padding-left: 20px; position: relative; }
 .mail-preview__header .zmdi { float: left; margin-left: -20px; color: #dddddd; cursor: pointer; }
 .mail-preview__header .select-category { width: 200px; background: #ffffff; padding: 10px; position: absolute; box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); z-index: 9; display: none; }
+.mail-preview__header .select-category .cat-btn { text-align: right; margin: 10px 0; }
+.mail-preview__header .select-category .cat-btn .btn { padding: 5px 8px; }
 .mail-preview__header .select-category__list { margin-top: 10px; }
 .mail-preview__header .select-category__list li { margin-bottom: 5px; padding-left: 15px; cursor: pointer; }
 .mail-preview__header .select-category__list .cat1 { position: relative; }
