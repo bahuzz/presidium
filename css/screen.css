@@ -705,17 +705,21 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .positive { min-width: 99px; }
 
-.mail-contacts { width: calc(100% - 64px); position: fixed; left: 64px; top: 64px; height: 100%; overflow-y: auto; background: #FFF; }
-.mail-contacts .btn-contact { float: right; margin-right: 18px; margin-top: 24px; }
+.mail-contacts { width: calc(100% - 64px); position: fixed; left: 64px; top: 64px; height: 100%; padding: 0 18px; overflow-y: auto; background: #FFF; }
+.mail-contacts .btn-contact { float: right; margin-top: 24px; }
 @media screen and (max-width: 360px) { .mail-contacts .btn-contact { float: none; display: block; margin: 0 auto 20px; width: 90%; } }
-.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; margin-left: 18px; padding: 24px; }
-.mail-contacts h1 { float: left; padding: 30px 28px; }
-@media screen and (max-width: 360px) { .mail-contacts h1 { padding: 20px; } }
+.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; padding: 24px; overflow-x: auto; }
+.mail-contacts .forms-wrapper form { width: 602px; }
+.mail-contacts h1 { float: left; padding: 30px 0; }
+@media screen and (max-width: 360px) { .mail-contacts h1 { padding: 20px 0; } }
 .mail-contacts table { box-shadow: none; }
 .mail-contacts td:not(:last-child), .mail-contacts th:not(:last-child) { border-right: 1px solid #969C9C; }
 .mail-contacts .zmdi-delete { color: red; margin-left: 10px; }
+.mail-contacts i { cursor: pointer; }
 
-.edit-buttons { text-align: right; display: none; }
+.mail-contacts-header { overflow: auto; }
+
+.tr.edit-buttons { text-align: right; display: none; }
 
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .inner-logo { margin-right: 0; }
@@ -769,6 +773,15 @@ i.if-edit-vendor-true { display: inline-block; }
   .btn-wrapper .btn { float: none; }
   .radio label { display: block; text-align: left; }
   .radio.preferred label { float: none; margin-right: 0px; } }
+.fake-table { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #969C9C; }
+
+.thead { background: #F4F5F3; border-bottom: 2px solid #dddddd; line-height: 1.42857; }
+
+.tr { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+
+.th, .table-cell { padding: 8px; line-height: 1.42857; float: none; }
+.th:not(:last-child), .table-cell:not(:last-child) { border-right: 1px solid #969C9C; }
+
 .sk-fading-circle { margin: 100px auto; width: 40px; height: 40px; position: relative; }
 
 .modal-preloader { position: absolute; top: 50%; left: 50%; margin-top: -40px; }

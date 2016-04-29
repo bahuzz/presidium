@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   $('.row-del').click(function(){
     $(this).parents('tr')[0].remove();
-
+    $(this).parents('.tr')[0].remove();
   });
 
   $('.news-more').click(function(){
@@ -62,13 +62,22 @@ $(document).ready(function(){
     return false
   });
 
-  $('.forms-wrapper').click('.edit-row', function(event){
-    var parent = $(event.target).parents('tr')[0];
-    $(parent).find('.field-value').addClass('field-value-hidden');
-    $(parent).find('.edit-field').addClass('edit-field-show');
-    $(parent).next('.edit-buttons').slideDown();
-    return false
+  $('.forms-wrapper').on('click', '.edit-row', function(event){
+      var parent = $(event.target).parents('.tr')[0];
+      $(parent).find('.field-value').addClass('field-value-hidden');
+      $(parent).find('.edit-field').addClass('edit-field-show');
+      $(parent).next('.edit-buttons').css({
+        display: 'table-row'
+      });
+      return false;
   });
+
+  $('.forms-wrapper').on('click', '.contact-del', function(event) {
+    event.stopPropagation();
+    var parent = $(event.target).parents('.tr')[0];
+    parent.remove();
+    return false;
+  })
 
   $('#check-save').click(function(){
     $(".edit-check input").attr("disabled", 'true');
@@ -492,7 +501,7 @@ if($('.mail-wrapper').length) {
       $(this).val('');
     });
     $('form:last-child').find('.edit-row').click();
-    $('form:last-child td:first-child input').focus();
+    $('form:last-child .table-cell:first-child input').focus();
     $('html, body').animate({
       scrollTop: $('form:last-child').offset().top
     }, 1000);

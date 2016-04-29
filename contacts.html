@@ -122,84 +122,80 @@
                             <i class="zmdi zmdi-search"></i>
                             <input type="text" placeholder="Search contacts...">
                         </form>
-                        <div class="row mail-contacts-header">
+                        <div class="mail-contacts-header">
                             <h1>Contacts</h1>
                             <button class="btn btn-default btn-contact js-add-contact">Add Contact</button>
                         </div>
                         <div class="forms-wrapper">
                             <form action="#">
-                                <table class="table md-table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Email</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="col-md-3">
-                                                <span class="field-value">Evan</span>
-                                                <input type="text" class="edit-field" value="Evan">
-                                            </td>
-                                            <td class="col-md-3">
-                                                <span class="field-value">Jones</span>
-                                                <input type="text" class="edit-field" value="Jones">
-                                            </td>
-                                            <td class="col-md-4">
-                                                <span class="field-value">dbooks@realmix.com</span>
-                                                <input type="text" class="edit-field" value="dbooks@realmix.com">
-                                            </td>
-                                            <td class="col-md-2"><i class="zmdi zmdi-edit edit-row"></i><i class="zmdi zmdi-delete row-del"></i></td>
-                                        </tr>
-                                        <tr class="edit-buttons">
-                                            <td colspan="4">
-                                                <div class="btn-group-sm">
-                                                    <button class="btn btn-primary cancel" type="button">Cancel</button>
-                                                    <button class="btn btn-primary btn-sm save" type="button" disabled>Save</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="fake-table md-table table-hover">
+                                    <div class="thead">
+                                        <div class="tr">
+                                            <div class="th col-md-3 col-sm-3 col-xs-3">First Name</div>
+                                            <div class="th col-md-3 col-sm-3 col-xs-3">Last Name</div>
+                                            <div class="th col-md-4 col-sm-4 col-xs-4">Email</div>
+                                            <div class="th col-md-2 col-sm-2 col-xs-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="col-md-3 col-sm-3 col-xs-3 table-cell">
+                                            <span class="field-value">Evan</span>
+                                            <input type="text" class="edit-field" value="Evan">
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3 table-cell">
+                                            <span class="field-value">Jones</span>
+                                            <input type="text" class="edit-field" value="Jones">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 table-cell">
+                                            <span class="field-value">dbooks@realmix.com</span>
+                                            <input type="text" class="edit-field" value="dbooks@realmix.com">
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-2 table-cell"><i class="zmdi zmdi-edit edit-row"></i><i class="zmdi zmdi-delete contact-del"></i></div>
+                                    </div>
+                                    <div class="tr edit-buttons">
+                                        <div class="table-cell col-md-12 col-sm-12 col-xs-12">
+                                            <div class="btn-group-sm">
+                                                <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                                <button class="btn btn-primary btn-sm save" type="button" disabled>Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                             <form action="#">
-                                <table class="table md-table table-hover">
-                                    <thead>
-                                        <!-- <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr> -->
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="col-md-3">
-                                                <span class="field-value">Evan</span>
-                                                <input type="text" class="edit-field" value="Evan">
-                                            </td>
-                                            <td class="col-md-3">
-                                                <span class="field-value">Jones</span>
-                                                <input type="text" class="edit-field" value="Jones">
-                                            </td>
-                                            <td class="col-md-4">
-                                                <span class="field-value">dbooks@realmix.com</span>
-                                                <input type="text" class="edit-field" value="dbooks@realmix.com">
-                                            </td>
-                                            <td class="col-md-2"><i class="zmdi zmdi-edit edit-row"></i><i class="zmdi zmdi-delete row-del"></i></td>
-                                        </tr>
-                                        <tr class="edit-buttons">
-                                            <td colspan="4">
-                                                <div class="btn-group-sm">
-                                                    <button class="btn btn-primary cancel" type="button">Cancel</button>
-                                                    <button class="btn btn-primary btn-sm save" type="button" disabled>Save</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="fake-table md-table table-hover">
+                                    <!-- <div class="thead">
+                                        <div class="tr">
+                                            <div class="th col-md-3">First Name</div>
+                                            <div class="th col-md-3">Last Name</div>
+                                            <div class="th col-md-4">Email</div>
+                                            <div class="th col-md-2"></div>
+                                        </div>
+                                    </div> -->
+                                    <div class="tr">
+                                        <div class="col-md-3 col-sm-3 col-xs-3 table-cell">
+                                            <span class="field-value">Evan</span>
+                                            <input type="text" class="edit-field" value="Evan">
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3 table-cell">
+                                            <span class="field-value">Jones</span>
+                                            <input type="text" class="edit-field" value="Jones">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-4 table-cell">
+                                            <span class="field-value">dbooks@realmix.com</span>
+                                            <input type="text" class="edit-field" value="dbooks@realmix.com">
+                                        </div>
+                                        <div class="col-md-2 col-sm-2 col-xs-2 table-cell"><i class="zmdi zmdi-edit edit-row"></i><i class="zmdi zmdi-delete contact-del"></i></div>
+                                    </div>
+                                    <div class="tr edit-buttons">
+                                        <div class="table-cell col-md-12 col-sm-12 col-xs-12">
+                                            <div class="btn-group-sm">
+                                                <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                                <button class="btn btn-primary btn-sm save" type="button" disabled>Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div><!-- end mail-contacts -->

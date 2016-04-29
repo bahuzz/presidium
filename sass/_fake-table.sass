@@ -1,0 +1,29 @@
+.fake-table
+	// display: table
+	// width: 100%
+	// // table-layout: fixed
+	// border-collapse: collapse
+	display: flex
+	flex-direction: column
+	border-bottom: 1px solid #969C9C
+	
+.thead
+	// display: table-header-group
+	background: #F4F5F3 
+	border-bottom: 2px solid #dddddd
+	line-height: 1.42857143 
+	
+.tr
+	display: flex
+	flex-direction: row
+	
+.th,
+.table-cell
+	// display: table-cell
+	padding: 8px
+	line-height: 1.42857143 
+	float: none
+	
+	&:not(:last-child)
+		border-right: 1px solid #969C9C
+	
