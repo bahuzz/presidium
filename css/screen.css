@@ -715,7 +715,7 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 768px) { .mail-contacts { width: calc(100% - 64px); left: 64px; } }
 .mail-contacts .btn-contact { float: right; margin-top: 24px; }
 @media screen and (max-width: 360px) { .mail-contacts .btn-contact { float: none; display: block; margin: 0 auto 20px; width: 90%; } }
-.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; padding: 24px; overflow-x: auto; }
+.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; padding: 24px; margin-bottom: 156px; overflow-x: auto; }
 .mail-contacts .forms-wrapper form { width: 602px; }
 .mail-contacts h1 { float: left; padding: 30px 0; }
 @media screen and (max-width: 360px) { .mail-contacts h1 { padding: 20px 0; } }
