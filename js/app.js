@@ -432,7 +432,7 @@ if($('.mail-wrapper').length) {
     if($(window).width() >= 724) {
       return false;
     } else {
-      $('.mail-list').css('left', '64px');
+      $('.mail-list').css('left', '0');
       $('.mail-back-mailboxes').fadeIn();
     }
   });
@@ -448,7 +448,7 @@ if($('.mail-wrapper').length) {
   $('.mail-back-inbox').on('click', function() {
     $(this).fadeOut();
     $('.mail-full').css('left', $('.mailboxes').outerWidth() + 64 + $('.mail-list').outerWidth());
-    if(parseInt($('.mail-list').css('left'), 10) == 64) {
+    if(parseInt($('.mail-list').css('left'), 10) == 0) {
       $('.mail-back-mailboxes').fadeIn();
     }
   });
@@ -540,6 +540,9 @@ function mailPanels() {
   var mailListW = $('.js-mail-panels .mail-list').outerWidth();
   var fullMailW = $('.js-mail-panels .mail-full').outerWidth();
   $('.js-mail-panels .mail-container').css('width', mailboxesW + mailListW + fullMailW);
-  $('.js-mail-panels .mail-list').css('left', mailboxesW + 64);
+  $('.js-mail-panels .mail-list').css('left', mailboxesW);
+  if($(window).width() > 767) {
+    $('.js-mail-panels .mail-list').css('left', mailboxesW + 64);
+  }
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
 }
