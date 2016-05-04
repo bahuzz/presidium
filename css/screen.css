@@ -592,7 +592,8 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 767px) { .sidebar.sidebar--mail .sidemenu a i { left: 5px; } }
 .sidebar.sidebar--mail .sidemenu a i.active { background: #FFF; color: #007dc3; }
 
-.mail-wrapper { position: fixed; width: calc(100% - 64px); height: calc(100% - 64px); top: 64px; left: 64px; overflow: hidden; }
+.mail-wrapper { position: fixed; width: 100%; height: calc(100% - 64px); top: 64px; left: 0; overflow: hidden; }
+@media screen and (min-width: 767px) { .mail-wrapper { width: calc(100% - 64px); left: 64px; } }
 
 .mail-container { height: 100vh; float: left; }
 
@@ -658,6 +659,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-preview__header .select-category__list .cat2:before { content: ""; width: 10px; height: 10px; background: green; position: absolute; left: -15px; top: 6px; }
 .mail-preview__header .select-category__list .cat3 { position: relative; }
 .mail-preview__header .select-category__list .cat3:before { content: ""; width: 10px; height: 10px; background: blue; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat-remove { display: none; }
 
 .mail-preview__content { font-size: 14px; line-height: 19px; color: #969C9C; padding-left: 20px; }
 

@@ -144,11 +144,14 @@
                     
 .mail-wrapper
     position: fixed
-    width: calc(100% - 64px)
+    width: 100%
     height: calc(100% - 64px)
     top: 64px
-    left: 64px
+    left: 0
     overflow: hidden
+    @media screen and (min-width: 767px)
+        width: calc(100% - 64px)
+        left: 64px 
 
 .mail-container
     height: 100vh
@@ -382,6 +385,9 @@
                 position: absolute
                 left: -15px
                 top: 6px 
+                
+        .cat-remove
+            display: none
     
 .mail-preview__content
     font-size: 14px
