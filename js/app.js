@@ -465,6 +465,7 @@ if($('.mail-wrapper').length) {
           color: ''
         });
         $('.select-category').fadeOut();
+        $('.cat-remove').css('display', 'none');
     } else if(target.parent().is('li')) {
       var cat = target.data('category');
       var parent = target.parents('.mail-preview')[0];
