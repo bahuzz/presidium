@@ -659,7 +659,8 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-preview__header .select-category__list .cat2:before { content: ""; width: 10px; height: 10px; background: green; position: absolute; left: -15px; top: 6px; }
 .mail-preview__header .select-category__list .cat3 { position: relative; }
 .mail-preview__header .select-category__list .cat3:before { content: ""; width: 10px; height: 10px; background: blue; position: absolute; left: -15px; top: 6px; }
-.mail-preview__header .select-category__list .cat-remove { display: none; }
+
+.cat-remove { display: none; }
 
 .mail-preview__content { font-size: 14px; line-height: 19px; color: #969C9C; padding-left: 20px; }
 
