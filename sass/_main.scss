@@ -513,17 +513,33 @@ label {
 	margin-bottom: 30px;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
 	        box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	display: table;
 	th {
 		width: 195px;
 		background: #f4f5f5;
 	}
+	.t-th {
+		background: #eaecec;
+	}
 	td {
 		background: #fff;
+	}
+	.t-td {
+		background: #fff;
+		border-left: 1px solid #969c9c;
+		min-height: 60px;
 	}
 	thead {
 		td {
 			background: #f4f5f5;
 		}
+	}
+	.t-td,.t-th {
+		padding: 20px;
+		display: table-cell;
+	}
+	.tr {
+		display: table-row;
 	}
 	&.table-overview tr:hover td {
 		background: rgb(244, 245, 245);;
@@ -831,4 +847,29 @@ textarea.form-control {
 //////////////////////// additional-items ////////////////////////
 .content-inner {
 	padding-top: 40px;
+}
+.adtn {
+	width: 200px;
+	.btn {
+		width: 100%;
+	}
+	li {
+		margin-bottom: 20px;
+	}
+}
+.adtn-cont-top {
+	margin-bottom: 25px;
+	a {
+		float: right;
+	}
+}
+.adtn-select {
+	float: left;
+}
+.red {
+	color: #F44336;
+}
+.mybtn {
+	cursor: pointer;
+	padding: 10px;
 }
