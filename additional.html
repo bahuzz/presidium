@@ -199,7 +199,7 @@
 							</div><!-- col-md-9 -->
 
 							<div class="col-md-3">
-								<ul class="adtn fr">
+								<ul class="adtn fr hidden-xs">
 									<li><a href="#" class="btn btn-primary">Edit Type of Notes</a></li>
 									<li><a href="#" class="btn btn-primary">Edit Classes</a></li>
 									<li><a href="#" class="btn btn-primary">Edit MFG Terms</a></li>
@@ -212,6 +212,20 @@
 									<li><a href="#" class="btn btn-primary">Content Management</a></li>
 									<li><a href="#" class="btn btn-primary">Bulk Updates</a></li>
 								</ul>
+
+								<select class="form-control visible-xs">
+									<option>Edit Type of Notes</option>
+									<option>Edit Classes</option>
+									<option>Edit MFG Terms</option>
+									<option>Edit U/M</option>
+									<option>Edit QSS Numbers</option>
+									<option>Edit Disperancy Codes</option>
+									<option>Edit Issue Types</option>
+									<option>Edit Additional Items</option>
+									<option>Edit Vendor Notes</option>
+									<option>Content Management</option>
+									<option>Bulk Updates</option>
+								</select>
 								
 								
 							</div><!-- col-md-3 -->
@@ -236,9 +250,12 @@
 	<script src="js/app.js"></script>
 	<script>
 		 $('.edit-tr').click(function(){
-		    $(this).parent('.tr').find('.edit-field').addClass('field-value-hidden');
-		    $(this).parent('.tr').find('.edit-field').addClass('edit-field-show');
-		    return false
+		    $(this).parents('.tr').find('.field-value').addClass('field-value-hidden');
+		    $(this).parents('.tr').find('.edit-field').addClass('edit-field-show');
+		  });
+
+		  $('.del-tr').click(function(){
+		    $(this).parents('.tr').remove();
 		  });
 	</script>
 </html>
