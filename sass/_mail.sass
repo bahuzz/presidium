@@ -7,7 +7,7 @@
     left: 0
     display: none
     
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 767px)
         display: block
         position: relative
         float: left
@@ -518,7 +518,21 @@
         margin-right: 0
         margin-left: 10px
         
-.mail-back-inbox,
+.mail-back-inbox
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    
+    a
+        color: #007DC3 
+        
+    i
+        font-size: 36px
+        vertical-align: middle
+        position: relative
+        top: -2px
+        
 .mail-back-mailboxes
     position: absolute
     top: 50%
@@ -539,6 +553,7 @@
     top: 50%
     transform: translateY(-50%)
     left: 10px
+    display: none
     a
         color: #007DC3 
         

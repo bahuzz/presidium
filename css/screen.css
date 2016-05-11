@@ -573,7 +573,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .selectBox-inline.selectBox-disabled .selectBox-options A { background-color: transparent !important; }
 
 .mail-logo-block { display: inline-block; width: 64px; height: 64px; position: absolute; top: 0; left: 0; display: none; }
-@media screen and (min-width: 768px) { .mail-logo-block { display: block; position: relative; float: left; margin-right: 24px; } }
+@media screen and (min-width: 767px) { .mail-logo-block { display: block; position: relative; float: left; margin-right: 24px; } }
 
 @media screen and (min-width: 1200px) { .mail-inner-header .mail-logo-block { display: none; } }
 
@@ -723,11 +723,15 @@ i.if-edit-vendor-true { display: inline-block; }
 .mfr-data--bottom .zmdi-delete { float: right; margin-top: 11px; }
 .mfr-data--bottom .mfr-draft { float: right; margin-right: 0; margin-left: 10px; }
 
-.mail-back-inbox, .mail-back-mailboxes { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; display: none; }
-.mail-back-inbox a, .mail-back-mailboxes a { color: #007DC3; }
-.mail-back-inbox i, .mail-back-mailboxes i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
+.mail-back-inbox { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; }
+.mail-back-inbox a { color: #007DC3; }
+.mail-back-inbox i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
 
-.contacts-back { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; }
+.mail-back-mailboxes { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; display: none; }
+.mail-back-mailboxes a { color: #007DC3; }
+.mail-back-mailboxes i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
+
+.contacts-back { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 10px; display: none; }
 .contacts-back a { color: #007DC3; }
 .contacts-back i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
 
