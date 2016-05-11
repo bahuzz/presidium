@@ -283,7 +283,6 @@ label {
 		//border-bottom: 1px solid #ddd;
 	}
 	.form-group {
-		
 		padding-bottom: 5px;
 	}
 }
@@ -874,3 +873,36 @@ textarea.form-control {
 	cursor: pointer;
 	padding: 10px;
 }
+/////////////////////// test ////////////////////////////
+.test {
+	.header {
+		height: 128px;
+		&:after {
+			content: "";
+			width: 64px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 64px;
+			display: inline-block;
+			background: #007DC3;
+		}
+	}
+	.inner-logo {
+		left: 0;
+	}
+	.logo-block {
+		text-align: left;
+	}
+	.ask {
+		float: right;
+		margin-right: 20px;
+	}
+}
+@media (max-width: 1280px) {
+	.some-title {
+		padding-left: 10px;
+	}
+}
+
+/////////////////////// test ////////////////////////////
