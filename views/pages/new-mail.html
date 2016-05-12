@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row wrapper clearfix">
+    {{> header--mail pagetitle="Mail"}}
+
+    {{> sidebar }}
+
+    <div class="mail-wrapper js-mail-wrapper">
+      <div class="mail-container">
+        <div class="mail-full new-mail">
+          <div class="mail-full__reply">
+            <div class="mfr-data">
+                <i class="zmdi zmdi-mail-reply-all"></i>
+                <input type="text" value="Robert Smith(smith@company.com)">
+            </div>
+            <textarea name="" id="mail-reply" class="editor-source">
+            </textarea>
+            <div class="mfr-data mfr-data--bottom">
+              <button type="button" class="btn">Send</button>
+              <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple>
+              <label for="file">
+                  <i class="zmdi zmdi-attachment-alt"></i>
+                  <span></span>
+              </label>
+              <button type="button" class="btn mfr-draft">Cancel</button>
+              <button type="button" class="btn mfr-draft">Save</button>
+            </div>
+          </div>
+        </div>
+        <!-- /.mail-list -->
+      </div>
+      <!-- /.mail-container -->
+    </div>
+    <!-- /.mail-wrapper js-mail-wrapper -->
+  </div>
+  <!-- /.row wrapper clearfix -->
+</div>
+<!-- /.container-fluid -->
