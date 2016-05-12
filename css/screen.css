@@ -637,6 +637,8 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mailbox--inner { margin-left: 33px; color: #969C9C; font-size: 15px; margin-bottom: 10px; }
 
+.mailbox--active { color: #333333; }
+
 .mailbox-link { display: block; margin-bottom: 20px; }
 
 .mailboxes__links { position: relative; display: inline-block; text-align: left; }
@@ -665,7 +667,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail__search input { font-size: 12px; border: none; outline: none; }
 
 .mail-preview { padding: 20px 18px 20px; border-bottom: 1px solid #DDDDDD; position: relative; cursor: pointer; }
-.mail-preview:last-child { margin-bottom: 200px; }
+.mail-preview:last-child { margin-bottom: 280px; }
 .mail-preview:hover { background: rgba(221, 221, 221, 0.35); }
 .mail-preview .from { font-size: 14px; float: left; }
 .mail-preview .date { float: right; font-size: 12px; color: #969C9C; }
@@ -680,11 +682,17 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-preview__header .select-category__list { margin-top: 10px; }
 .mail-preview__header .select-category__list li { margin-bottom: 5px; padding-left: 15px; cursor: pointer; }
 .mail-preview__header .select-category__list .cat1 { position: relative; }
-.mail-preview__header .select-category__list .cat1:before { content: ""; width: 10px; height: 10px; background: red; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat1:before { content: ""; width: 10px; height: 10px; background: #784C4C; position: absolute; left: -15px; top: 6px; }
 .mail-preview__header .select-category__list .cat2 { position: relative; }
-.mail-preview__header .select-category__list .cat2:before { content: ""; width: 10px; height: 10px; background: green; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat2:before { content: ""; width: 10px; height: 10px; background: #AA2AC8; position: absolute; left: -15px; top: 6px; }
 .mail-preview__header .select-category__list .cat3 { position: relative; }
-.mail-preview__header .select-category__list .cat3:before { content: ""; width: 10px; height: 10px; background: blue; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat3:before { content: ""; width: 10px; height: 10px; background: #3E74B3; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat4 { position: relative; }
+.mail-preview__header .select-category__list .cat4:before { content: ""; width: 10px; height: 10px; background: #20C242; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat5 { position: relative; }
+.mail-preview__header .select-category__list .cat5:before { content: ""; width: 10px; height: 10px; background: #E4CF2A; position: absolute; left: -15px; top: 6px; }
+.mail-preview__header .select-category__list .cat6 { position: relative; }
+.mail-preview__header .select-category__list .cat6:before { content: ""; width: 10px; height: 10px; background: #E42A2A; position: absolute; left: -15px; top: 6px; }
 
 .cat-remove { display: none; }
 

@@ -478,17 +478,29 @@ if($('.mail-wrapper').length) {
       var flag = $(parent).find('.zmdi');
       if (cat == 'category1') {
         flag.css({
-          color: 'red'
+          color: '#784C4C'
         });
         $('.cat-remove').css('display', 'inline-block');
       } else if (cat == 'category2') {
         flag.css({
-          color: 'green'
+          color: '#AA2AC8'
         });
         $('.cat-remove').css('display', 'inline-block');
-      } else {
+      } else if (cat == 'category3') {
         flag.css({
-          color: 'blue'
+          color: '#AA2AC8'
+        });
+      } else if (cat == 'category4') {
+        flag.css({
+          color: '#20C242'
+        });
+      } else if (cat == 'category5') {
+        flag.css({
+          color: '#E4CF2A'
+        });
+      }  else {
+        flag.css({
+          color: '#E42A2A'
         });
         $('.cat-remove').css('display', 'inline-block');
       }
