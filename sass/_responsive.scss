@@ -2,9 +2,7 @@
 	.some-title {
 		font-size: 21px;
 	}
-	.inner-logo {
-		margin-right: 0;
-	}
+	
 	.search-form {
 		.form-control {
 			width: 60%;
@@ -94,6 +92,9 @@
 	// 	padding-top: 10px;
 	// 	min-height: 1px;
 	// }
+	.header {
+		padding-bottom: 10px;
+	}
 	.wrapper {
 		position: relative;
 		display: block;
@@ -104,6 +105,7 @@
 			font-size: 14px;
 			padding-left: 5px;
 			padding-right: 35px;
+			width: 50%;
 		}
 		&.os-form {
 			.form-control {
@@ -145,7 +147,7 @@
 		margin-bottom: 20px;
 	}
 	.utp-dropdown {
-		padding-top: 185px;
+		padding-top: 215px;
 	}
 	.os-form {
 		.form-group {
@@ -178,6 +180,12 @@
 	}
 	.content {
 		padding-left: 10px;
+	}
+	.ask {
+		margin-left: 10px;
+	}
+	.sidemenu {
+		padding-top: 50px;
 	}
 }
 
@@ -253,6 +261,16 @@
 			float: none;
 			margin-bottom: 20px;
 		}
+	}
+	.search-form {
+		padding-top: 75px;
+		padding-left: 10px;
+	}
+	.search-form .form-control {
+		width: 60%;
+	}
+	.search-form-adv {
+		top: 119px;
 	}
 }
 
