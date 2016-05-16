@@ -699,7 +699,6 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-preview__content { font-size: 14px; line-height: 19px; color: #969C9C; padding-left: 20px; }
 
 .attachment { display: inline-block; position: absolute; right: 18px; bottom: 20px; }
-.attachment-left { display: inline-block; position: absolute; left: 18px; bottom: 20px; }
 
 .active-mail { background: rgba(221, 221, 221, 0.35); border-left: 3px solid #007CC1; padding-left: 15px; }
 

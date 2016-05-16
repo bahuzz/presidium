@@ -111,14 +111,13 @@
 							<div class="row">
 							<div class="col-md-9">
 								<div class="adtn-cont-top clearfix">
-
 									<a href="#" class="btn btn-primary">Add user</a>
-
-
 								</div><!-- adtn-cont-top -->
 
 
 								<!-- first table-->
+
+                            <form action="#">
 								<div class="table ">
 									<div class="tr">
 										<div class="t-th col-md-2 table-bordered">
@@ -126,7 +125,9 @@
 										</div><!-- th -->
 
 										<div class="t-td col-md-8 table-bordered">
-												<input type="text" class="input-text" value="Evan">
+											<span class="edit-field-show">
+												<input type="text" class="form-control" value="Evan">
+											</span>
 										</div><!-- td -->
 									</div><!-- tr -->
 
@@ -136,7 +137,9 @@
 										</div><!-- th -->
 
 										<div class="t-td col-md-8 table-bordered">
-												<input type="text" class="input-text" value="Jones">
+											<span class="edit-field-show">
+												<input type="text" class="form-control" value="Jones">
+											</span>
 										</div><!-- td -->
 									</div><!-- tr -->
 
@@ -146,7 +149,10 @@
 										</div><!-- th -->
 
 										<div class="t-td col-md-8 table-bordered">
-												<input type="text" class="input-text" value="dbrooks@readmix.mil">
+											<span class="edit-field-show">
+												<input type="text" class="form-control" value="dbrooks@readmix.mil">
+											</span>
+											<!--<input type="text" class="input-text" value="dbrooks@readmix.mil">-->
 										</div><!-- td -->
 									</div><!-- tr -->
 
@@ -195,9 +201,12 @@
 										</div><!-- th -->
 
 										<div class="t-td col-md-8 table-bordered">
-											<div class="attachment-left">
+											<!--<div class="attachment-left">
 											    <i class="zmdi zmdi-attachment-alt"></i>
-											</div>
+											</div>-->
+											<span class="btn btn-default btn-file">Choose image
+												<input type="file" class="form-control" >
+											</span>
 										</div><!-- td -->
 									</div><!-- tr -->
 
@@ -207,7 +216,9 @@
 										</div><!-- th -->
 
 										<div class="t-td col-md-8 table-bordered">
-												<input type="text" class="input-text" value="Trainings">
+											<span class="edit-field-show">
+												<input type="text" class="form-control" value="Trainings">
+											</span>
 										</div><!-- td -->
 									</div><!-- tr -->
 
@@ -221,13 +232,16 @@
 											<label for="check-notifications" class="label">.</label>
 										</div><!-- td -->
 									</div><!-- tr -->
-									</tbody>
+
 
 								</div><!-- table -->
-                                <div class="btn-group-lg">
-                                    <button class="btn btn-primary cancel">Cancel</button>
-                                    <button class="btn btn-primary btn-sm save" disabled>Save</button>
-                                </div>
+								<div class="panel">
+									<div class="btn-wrapper navbar-btn btn-xs btns clearfix">
+										<a href="#" class="btn btn-primary">Close</a>
+										<a href="#" class="btn btn-primary">Save</a>
+									</div>
+								</div><!-- clearfix -->
+								</form>
 							</div><!-- col-md-9 -->
 
 							<div class="col-md-3">
