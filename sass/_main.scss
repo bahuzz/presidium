@@ -1,4 +1,4 @@
-aaaaaaa///////////////// main /////////////////////
+///////////////// main /////////////////////
 h1 {
 	font-size: 39px;
 	padding-bottom: 20px;
@@ -172,6 +172,9 @@ label {
 	width: 64px;
 	height: 64px;
 	background: url('../img/logo.svg') center center no-repeat;
+	position: relative;
+	float: left;
+	margin-right: 10px;
 }
 .logo-block {
 	height: 64px;
@@ -192,12 +195,7 @@ label {
 	height: 20px;
 	background: #F77B72;
 }
-.inner-logo {
-	position: relative;
-	left: -10px;
-	float: left;
-	margin-right: 10px;
-}
+
 .some-title {
 	font-size: 31px;
   color: #222222;
@@ -337,6 +335,7 @@ label {
 	float: right;
 	width: 50%;
 	padding-top: 12px;
+	max-width: 200px;
 	a {
 		font-size: 14px;
   		color: rgba(0, 0, 0, 0.6);
