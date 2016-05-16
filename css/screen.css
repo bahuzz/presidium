@@ -166,7 +166,7 @@ form + form thead { height: 0; }
 form + form thead td { padding: 0 8px !important; }
 form + form thead td span.td { display: none; }
 
-h1 { font-size: 39px; padding-bottom: 20px; }
+aaaaaaa h1 { font-size: 39px; padding-bottom: 20px; }
 
 h2 { font-size: 30px; padding-bottom: 15px; }
 
@@ -456,13 +456,8 @@ textarea.form-control { resize: none; width: 100%; }
 
 .mybtn { cursor: pointer; padding: 10px; }
 
-.test .header { height: 128px; }
-.test .header:after { content: ""; width: 64px; position: absolute; left: 0; bottom: 0; height: 64px; display: inline-block; background: #007DC3; }
-.test .inner-logo { left: 0; }
-.test .logo-block { text-align: left; }
-.test .ask { float: right; margin-right: 20px; }
+.additional-select { margin-bottom: 30px; }
 
-@media (max-width: 1280px) { .some-title { padding-left: 10px; } }
 em { font-style: italic; }
 
 .sidebar { z-index: 9; }
@@ -773,6 +768,10 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .new-mail { padding: 24px; }
 
+.edit-folder-buttons .btn + .btn { margin-right: 24px; }
+
+.mailbox-link.field-value-hidden { display: none; }
+
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .inner-logo { margin-right: 0; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
@@ -826,7 +825,8 @@ i.if-edit-vendor-true { display: inline-block; }
   .btn-wrapper nav { float: none; }
   .btn-wrapper .btn { float: none; }
   .radio label { display: block; text-align: left; }
-  .radio.preferred label { float: none; margin-right: 0px; } }
+  .radio.preferred label { float: none; margin-right: 0px; }
+  .adtn-cont-top .adtn-select { float: none; margin-bottom: 20px; } }
 @media screen and (min-width: 768px) { .sidebar { display: block !important; } }
 .fake-table { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #969C9C; }
 
