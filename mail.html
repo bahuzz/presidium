@@ -24,6 +24,54 @@
               <div class="mail-title">
           Mail
         </div><!-- some-title -->
+
+       <div class="col-md-4">
+          <form class="form search-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search vendors…">
+                <span class="input-group-btn">
+                  <button class="btn btn-search" type="button">
+                    <i style="" class="zmdi zmdi-search"></i>
+                  </button>
+                  <a href="#" class="search-adv">Advanced search</a>
+                </span>
+              </div>
+            </form>
+
+            <form class="search-form-adv">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="field1">
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="field2">
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="field3">
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <input type="checkbox" id="ch1">
+                <label for="ch1">Checkbox 1</label>
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <input type="checkbox" id="ch2">
+                <label for="ch2">Checkbox 2</label>
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <input type="checkbox" id="ch3">
+                <label for="ch3">Checkbox 3</label>
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <button class="btn btn-primary">Search</button>
+              </div><!-- form-group -->
+            </form>
+       </div><!-- col-md-4 -->
+
         <div class="header-user-info">
                     <div class="hui-img">
                         <a href="#"><img src="uploads/images/admin.jpg" alt=""/></a>
@@ -61,6 +109,10 @@
       <div class="col-md-12 col-sm-12 content">
         
         <div class="mail-wrapper js-mail-panels">
+             <ol class="breadcrumb">
+                <li><a href="#">Vendors</a></li>
+                <li class="active">Main</li>
+              </ol>
                   <div class="mail-container">
                       <div class="mailboxes">
                           <button class="btn btn-default btn--compose" type="button">Compose</button>
@@ -632,6 +684,26 @@
                                   <i class="zmdi zmdi-attachment-alt"></i>
                               </div>
                           </div><!-- end mail-preview -->
+
+                           <div class="mail-pagination">
+                              <ul class="pagination ">
+                                <li>
+                                  <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                  </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                  <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                  </a>
+                                </li>
+                            </ul>
+                           </div><!-- mail-pagination -->
                       </div><!-- end mail-list -->
                   
                   </div><!-- end mail-container -->
