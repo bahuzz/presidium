@@ -634,7 +634,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-wrapper { position: fixed; width: 100%; height: calc(100% - 64px); top: 64px; left: 0; overflow: hidden; }
 @media screen and (min-width: 767px) { .mail-wrapper { width: calc(100% - 64px); left: 64px; } }
 
-.mail-container { height: 100vh; float: left; }
+.mail-container { height: 100vh; }
 
 .mailboxes { width: 100%; height: 100vh; overflow-y: auto; text-align: center; padding: 24px 24px 148px; position: fixed; left: 0; top: 80px; z-index: 1; }
 @media screen and (min-width: 724px) { .mailboxes { width: 300px; } }
@@ -770,7 +770,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .positive { min-width: 99px; }
 
-.mail-contacts { width: 100%; position: fixed; left: 0; top: 64px; height: 100%; padding: 0 18px; overflow-y: auto; background: #FFF; }
+.mail-contacts { width: 100%; position: fixed; left: 0; top: 95px; height: 100%; padding: 0 18px; overflow-y: auto; background: #FFF; }
 @media screen and (min-width: 768px) { .mail-contacts { width: calc(100% - 64px); left: 64px; } }
 .mail-contacts .btn-contact { float: right; margin-top: 24px; }
 @media screen and (max-width: 360px) { .mail-contacts .btn-contact { float: none; display: block; margin: 0 auto 20px; width: 90%; } }
