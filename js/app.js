@@ -579,7 +579,7 @@ if($('.mail-wrapper').length) {
   });
 
 
-  tinymce.init({ selector:'.mail-wrapper textarea' });
+  tinymce.init({ selector:'.mail-wrapper textarea', resize: false });
 }
 
 function mailPanels() {

@@ -795,6 +795,8 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mail-category-select { width: 36%; padding-top: 20px; }
 
+textarea { resize: none; }
+
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
   .search-form.os-form .form-control { padding-right: 40px; }
