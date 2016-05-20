@@ -11,9 +11,16 @@
 </head>
 <body>
 
+  <div class="container-fluid">
+    <div class="row clearfix">
+      
+   
+
 {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 
   {{> body}}
+   </div><!-- row wrapper clearfix -->
+  </div><!-- container-fluid -->
 
 </body>
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
@@ -22,6 +29,7 @@
   <script src="js/jquery.selectbox.js"></script>
   <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
   <script src="js/set-access.js"></script>
+  <script src="js/jquery.tokenize.js"></script>
   <script src="js/app.js"></script>
   <script>
      $('.edit-tr').click(function(){

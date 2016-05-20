@@ -1,10 +1,14 @@
-{{> header--mail-full pagetitle="Mail"}}
+ {{> header--mail pagetitle="Mail"}}
 
 {{> sidebar}}
 
 <div class="container-fluid">
     <div class="row wrapper">
         <div class="mail-wrapper">
+             <ol class="breadcrumb">
+                <li><a href="#">Vendors</a></li>
+                <li class="active">Main</li>
+              </ol>
             <div class="mail-container">
                 <div class="mail-full">
                     <div class="mail-full__header clearfix">
@@ -30,9 +34,28 @@
                     </div>
                     <div class="mail-full__reply">
                         <div class="mfr-data">
-                            <i class="zmdi zmdi-mail-reply-all"></i>
-                            <input type="text" value="Robert Smith(smith@company.com)">
+                           <div class="token-wrapper">
+                                <label class="mail-label">Email addresses</label>
+                                <select id="tokenize" multiple="multiple" class="tokenize-sample">
+                                    <option value="1">Dave</option>
+                                    <option value="2">Paul</option>
+                                    <option value="3">Michel</option>
+                                    <option value="4">Anna</option>
+                                    <option value="5">Eleanor</option>
+                                </select>
+                          </div><!-- token-wrapper -->
+
+                             <div class="mail-category-select clearfix">
+                                 <label class="mail-label">Category</label>
+                                <select class="form-control">
+                                    <option>category</option>
+                                    <option>category</option>
+                                    <option>category</option>
+                                    <option>category</option>
+                                </select>
+                            </div><!-- category select -->
                         </div>
+                       
                         <textarea name="" id="mail-reply" class="editor-source">
                         </textarea>
                         <div class="mfr-data mfr-data--bottom">
@@ -42,6 +65,15 @@
                                 <i class="zmdi zmdi-attachment-alt"></i>
                                 <span></span>
                             </label>
+                            <span class="atach-docs">
+                                  <select id="token-doc" multiple="multiple" class="tokenize-sample">
+                                    <option value="1">Doc1</option>
+                                    <option value="2">Doc2</option>
+                                    <option value="3">Doc3</option>
+                                    <option value="4">Doc4</option>
+                                    <option value="5">Doc5</option>
+                                </select>
+                            </span>
                             <button type="button" class="btn mfr-draft">Cancel</button>
                             <button type="button" class="btn mfr-draft">Save</button>
                         </div>

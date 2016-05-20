@@ -579,7 +579,7 @@ if($('.mail-wrapper').length) {
   });
 
 
-  tinymce.init({ selector:'.mail-wrapper textarea' });
+  tinymce.init({ selector:'.mail-wrapper textarea', resize: false });
 }
 
 function mailPanels() {
@@ -593,3 +593,7 @@ function mailPanels() {
   }
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
 }
+
+
+$('#tokenize').tokenize();
+$('#token-doc').tokenize();
