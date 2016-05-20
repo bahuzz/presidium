@@ -596,3 +596,4 @@ function mailPanels() {
 
 
 $('#tokenize').tokenize();
+$('#token-doc').tokenize();
