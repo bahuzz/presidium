@@ -743,8 +743,10 @@ i.if-edit-vendor-true { display: inline-block; }
 .inputfile { width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
 
 .mfr-data { padding: 15px 20px; font-size: 14px; font-weight: 500; border-top: 1px solid #969C9C; border-left: 1px solid #969C9C; border-right: 1px solid #969C9C; }
-.mfr-data input { width: 70%; border: none; outline: none; font-size: 14px; font-weight: 500; }
+.mfr-data input { width: 90%; border: none; outline: none; font-size: 14px; font-weight: 500; }
 .mfr-data i { margin-right: 10px; }
+
+.mail-author { width: 30%; padding-top: 6px; }
 
 .mfr-data--bottom { border-bottom: 1px solid #969C9C; border-top: none; padding: 0; }
 .mfr-data--bottom .btn { box-shadow: none; border-radius: 0; margin-right: 20px; padding-left: 14px; padding-right: 14px; }
@@ -794,8 +796,6 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail-pagination { padding-top: 30px; text-align: center; margin: auto; }
 
 .mail-category-select { width: 36%; padding-top: 20px; }
-
-textarea { resize: none; }
 
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
@@ -948,3 +948,45 @@ textarea { resize: none; }
 .tree-view li .label { padding: 0; font-size: 16px; font-weight: normal; line-height: inherit; color: inherit; }
 .tree-view li .label:before { top: 2px; }
 .tree-view a { color: #333333; }
+
+div.TokenizeMeasure, div.Tokenize ul li span, div.Tokenize ul.TokensContainer li.TokenSearch input { font-family: Arial, Helvetica, sans-serif; font-size: 12px; width: 100px; }
+
+div.Tokenize { position: relative; display: inline-block; zoom: 1; }
+
+div.Tokenize ul { list-style: none; padding: 0; margin: 0; }
+
+div.Tokenize ul li { white-space: nowrap; }
+
+div.Tokenize ul.TokensContainer { cursor: text; padding: 0 5px 5px 0; height: 30px; overflow-y: auto; background-color: white; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block; }
+
+div.Tokenize ul.TokensContainer.Autosize { height: auto; }
+
+div.Tokenize.Disabled ul.TokensContainer, div.Tokenize.Disabled ul.TokensContainer input { cursor: not-allowed; }
+
+div.Tokenize ul.TokensContainer li.Token { border: 1px solid #ccd5e3; background-color: #eff2f7; padding: 0 5px; line-height: 18px; }
+
+div.Tokenize ul.TokensContainer.ui-sortable:not(.ui-sortable-disabled) li.Token { cursor: move; }
+
+div.Tokenize ul.TokensContainer li.Token.MovingShadow { border: 1px solid #fcefa1; background-color: #fbf9ee; }
+
+div.Tokenize ul.TokensContainer li.Token.PendingDelete { opacity: 0.5; -moz-opacity: 0.5; -ms-filter: "alpha(opacity=50)"; filter: alpha(opacity=50); }
+
+div.Tokenize ul.TokensContainer li.Token, div.Tokenize ul.TokensContainer li.TokenSearch { margin: 5px 0 0 5px; height: 18px; float: left; }
+
+div.Tokenize ul.TokensContainer li.TokenSearch input { margin: 0; padding: 1px 0; background-color: transparent; line-height: 18px; border: none; outline: none; }
+
+div.Tokenize ul.TokensContainer li.Placeholder { color: #ddd; position: absolute; line-height: 20px; padding: 5px 0 0 5px; display: none; }
+
+div.Tokenize ul.TokensContainer, div.Tokenize ul.Dropdown { border: 1px solid #ccc; }
+
+div.Tokenize ul.TokensContainer li.Token a.Close { font-family: Arial, Helvetica, sans-serif !important; font-size: 16px !important; line-height: 18px; float: right; margin: 1px 0 0 5px; padding: 0; cursor: pointer; color: #a6b4ce; }
+
+div.Tokenize.Disabled ul.TokensContainer li.Token a.Close { display: none; }
+
+div.Tokenize ul.TokensContainer li.Token a.Close:hover { background: transparent; text-decoration: none; }
+
+div.Tokenize ul.Dropdown { -ms-box-sizing: border-box; box-sizing: border-box; display: none; width: 100%; padding: 5px 0; margin: -1px 0 0 0; position: absolute; background-color: white; overflow-y: auto; -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); background-clip: padding-box; border-radius: 0 0 6px 6px; z-index: 20; }
+
+div.Tokenize ul.Dropdown li { padding: 5px 20px; overflow: hidden; cursor: pointer; }
+
+div.Tokenize ul.Dropdown li.Hover { color: white; text-decoration: none; background-color: #0081c2; background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3)); background-image: -webkit-linear-gradient(top, #0088cc, #0077b3); background-image: linear-gradient(to bottom, #0088cc, #0077b3); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0); }

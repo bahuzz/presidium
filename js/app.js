@@ -593,3 +593,6 @@ function mailPanels() {
   }
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
 }
+
+
+$('#tokenize').tokenize();
