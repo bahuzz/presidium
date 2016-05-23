@@ -795,7 +795,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mailbox-link.field-value-hidden { display: none; }
 
-.mail-pagination { padding-top: 30px; text-align: center; margin: auto; }
+.mail-pager { padding-top: 30px; text-align: center; margin: auto; }
 
 .mail-category-select { width: 36%; padding-top: 20px; }
 
