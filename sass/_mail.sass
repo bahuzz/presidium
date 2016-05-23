@@ -159,15 +159,14 @@
                     
 .mailboxes
     width: 100%
-    height: 100vh
+    height: calc(100vh - 160px)
     overflow-y: auto
     text-align: center
-    padding: 24px 24px 148px
+    padding: 24px 24px
     position: fixed
     left: 0
     top: 95px
     z-index: 1
-    padding-bottom: 200px  
     @media screen and (min-width: 724px)
         width: 300px
         
@@ -269,13 +268,13 @@
     
 .mail-list
     width: 100%
-    height: 83vh
+    height: calc(81vh - 78px)
     overflow-y: auto
     background: #FFF 
     position: fixed
     top: 95px
     left: 300px
-    padding-bottom: 100px
+
     transition: left .3s ease-in-out
     z-index: 2
     @media screen and (min-width: 724px)
@@ -444,7 +443,7 @@
     
 .mail-full
     width: 100%
-    height: 100vh
+    height: calc(100vh - 50px)
     overflow-y: auto
     position: fixed
     top: 95px
@@ -452,7 +451,6 @@
     padding: 24px 24px 0
     background: #FFF 
     z-index: 3
-    padding-bottom: 50px
     @media screen and (min-width: 768px)
         width: calc(100vw - 64px)
         left: 64px
