@@ -1,0 +1,27 @@
+
+.mail-tokenize-left-top-block {
+	float: left !important;
+	margin-left: 0px !important;
+	margin-right: 10px !important;
+}
+
+label.mail-tokenize-left-top-block {
+	margin-top: 10px !important;
+}
+
+div.Tokenize ul.TokensContainer li.Token a.Load  {
+	line-height: 18px;
+	float: right;
+	margin: 1px 0 0 5px; 
+	padding: 0; 
+	cursor: pointer; 
+	color: #a6b4ce; 
+}
+
+div.Tokenize.Disabled ul.TokensContainer li.Token a.Load  { 
+	display: none; 
+}
+div.Tokenize ul.TokensContainer li.Token a.Load :hover { 
+	background: transparent; 
+	text-decoration: none; 
+}
