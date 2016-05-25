@@ -1,0 +1,141 @@
+<div class="container-fluid">
+  <div class="row wrapper clearfix">
+    {{> header pagetitle="Set Access" }}
+
+    {{> sidebar }}
+
+    <div class="col-md-12 col-sm-12 content">
+      <div class="content-inner">
+        <div class="row">
+          <div class="col-md-10 admin-inner admin-access">
+            <div class="admin-access__settings">
+              <ul class="tree-view">
+                <li>
+                  <a href="#collapseVendors" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseVendors">Vendors</a>
+                  <div class="collapse" id="collapseVendors">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="rule1">
+                        <label for="rule1" class="label">Rule 1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="rule2">
+                        <label for="rule2" class="label">Rule 2</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="rule3">
+                        <label for="rule3" class="label">Rule 3</label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#collapseMail" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseMail">Mail</a>
+                  <div class="collapse" id="collapseMail">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="rule4">
+                        <label for="rule4" class="label">Rule 1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="rule5">
+                        <label for="rule5" class="label">Rule 2</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="rule6">
+                        <label for="rule6" class="label">Rule 3</label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#collapseQuoting" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseQuoting">Quoting</a></li>
+                <li><a href="#collapseRFQValidation" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseRFQValidation">RFQ Validation</a></li>
+                <li><a href="#collapsePurchaseOrders" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapsePurchaseOrders">Purchase Orders</a></li>
+                <li><a href="#collapseContract" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseContract">Contract</a></li>
+                <li><a href="#collapseInventoryManagement" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseInventoryManagement">Inventory Management</a></li>
+              </ul>
+            </div>
+            <!-- /.admin-access__settings -->
+
+            <div class="admin-access__description">
+              <form action="#" id="vendorSettings1" data-rule="rule1">
+                <div class="form-group">
+                  <label for="vendorSettingsTitle1">Title</label>
+                  <input type="text" id="vendorSettingsTitle1" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="vendorSettingsDesc1">Description</label>
+                  <textarea name="" id="vendorSettingsDesc1" class="form-control"></textarea>
+                </div>
+              </form>
+
+              <form action="#" id="vendorSettings2" data-rule="rule2">
+                <div class="form-group">
+                  <label for="vendorSettingsTitle2">Title</label>
+                  <input type="text" id="vendorSettingsTitle2" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="vendorSettingsDesc2">Description</label>
+                  <textarea name="" id="vendorSettingsDesc2" class="form-control"></textarea>
+                </div>
+              </form>
+
+              <form action="#" id="vendorSettings3" data-rule="rule3">
+                <div class="form-group">
+                  <label for="vendorSettingsTitle3">Title</label>
+                  <input type="text" id="vendorSettingsTitle3" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="vendorSettingsDesc3">Description</label>
+                  <textarea name="" id="vendorSettingsDesc3" class="form-control"></textarea>
+                </div>
+              </form>
+
+              <form action="#" id="mailSettings1" data-rule="rule4">
+                <div class="form-group">
+                  <label for="mailSettingsTitle1">Title</label>
+                  <input type="text" id="mailSettingsTitle1" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="mailSettingsDesc1">Description</label>
+                  <textarea name="" id="mailSettingsDesc1" class="form-control"></textarea>
+                </div>
+              </form>
+
+              <form action="#" id="mailSettings2" data-rule="rule5">
+                <div class="form-group">
+                  <label for="mailSettingsTitle2">Title</label>
+                  <input type="text" id="mailSettingsTitle2" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="mailSettingsDesc2">Description</label>
+                  <textarea name="" id="mailSettingsDesc2" class="form-control"></textarea>
+                </div>
+              </form>
+
+              <form action="#" id="mailSettings3" data-rule="rule6">
+                <div class="form-group">
+                  <label for="mailSettingsTitle3">Title</label>
+                  <input type="text" id="mailSettingsTitle3" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="mailSettingsDesc3">Description</label>
+                  <textarea name="" id="mailSettingsDesc3" class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+            <!-- /.admin-access__description -->
+          </div>
+          <!-- /.col-md-9 -->
+          {{> admin-buttons }}
+        </div>
+      </div>
+      <!-- /.content-inner -->
+    </div>
+    <!-- /.col-md-12 col-sm-12 content -->
+ 
+    {{> footer }}
+  </div>
+  <!-- /.row wrapper clearfix -->
+</div>
+<!-- /.container-fluid -->

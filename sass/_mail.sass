@@ -5,7 +5,7 @@
     position: absolute
     top: 0
     left: 0
-    display: none
+    //display: none
     
     @media screen and (min-width: 767px)
         display: block
@@ -155,17 +155,17 @@
 
 .mail-container
     height: 100vh
-    float: left
+    //float: left
                     
 .mailboxes
     width: 100%
-    height: 100vh
+    height: calc(100vh - 160px)
     overflow-y: auto
     text-align: center
-    padding: 24px 24px 148px
+    padding: 24px 24px
     position: fixed
     left: 0
-    top: 64px
+    top: 95px
     z-index: 1
     @media screen and (min-width: 724px)
         width: 300px
@@ -268,13 +268,13 @@
     
 .mail-list
     width: 100%
-    height: 100vh
+    height: calc(100vh - 140px)
     overflow-y: auto
     background: #FFF 
     position: fixed
-    top: 64px
+    top: 95px
     left: 300px
-    // padding-bottom: 128px
+
     transition: left .3s ease-in-out
     z-index: 2
     @media screen and (min-width: 724px)
@@ -328,7 +328,6 @@
     .zmdi
         float: left
         margin-left: -20px
-        color: #dddddd
         cursor: pointer
     
     .select-category
@@ -444,10 +443,10 @@
     
 .mail-full
     width: 100%
-    height: 100vh
+    height: calc(100vh - 50px)
     overflow-y: auto
     position: fixed
-    top: 64px
+    top: 95px
     left: 0
     padding: 24px 24px 0
     background: #FFF 
@@ -480,6 +479,9 @@
     
     i:not(:first-child)
         margin-left: 10px 
+    i 
+        cursor: pointer
+    
     
 .mfh-date
     display: block
@@ -522,7 +524,7 @@
     border-right: 1px solid #969C9C
     
     input
-        width: 70%
+        width: 90%
         border: none
         outline: none
         font-size: 14px
@@ -531,7 +533,10 @@
     
     i
         margin-right: 10px
-    
+.mail-author 
+    width: 30%
+    padding-top: 6px
+  
 .mfr-data--bottom
     border-bottom: 1px solid #969C9C
     border-top: none
@@ -541,6 +546,8 @@
         box-shadow: none
         border-radius: 0
         margin-right: 20px
+        padding-left: 14px
+        padding-right: 14px
     
     i
         cursor: pointer
@@ -614,12 +621,12 @@
     width: 100%
     position: fixed
     left: 0
-    top: 64px
+    top: 95px
     height: 100%
     padding: 0 18px 
     overflow-y: auto
     background: #FFF 
-    
+    padding-bottom: 25px
     @media screen and (min-width: 768px)
         width: calc(100% - 64px)
         left: 64px
@@ -675,3 +682,32 @@
     
 .new-mail
     padding: 24px
+    
+.edit-folder-buttons
+    .btn + .btn
+        margin-right: 24px
+        
+.mailbox-link.field-value-hidden
+    display: none
+.mail-pager 
+    padding-top: 30px
+    text-align: center
+    margin: auto
+.mail-category-select 
+    width: 36%
+    padding-top: 20px
+.mail-label 
+    margin-bottom: 10px
+    display: block
+.atach-docs 
+    width: 70%
+    display: inline-block
+    position: relative
+    top: 8px
+    left: 0
+    padding-bottom: 9px
+    div.Tokenize ul.TokensContainer 
+        height: 24px
+    div.Tokenize ul.TokensContainer, div.Tokenize ul.Dropdown
+        border: none
+        

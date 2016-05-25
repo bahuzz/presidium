@@ -62,6 +62,21 @@ $(document).ready(function(){
     return false
   });
 
+  $('.edit-mailboxes').on('click', function(e) {
+    e.preventDefault();
+    $('.mailbox--inner').each(function() {
+      var inputText = $(this).find('span:first-child').text();
+      $(this).find('input').val(inputText);
+    });
+    $('.field-value').addClass('field-value-hidden');
+    $('.edit-field').addClass('edit-field-show');
+  })
+
+  $('.mailbox--inner .edit-field .zmdi-delete').on('click', function() {
+    var target = $(this).parent().parent();
+    target.remove();
+  });
+
   $('.forms-wrapper').on('click', '.edit-row', function(event){
       var parent = $(event.target).parents('.tr')[0];
       $(parent).find('.field-value').addClass('field-value-hidden');
@@ -564,7 +579,7 @@ if($('.mail-wrapper').length) {
   });
 
 
-  tinymce.init({ selector:'.mail-wrapper textarea' });
+  tinymce.init({ selector:'.mail-wrapper textarea', resize: false });
 }
 
 function mailPanels() {
@@ -578,3 +593,7 @@ function mailPanels() {
   }
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
 }
+
+
+$('#tokenize').tokenize();
+$('#token-doc').tokenize();
