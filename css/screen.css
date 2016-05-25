@@ -594,32 +594,9 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .selectBox-inline.selectBox-disabled .selectBox-options A { background-color: transparent !important; }
 
-.mail-logo-block { display: inline-block; width: 64px; height: 64px; position: absolute; top: 0; left: 0; }
-@media screen and (min-width: 767px) { .mail-logo-block { display: block; position: relative; float: left; margin-right: 24px; } }
+.mail-content { padding-bottom: 0; }
 
-@media screen and (min-width: 1200px) { .mail-inner-header .mail-logo-block { display: none; } }
-
-.logo--inner { display: block; width: 64px; height: 64px; background: url("../img/logo.svg") center center no-repeat; }
-
-.mail-title { display: inline-block; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); font-size: 26px; color: #222222; height: 64px; line-height: 64px; }
-@media screen and (min-width: 767px) { .mail-title { position: relative; left: auto; -webkit-transform: none; transform: none; font-size: 31px; float: left; } }
-
-@media screen and (min-width: 1200px) { .mail-inner-header .mail-title { position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); font-size: 26px; } }
-
-.header-user-info { position: absolute; right: 60px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-@media screen and (min-width: 480px) { .header-user-info { float: right; position: relative; right: auto; top: auto; -webkit-transform: none; transform: none; margin-top: 10px; margin-right: 14px; padding-right: 30px; } }
-@media screen and (min-width: 480px) and (max-width: 767px) { .header-user-info { padding-right: 70px; } }
-
-.hui-img { float: left; margin-right: 30px; }
-@media screen and (min-width: 480px) { .hui-img { margin-right: 15px; } }
-.hui-img img { width: 40px; height: 40px; border-radius: 50%; }
-
-.hui-links { float: left; display: none; }
-@media screen and (min-width: 670px) { .hui-links { display: block; } }
-.hui-links a { font-size: 14px; color: rgba(0, 0, 0, 0.65); }
-.hui-links span { display: block; }
-.hui-links + .zmdi { position: absolute; top: 50%; right: 10px; margin-top: -8px; }
-@media screen and (min-width: 480px) and (max-width: 767px) { .hui-links + .zmdi { right: 55px; } }
+.mail-breadcrumb { margin-bottom: 0; }
 
 .sidebar.sidebar--mail { display: none; width: 250px; height: 100%; -webkit-transition: width 0.3s ease-in-out; transition: width 0.3s ease-in-out; overflow-x: hidden; }
 @media screen and (min-width: 767px) { .sidebar.sidebar--mail { display: block; width: 64px; height: 100%; float: left; }
@@ -633,14 +610,11 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 767px) { .sidebar.sidebar--mail .sidemenu a i { left: 5px; } }
 .sidebar.sidebar--mail .sidemenu a i.active { background: #FFF; color: #007dc3; }
 
-.mail-wrapper { position: fixed; width: 100%; height: calc(100% - 64px); top: 64px; left: 0; overflow: hidden; }
-@media screen and (min-width: 767px) { .mail-wrapper { width: calc(100% - 64px); left: 64px; } }
+.mailboxes { overflow-y: auto; text-align: center; padding: 24px 24px; z-index: 1; width: 300px; float: left; }
 
-.mail-container { height: 100vh; }
+.mail-list-wrapper { float: right; width: 100%; margin-left: -300px; }
 
-.mailboxes { width: 100%; height: calc(100vh - 160px); overflow-y: auto; text-align: center; padding: 24px 24px; position: fixed; left: 0; top: 95px; z-index: 1; }
-@media screen and (min-width: 724px) { .mailboxes { width: 300px; } }
-@media screen and (min-width: 768px) { .mailboxes { left: 64px; } }
+.mail-list { background: #FFF; -webkit-transition: left 0.3s ease-in-out; transition: left 0.3s ease-in-out; z-index: 2; margin-left: 300px; }
 
 .btn--compose { width: 100%; }
 
@@ -673,10 +647,6 @@ i.if-edit-vendor-true { display: inline-block; }
 .dropdown-menu .label-color6 { background-color: #E42A2A; }
 .dropdown-menu span.checked { border: 1px solid #000; }
 .dropdown-menu .category-colors { margin-top: 10px; font-size: 0; }
-
-.mail-list { width: 100%; height: calc(100vh - 140px); overflow-y: auto; background: #FFF; position: fixed; top: 95px; left: 300px; -webkit-transition: left 0.3s ease-in-out; transition: left 0.3s ease-in-out; z-index: 2; }
-@media screen and (min-width: 724px) { .mail-list { width: calc(100vw - 300px); } }
-@media screen and (min-width: 768px) { .mail-list { width: calc(100vw - 64px - 300px); left: 364px; } }
 
 .mail__search { padding: 30px 18px 7px 18px; color: #969C9C; border-bottom: 1px solid #DDDDDD; }
 .mail__search input { font-size: 12px; border: none; outline: none; }
@@ -717,7 +687,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .active-mail { background: rgba(221, 221, 221, 0.35); border-left: 3px solid #007CC1; padding-left: 15px; }
 
-.mail-full { width: 100%; height: calc(100vh - 50px); overflow-y: auto; position: fixed; top: 95px; left: 0; padding: 24px 24px 0; background: #FFF; z-index: 3; }
+.mail-full { width: 100%; height: calc(100vh - 50px); overflow-y: auto; top: 95px; left: 0; padding: 24px 24px 0; background: #FFF; z-index: 3; }
 @media screen and (min-width: 768px) { .mail-full { width: calc(100vw - 64px); left: 64px; } }
 
 .mail-full__header { border-bottom: 1px solid #E5E6E6; padding-bottom: 5px; }
@@ -768,11 +738,11 @@ i.if-edit-vendor-true { display: inline-block; }
 .contacts-back a { color: #007DC3; }
 .contacts-back i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
 
-.footer--mail { position: fixed; left: 0; bottom: 0; width: 100%; z-index: 9; }
+.footer--mail { left: 0; bottom: 0; width: 100%; z-index: 9; }
 
 .positive { min-width: 99px; }
 
-.mail-contacts { width: 100%; position: fixed; left: 0; top: 95px; height: 100%; padding: 0 18px; overflow-y: auto; background: #FFF; padding-bottom: 25px; }
+.mail-contacts { width: 100%; left: 0; top: 95px; height: 100%; padding: 0 18px; overflow-y: auto; background: #FFF; padding-bottom: 25px; }
 @media screen and (min-width: 768px) { .mail-contacts { width: calc(100% - 64px); left: 64px; } }
 .mail-contacts .btn-contact { float: right; margin-top: 24px; }
 @media screen and (max-width: 360px) { .mail-contacts .btn-contact { float: none; display: block; margin: 0 auto 20px; width: 90%; } }

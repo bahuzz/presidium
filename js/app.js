@@ -582,7 +582,7 @@ if($('.mail-wrapper').length) {
   tinymce.init({ selector:'.mail-wrapper textarea', resize: false });
 }
 
-function mailPanels() {
+/*function mailPanels() {
   var mailboxesW = $('.js-mail-panels .mailboxes').outerWidth();
   var mailListW = $('.js-mail-panels .mail-list').outerWidth();
   var fullMailW = $('.js-mail-panels .mail-full').outerWidth();
@@ -592,7 +592,7 @@ function mailPanels() {
     $('.js-mail-panels .mail-list').css('left', mailboxesW + 64);
   }
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
-}
+}*/
 
 
 $('#tokenize').tokenize();

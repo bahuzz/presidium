@@ -4,155 +4,17 @@
 
     {{> sidebar}}
 
-    <div class="col-md-12 col-sm-12 content">
-
-
-      
-      <div class="mail-wrapper js-mail-panels">
-         <ol class="breadcrumb">
+    <div class="content mail-content">
+         <ol class="breadcrumb mail-breadcrumb">
                 <li><a href="#">Vendors</a></li>
                 <li class="active">Main</li>
               </ol>
-                <div class="mail-container">
-                    <div class="mailboxes">
-                        <button class="btn btn-default btn--compose" type="button">Compose</button>
-                        <ul class="mailboxes__list">
-                            <li class="mailbox"><i class="zmdi zmdi-download"></i><span class="field-value">Inbox</li>
-                            <li class="mailbox--inner mailbox--active"><span class="field-value">Reports</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            <span class="field-value">(1)</span></li>
-                            <li class="mailbox--inner"><span class="field-value">Acknowledgements</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            <span class="field-value">(18)</span></li>
-                            <li class="mailbox--inner"><span class="field-value">Requests</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            <span class="field-value">(10)</span></li>
-                            <li class="mailbox--inner"><span class="field-value">Expedites</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            <span class="field-value">(18)</span>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Kickouts</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Problem Orders</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Modification Checklists</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Quality Support</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Quality Material</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Quality Received</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Quality Nonconformity</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Quality CPARs</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox--inner"><span class="field-value">Quality Product Nonconformity</span>
-                            <div class="edit-field">
-                                <input type="text">
-                                <i class="zmdi zmdi-delete"></i>
-                            </div>
-                            </li>
-                            <li class="mailbox"><i class="zmdi zmdi-upload"></i>Sent</li>
-                            <li class="mailbox"><i class="zmdi zmdi-format-align-center"></i>Drafts</li>
-                            <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
-                        </ul>
-                        <div class="mailboxes__links">
-                            <div class="edit-folder-buttons">
-                                <a href="#" class="mailbox-link edit-mailboxes field-value">Edit Folders</a>
-                                <div class="btn-wrapper edit-field">
-                                    <button class="btn btn-primary cancel" type="button">Cancel</button>
-                                    <button class="btn btn-primary save" type="button">Save</button>
-                                </div>
-                            </div>
-                            <div class="dropup">
-                                <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New Folder</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <form action="#">
-                                            <input type="text" placeholder="Enter the name of the folder">
-                                        </form>
-                                        <div class="btn-wrapper">
-                                            <button class="btn btn-primary cancel" type="button">Cancel</button>
-                                            <button class="btn btn-primary save" type="button">Save</button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropup">
-                                <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New category</a>
-                                <ul class="dropdown-menu category-dropup">
-                                    <li>
-                                        <form action="#">
-                                            <input type="text" placeholder="Enter the name of the category">
-                                        </form>
-                                    </li>
-                                    <li>
-                                        Select the color
-                                        <div class="category-colors">
-                                            <span class="label-color1 js-color"></span>
-                                            <span class="label-color2 js-color"></span>
-                                            <span class="label-color3 js-color"></span>
-                                            <span class="label-color4 js-color"></span>
-                                            <span class="label-color5 js-color"></span>
-                                            <span class="label-color6 js-color"></span>
-                                        </div>
-                                        <div class="btn-wrapper">
-                                            <button class="btn btn-primary cancel" type="button">Cancel</button>
-                                            <button class="btn btn-primary save" type="button">Save</button>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#" class="mailbox-link">+ Create New Reply Form</a>
-                        </div>
-                        <button class="btn btn-default btn--compose js-contacts" type="button">Contacts</button>
-                    </div>
-                    <div class="mail-list">
+                <div class="mail-container clearfix">
+
+
+
+                    <div class="mail-list-wrapper">
+                        <div class="mail-list">
                         <div class="mail-preview">
                             <div class="mail-preview__header">
                                 <i class="zmdi zmdi-flag js-mail-cat"></i>
@@ -605,13 +467,153 @@
                                           </ul>
                          </nav><!-- mail-pager -->
                     </div><!-- end mail-list -->
+                    </div><!-- mail-list-wrapper -->
+
+                                        <div class="mailboxes">
+                        <button class="btn btn-default btn--compose" type="button">Compose</button>
+                        <ul class="mailboxes__list">
+                            <li class="mailbox"><i class="zmdi zmdi-download"></i><span class="field-value">Inbox</li>
+                            <li class="mailbox--inner mailbox--active"><span class="field-value">Reports</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            <span class="field-value">(1)</span></li>
+                            <li class="mailbox--inner"><span class="field-value">Acknowledgements</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            <span class="field-value">(18)</span></li>
+                            <li class="mailbox--inner"><span class="field-value">Requests</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            <span class="field-value">(10)</span></li>
+                            <li class="mailbox--inner"><span class="field-value">Expedites</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            <span class="field-value">(18)</span>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Kickouts</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Problem Orders</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Modification Checklists</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Quality Support</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Quality Material</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Quality Received</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Quality Nonconformity</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Quality CPARs</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox--inner"><span class="field-value">Quality Product Nonconformity</span>
+                            <div class="edit-field">
+                                <input type="text">
+                                <i class="zmdi zmdi-delete"></i>
+                            </div>
+                            </li>
+                            <li class="mailbox"><i class="zmdi zmdi-upload"></i>Sent</li>
+                            <li class="mailbox"><i class="zmdi zmdi-format-align-center"></i>Drafts</li>
+                            <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
+                        </ul>
+                        <div class="mailboxes__links">
+                            <div class="edit-folder-buttons">
+                                <a href="#" class="mailbox-link edit-mailboxes field-value">Edit Folders</a>
+                                <div class="btn-wrapper edit-field">
+                                    <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                    <button class="btn btn-primary save" type="button">Save</button>
+                                </div>
+                            </div>
+                            <div class="dropup">
+                                <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New Folder</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <form action="#">
+                                            <input type="text" placeholder="Enter the name of the folder">
+                                        </form>
+                                        <div class="btn-wrapper">
+                                            <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                            <button class="btn btn-primary save" type="button">Save</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropup">
+                                <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New category</a>
+                                <ul class="dropdown-menu category-dropup">
+                                    <li>
+                                        <form action="#">
+                                            <input type="text" placeholder="Enter the name of the category">
+                                        </form>
+                                    </li>
+                                    <li>
+                                        Select the color
+                                        <div class="category-colors">
+                                            <span class="label-color1 js-color"></span>
+                                            <span class="label-color2 js-color"></span>
+                                            <span class="label-color3 js-color"></span>
+                                            <span class="label-color4 js-color"></span>
+                                            <span class="label-color5 js-color"></span>
+                                            <span class="label-color6 js-color"></span>
+                                        </div>
+                                        <div class="btn-wrapper">
+                                            <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                            <button class="btn btn-primary save" type="button">Save</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="mailbox-link">+ Create New Reply Form</a>
+                        </div>
+                        <button class="btn btn-default btn--compose js-contacts" type="button">Contacts</button>
+                    </div><!-- end mailboxes -->
 
 
                 
                 </div><!-- end mail-container -->
-            </div><!-- end mail-wrapper -->
 
-    </div>
+
+    </div><!-- end content -->
 
     {{> footer}}
   </div>
