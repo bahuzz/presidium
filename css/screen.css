@@ -610,7 +610,7 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 767px) { .sidebar.sidebar--mail .sidemenu a i { left: 5px; } }
 .sidebar.sidebar--mail .sidemenu a i.active { background: #FFF; color: #007dc3; }
 
-.mailboxes { overflow-y: auto; text-align: center; padding: 24px 24px; z-index: 1; width: 300px; float: left; }
+.mailboxes { overflow-y: auto; text-align: center; padding: 24px 24px; z-index: 1; width: 300px; float: left; background: #E5E6E6; }
 
 .mail-list-wrapper { float: right; width: 100%; margin-left: -300px; }
 
@@ -817,7 +817,13 @@ i.if-edit-vendor-true { display: inline-block; }
   .vd-docx-block .table { min-width: 600px; }
   .content { padding-left: 10px; }
   .ask { margin-left: 10px; }
-  .sidemenu { padding-top: 50px; } }
+  .sidemenu { padding-top: 50px; }
+  .mailboxes { width: 100%; float: none; display: none; }
+  .mail-list-wrapper { float: none; margin-left: 0px; }
+  .mail-list { margin-left: 0px; }
+  .content { padding-left: 0; position: relative; }
+  .mailboxes-btn { position: absolute; right: 10px; top: 5px; cursor: pointer; }
+  .mailboxes { position: absolute; left: 0; top: 20px; } }
 @media (max-width: 702px) { .vp-options .products-full { margin-right: 0; margin-left: 0; }
   .vp-options .products-full .table th, .vp-options .products-full .table .tb-th { width: 105px; }
   .table-vp { min-width: 620px; }

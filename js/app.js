@@ -594,6 +594,10 @@ if($('.mail-wrapper').length) {
   // $('.mail-full').css('left', mailboxesW + 64 + mailListW);
 }*/
 
+  $('.mailboxes-btn').click(function(){
+    $('.mailboxes').slideToggle();
+  });
+
 
 $('#tokenize').tokenize();
 $('#token-doc').tokenize();
