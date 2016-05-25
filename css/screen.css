@@ -610,7 +610,7 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 767px) { .sidebar.sidebar--mail .sidemenu a i { left: 5px; } }
 .sidebar.sidebar--mail .sidemenu a i.active { background: #FFF; color: #007dc3; }
 
-.mailboxes { overflow-y: auto; text-align: center; padding: 24px 24px; z-index: 1; width: 300px; float: left; background: #E5E6E6; }
+.mailboxes { overflow-y: auto; text-align: center; padding: 24px 24px; z-index: 1; width: 300px; float: left; background: #E5E6E6; display: block; }
 
 .mail-list-wrapper { float: right; width: 100%; margin-left: -300px; }
 
