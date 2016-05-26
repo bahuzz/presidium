@@ -420,6 +420,7 @@ $(document).ready(function(){
   /////// add um ///////////////
    $('.add-um').click(function(){
       $('.form-add-um').slideDown();
+      $('.form-add-um')[0].reset();
   });
 
    $('.save-um').click(function(){
@@ -427,10 +428,32 @@ $(document).ready(function(){
       $('.um-table .tr:first-child').clone().prependTo('.um-table');
       var umId = $("#um-id").val();
       var umValue = $("#um-value").val();
-      $('.um-table .tr:first-child .t-th').html(umId);
-      $('.um-table .tr:first-child .fv-val').html(umValue);
+      $('.um-table .tr:first-child .t-th .fv-val').html(umId);
+      $('.um-table .tr:first-child .t-td .fv-val').html(umValue);
     });
-});
+
+   $('.cancel-um').click(function(){
+      $('.form-add-um').slideUp();
+    });
+
+    $('.edit-tr').click(function(){
+        $(this).parents('.tr').find('.field-value').hide();
+        $(this).parents('.tr').find('.edit-field').show();
+        $(this).hide();
+        $(this).parents('.tr').find('.save-tr').show();
+      });
+
+      $('.save-tr').click(function(){
+        $(this).parents('.tr').find('.edit-field').hide();
+        $(this).parents('.tr').find('.field-value').show();
+        $(this).hide();
+        $(this).parents('.tr').find('.edit-tr').show();
+      });
+
+      $('.del-tr').click(function(){
+        $(this).parents('.tr').remove();
+      });
+});/* end of doc ready */
 
 $("body").click(function(event){
     if ($(event.target).hasClass('utp-dropdown')) {

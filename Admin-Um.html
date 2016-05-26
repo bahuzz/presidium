@@ -118,20 +118,7 @@
 							<div class="row">
 							<div class="col-md-9">
 								<div class="adtn-cont-top clearfix">
-									<div class="adtn-select">
-										<select class="form-control">
-											<option>Select U/M</option>
-											<option>Select U/M</option>
-											<option>Select U/M</option>
-											<option>Select U/M</option>
-											<option>Select U/M</option>
-										</select>
-									</div><!-- adtn-select -->
-
 									<a href="#" class="btn btn-primary add-um">Add U/M</a>
-
-									
-
 								</div><!-- adtn-cont-top -->
 
 
@@ -148,6 +135,7 @@
 
 												<div class="t-td col-md-3">
 													<button class="btn btn-primary save-um">Save</button>
+													<button type="reset" class="btn btn-primary cancel-um">Cancel</button>
 												</div><!-- td -->
 											</div><!-- tr -->
 											</form>
@@ -158,7 +146,12 @@
 
 									<div class="tr">
 										<div class="t-th col-md-2">
-											U/M
+											<span class="field-value">
+												<span class="fv-val">U/M</span>
+											</span>
+											<span class="edit-field">
+												<input type="text" class="form-control" placeholder="Text">
+											</span>
 										</div><!-- th -->
 
 										<div class="t-td col-md-7">
@@ -172,10 +165,26 @@
 
 										<div class="t-td col-md-3">
 											<button class="btn btn-primary edit-tr">Edit</button>
+											<button class="btn btn-primary save-tr">Save</button>
 											<button class="btn btn-primary del-tr">Delete</button>
 										</div><!-- td -->
 									</div><!-- tr -->
 								</div><!-- table -->
+								<ul class="pagination">
+							 <li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
 							</div><!-- col-md-9 -->
 
 							<div class="col-md-3">
