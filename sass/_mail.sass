@@ -155,17 +155,17 @@
 
 .mail-container
     height: 100vh
-    float: left
+    //float: left
                     
 .mailboxes
     width: 100%
-    height: 100vh
+    height: calc(100vh - 160px)
     overflow-y: auto
     text-align: center
-    padding: 24px 24px 148px
+    padding: 24px 24px
     position: fixed
     left: 0
-    top: 80px
+    top: 95px
     z-index: 1
     @media screen and (min-width: 724px)
         width: 300px
@@ -268,13 +268,13 @@
     
 .mail-list
     width: 100%
-    height: 83vh
+    height: calc(100vh - 140px)
     overflow-y: auto
     background: #FFF 
     position: fixed
     top: 95px
     left: 300px
-    // padding-bottom: 128px
+
     transition: left .3s ease-in-out
     z-index: 2
     @media screen and (min-width: 724px)
@@ -443,7 +443,7 @@
     
 .mail-full
     width: 100%
-    height: 100vh
+    height: calc(100vh - 50px)
     overflow-y: auto
     position: fixed
     top: 95px
@@ -621,12 +621,12 @@
     width: 100%
     position: fixed
     left: 0
-    top: 64px
+    top: 95px
     height: 100%
     padding: 0 18px 
     overflow-y: auto
     background: #FFF 
-    
+    padding-bottom: 25px
     @media screen and (min-width: 768px)
         width: calc(100% - 64px)
         left: 64px
@@ -689,7 +689,7 @@
         
 .mailbox-link.field-value-hidden
     display: none
-.mail-pagination 
+.mail-pager 
     padding-top: 30px
     text-align: center
     margin: auto
@@ -704,8 +704,15 @@
     display: inline-block
     position: relative
     top: 8px
+    left: 0
+    padding-bottom: 9px
     div.Tokenize ul.TokensContainer 
         height: 24px
     div.Tokenize ul.TokensContainer, div.Tokenize ul.Dropdown
         border: none
+.mail-preview-new 
+    background: #f6f6f6 
+    font-weight: bold
     
+
+        

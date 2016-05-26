@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.restore-form').parsley();
   $('.login-form').parsley();
   $('.reset-form').parsley();
@@ -415,6 +416,20 @@ $(document).ready(function(){
       $(row).remove();
     });
   });
+
+  /////// add um ///////////////
+   $('.add-um').click(function(){
+      $('.form-add-um').slideDown();
+  });
+
+   $('.save-um').click(function(){
+      $('.form-add-um').slideUp();
+      $('.um-table .tr:first-child').clone().prependTo('.um-table');
+      var umId = $("#um-id").val();
+      var umValue = $("#um-value").val();
+      $('.um-table .tr:first-child .t-th').html(umId);
+      $('.um-table .tr:first-child .fv-val').html(umValue);
+    });
 });
 
 $("body").click(function(event){
