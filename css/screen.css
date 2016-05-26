@@ -478,6 +478,8 @@ textarea.form-control { resize: none; width: 100%; }
 
 .mlabel { display: block; margin-bottom: 10px; }
 
+.form-add-um { display: none; }
+
 em { font-style: italic; }
 
 .sidebar { z-index: 9; }
