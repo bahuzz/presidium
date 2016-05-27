@@ -945,6 +945,8 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mailboxes__table { text-align: left; width: 100%; border-spacing: 0px 10px; border-collapse: separate; }
 
+#edit-field-popup { margin-left: -30px; }
+
 div.mail-files-attachment ul li span { font-family: Arial, Helvetica, sans-serif; font-size: 12px; width: 100%; }
 
 div.mail-files-attachment { position: relative; display: block; zoom: 1; }
