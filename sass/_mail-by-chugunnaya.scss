@@ -1,34 +1,37 @@
-
-.mail-tokenize-left-top-block {
-	float: left !important;
-	margin-left: 0px !important;
-	margin-right: 10px !important;
-}
-
-label.mail-tokenize-left-top-block {
-	margin-top: 10px !important;
-}
-
-div.Tokenize ul.TokensContainer li.Token a.Load  {
-	line-height: 18px;
-	float: right;
-	margin: 1px 0 0 5px; 
-	padding: 0; 
-	cursor: pointer; 
-	color: #a6b4ce; 
-}
-
-div.Tokenize.Disabled ul.TokensContainer li.Token a.Load  { 
-	display: none; 
-}
-div.Tokenize ul.TokensContainer li.Token a.Load :hover { 
-	background: transparent; 
-	text-decoration: none; 
-}
-
 .mailboxes__table { 
 	text-align: left; 
 	width: 100%;
 	border-spacing: 0px 10px;
 	border-collapse: separate; 
 }
+
+
+
+
+
+div.mail-files-attachment ul li span { font-family: Arial, Helvetica, sans-serif; font-size: 12px; width: 100%; }
+
+div.mail-files-attachment { position: relative; display: block; zoom: 1; }
+
+div.mail-files-attachment ul { list-style: none; padding: 0; margin: 0; }
+
+div.mail-files-attachment ul li { white-space: nowrap; }
+
+div.mail-files-attachment ul.attach-container { cursor: text; padding: 0 5px 5px 0; height: auto; overflow-y: auto; background-color: white; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block; width: 100%; }
+
+div.mail-files-attachment ul.attach-container li.attached-file { border: 1px solid #ccd5e3; background-color: #eff2f7; padding: 0 5px; line-height: 18px; margin: 5px 0 0 5px; height: 18px; float: left; }
+
+div.mail-files-attachment ul.attach-container li.attached-file a {color: #333333; line-height: 18px; float: right; margin: 1px 0 0 5px; padding: 0; cursor: pointer;font-family: Arial, Helvetica, sans-serif !important; font-size: 14px !important;}
+div.mail-files-attachment ul.attach-container li.attached-file a i{margin:0px; padding: 0px;}
+div.mail-files-attachment ul.attach-container li.attached-file a:hover { background: transparent; text-decoration: none; }
+div.mail-files-attachment ul.attach-container li.attached-file a img{ width: 10px; height: 10px; }
+
+div.mail-files-attachment ul.attach-container li.attached-file a.delete-file .load-icon{ display: none; }
+div.mail-files-attachment ul.attach-container li.attached-file a.load i{ display: none; }
+
+
+
+
+.mail-attach-left-top-block { float: left !important; margin-left: 0px !important; margin-right: 10px !important; }
+
+label.mail-attach-left-top-block { margin-top: 10px !important; }
