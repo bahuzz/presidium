@@ -775,6 +775,8 @@ i.if-edit-vendor-true { display: inline-block; }
 .atach-docs div.Tokenize ul.TokensContainer { height: 24px; }
 .atach-docs div.Tokenize ul.TokensContainer, .atach-docs div.Tokenize ul.Dropdown { border: none; }
 
+.mailcheck { position: absolute; left: -15px; top: 30px; display: none; }
+
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
   .search-form.os-form .form-control { padding-right: 40px; }
@@ -823,7 +825,8 @@ i.if-edit-vendor-true { display: inline-block; }
   .mail-list { margin-left: 0px; }
   .content { padding-left: 0; position: relative; }
   .mailboxes-btn { position: absolute; right: 10px; top: 5px; cursor: pointer; }
-  .mailboxes { position: absolute; left: 0; top: 20px; } }
+  .mailboxes { position: absolute; left: 0; top: 20px; }
+  .mailcheck { display: block; } }
 @media (max-width: 702px) { .vp-options .products-full { margin-right: 0; margin-left: 0; }
   .vp-options .products-full .table th, .vp-options .products-full .table .tb-th { width: 105px; }
   .table-vp { min-width: 620px; }
