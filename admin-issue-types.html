@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Issue types - Presidium</title>
+	<title>Admin Issue Types - Presidium</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
@@ -13,14 +13,10 @@
 	<div class="container-fluid">
 			<div class="row wrapper clearfix">
 				<header class="header clearfix">
-					<div class="col-md-4 col-sm-4  col-xs-12 logo-block tal">
-						<a href="#" class="inner-logo"></a>
-						<span class="some-title">
-							Issue types
-						</span><!-- some-title -->
-					</div><!-- col-md-2  -->
+						
+						<div class="col-md-5 col-sm-7 col-xs-12">
+						<a href="#" class="inner-logo"></a> 
 
-					<div class="col-md-4 col-sm-4 col-xs-12">
 						<form class="form search-form">
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search vendors…">
@@ -67,11 +63,22 @@
 						</form>
 					</div><!-- col-md-3 -->
 
+					<div class="col-md-3 hidden-sm hidden-xs">
+						<div class="weather">
+							<i class="zmdi zmdi-sun"></i>
+							<span class="temp">85&deg;F</span>
+						</div><!-- weather -->
 
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<a href="#" class="ask hidden-sm"><i class="zmdi zmdi-help-outline"></i> Ask Question</a>
+						<div class="location">
+							<i class="zmdi zmdi-pin"></i>
+							<span>Washington D.C.</span>
+						</div><!-- location -->
+					</div><!-- col-md-2 -->
 
-						<div class="user-top-block utb-sm-w64p">
+					<div class="col-md-4 col-sm-5 col-xs-12">
+						<a href="#" class="ask"><i class="zmdi zmdi-help-outline"></i> Ask Question</a>
+
+						<div class="user-top-block">
 							<div class="utp-img">
 								<a href="#"><img src="uploads/images/admin.jpg" alt="" /></a>
 							</div><!-- utp-img -->
@@ -107,32 +114,51 @@
 					</div><!-- sidebar -->
 
 					<div class="col-md-12 col-sm-12 content">
+						 <ol class="breadcrumb">
+			                    <li><a href="#">Admin</a></li>
+			                    <li class="active">Units Measures</li>
+			                  </ol>
 						<div class="content-inner">
 							<div class="row">
 							<div class="col-md-9">
 								<div class="adtn-cont-top clearfix">
-									<div class="adtn-select">
-										<select class="form-control">
-											<option>Select Issue Type</option>
-											<option>Select Issue Type</option>
-											<option>Select Issue Type</option>
-											<option>Select Issue Type</option>
-											<option>Select Issue Type</option>
-										</select>
-									</div><!-- adtn-select -->
-
-									<a href="#" class="btn btn-primary">Add Issue Type</a>
-
-
+									<a href="#" class="btn btn-primary add-um">Add Issue Type</a>
 								</div><!-- adtn-cont-top -->
 
-								<div class="table">
+
+										<div class="table ">
+											<form class="form-add-um">
+											<div class="tr">
+												<div class="t-th col-md-2">
+													<input type="text" id="um-id" class="form-control" placeholder="Text">
+												</div><!-- th -->
+
+												<div class="t-td col-md-7">
+													<input type="text" id="um-value" class="form-control" placeholder="Text">
+												</div><!-- td -->
+
+												<div class="t-td col-md-3">
+													<button class="btn btn-primary save-um">Save</button>
+													<button type="reset" class="btn btn-primary cancel-um">Cancel</button>
+												</div><!-- td -->
+											</div><!-- tr -->
+											</form>
+										</div><!-- table-um -->
+									
+
+								<div class="table um-table">
+
 									<div class="tr">
 										<div class="t-th col-md-2">
-											Issue Type
+											<span class="field-value">
+												<span class="fv-val">Issue Type</span>
+											</span>
+											<span class="edit-field">
+												<input type="text" class="form-control" placeholder="Text">
+											</span>
 										</div><!-- th -->
 
-										<div class="t-td col-md-8">
+										<div class="t-td col-md-7">
 											<span class="field-value">
 												<span class="fv-val">Some text</span>
 											</span>
@@ -141,15 +167,28 @@
 											</span>
 										</div><!-- td -->
 
-										<div class="t-td col-md-2">
-											<span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
-											<span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
-											
+										<div class="t-td col-md-3">
+											<button class="btn btn-primary edit-tr">Edit</button>
+											<button class="btn btn-primary save-tr">Save</button>
+											<button class="btn btn-primary del-tr">Delete</button>
 										</div><!-- td -->
 									</div><!-- tr -->
-
-									
 								</div><!-- table -->
+								<ul class="pagination">
+							 <li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
 							</div><!-- col-md-9 -->
 
 							<div class="col-md-3">
@@ -197,11 +236,14 @@
 	</div><!-- container -->
 
 </body>
-	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/parsley.min.js"></script>
-	<script src="js/jquery.selectbox.js"></script>
-	<script src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parsley.min.js"></script>
+  <script src="js/jquery.selectbox.js"></script>
+  <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script src="js/set-access.js"></script>
+  <script src="js/jquery.tokenize.js"></script>
+  <script src="js/app.js"></script>
 	<script>
 		 $('.edit-tr').click(function(){
 		    $(this).parents('.tr').find('.field-value').addClass('field-value-hidden');
