@@ -1,0 +1,961 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Additional - Presidium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+  <link rel="stylesheet" media="screen" href="css/screen.css" >
+</head>
+<body>
+
+
+
+  <div class="container-fluid">
+    <div class="row wrapper clearfix">
+      <header class="header clearfix">
+                  <div class="col-md-5 col-sm-7 col-xs-12">
+                  <a href="#" class="inner-logo"></a> 
+      
+                  <form class="form search-form">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search vendors…">
+                      <span class="input-group-btn">
+                        <button class="btn btn-search" type="button">
+                          <i style="" class="zmdi zmdi-search"></i>
+                        </button>
+                        <a href="#" class="search-adv">Advanced search</a>
+                      </span>
+                    </div>
+                  </form>
+      
+                  <form class="search-form-adv">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="field1">
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="field2">
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="field3">
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <input type="checkbox" id="ch1">
+                      <label for="ch1">Checkbox 1</label>
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <input type="checkbox" id="ch2">
+                      <label for="ch2">Checkbox 2</label>
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <input type="checkbox" id="ch3">
+                      <label for="ch3">Checkbox 3</label>
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <button class="btn btn-primary">Search</button>
+                    </div><!-- form-group -->
+                  </form>
+                </div><!-- col-md-3 -->
+      
+                <div class="col-md-3 hidden-sm hidden-xs">
+                  <div class="weather">
+                    <i class="zmdi zmdi-sun"></i>
+                    <span class="temp">85&deg;F</span>
+                  </div><!-- weather -->
+      
+                  <div class="location">
+                    <i class="zmdi zmdi-pin"></i>
+                    <span>Washington D.C.</span>
+                  </div><!-- location -->
+                </div><!-- col-md-2 -->
+      
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                  <a href="#" class="ask"><i class="zmdi zmdi-help-outline"></i> Ask Question</a>
+      
+                  <div class="user-top-block">
+                    <div class="utp-img">
+                      <a href="#"><img src="uploads/images/admin.jpg" alt="" /></a>
+                    </div><!-- utp-img -->
+                    <a href="#" class="utp-name">John Doe</a><br>
+                    <span class="utp-status">Administrator</span>
+                    <div class="utb-links">
+                      <a href="#">Logout</a>
+                      <a href="#">My account</a>
+                    </div><!-- utb-links -->
+                    <i class="zmdi zmdi-chevron-down"></i>
+                  </div><!-- user-top-block -->
+      
+                </div><!-- col-md-3 col-md-offset-1 -->
+      
+                <span class="menu-btn"><i class="zmdi zmdi-menu"></i></span>
+              </header>
+  
+      <div class="sidebar sidebar--mail">
+        <ul class="sidemenu">
+          <li><a href="#"><i class="zmdi zmdi-home"></i> <span>Dashboard</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-email"></i> <span>Mail</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-case"></i> <span>Vendors</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-comment"></i> <span>Quoting</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-check-all"></i> <span>RFQ Validation</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-money"></i> <span>Purchase Order</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-receipt"></i> <span>Contact</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-puzzle-piece"></i> <span>Inventory Management</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-group-work"></i> <span>Job Costing</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-compass"></i> <span>Marketing</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-thumb-up"></i> <span>Quality</span></a></li>
+          <li><a href="#"><i class="zmdi zmdi-chart"></i> <span>Reports</span></a></li>
+        </ul>
+      </div><!-- sidebar -->
+  
+      <div class="col-md-12 col-sm-12 content">
+  
+  
+        
+        <div class="mail-wrapper js-mail-panels">
+           <ol class="breadcrumb">
+                  <li><a href="#">Vendors</a></li>
+                  <li class="active">Main</li>
+              </ol>
+                  <div class="mail-container">
+                      <div class="mailboxes">
+                          <button class="btn btn-default btn--compose" type="button">Compose</button>
+
+                          <ul class="mailboxes__list">
+                              <li class="mailbox"><i class="zmdi zmdi-download"></i><span class="field-value">Inbox</li>
+                              <li class="mailbox--inner">
+                            <table class="mailboxes__table">
+                              <tr class="mailbox--inner mailbox--active">
+                              <td>
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Reports</span>
+                                    <span class="edit-field">
+                                      <input type="text" class="form-control" placeholder="Text">
+                                    </span>
+                                  </td>
+                                  <td>
+                                   
+                                   <span class="field-value">(1)</span>
+                                  </td>
+                                  <td>
+                                    <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Acknowledgements</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value">(18)</span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Requests</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value">(10)</span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Expedites</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value">(18)</span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Kickouts</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Problem Orders</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Modification Checklists</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Support</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Material</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Received</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Nonconformity</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality CPARs</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Product Nonconformity</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                            </table><!-- table -->
+                            </li>
+
+                              <li class="mailbox"><i class="zmdi zmdi-upload"></i>Sent</li>
+                              <li class="mailbox"><i class="zmdi zmdi-format-align-center"></i>Drafts</li>
+                              <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
+                          </ul>
+                          <div class="mailboxes__links">
+                              <div class="dropup">
+                                  <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New Folder</a>
+                                  <ul class="dropdown-menu">
+                                      <li>
+                                          <form action="#">
+                                              <input type="text" placeholder="Enter the name of the folder">
+                                          </form>
+                                          <div class="btn-wrapper">
+                                              <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                              <button class="btn btn-primary save" type="button">Save</button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="dropup">
+                                  <a href="#" class="mailbox-link dropdown-toggle" data-toggle="dropdown">+ Create New category</a>
+                                  <ul class="dropdown-menu category-dropup">
+                                      <li>
+                                          <form action="#">
+                                              <input type="text" placeholder="Enter the name of the category">
+                                          </form>
+                                      </li>
+                                      <li>
+                                          Select the color
+                                          <div class="category-colors">
+                                              <span class="label-color1 js-color"></span>
+                                              <span class="label-color2 js-color"></span>
+                                              <span class="label-color3 js-color"></span>
+                                              <span class="label-color4 js-color"></span>
+                                              <span class="label-color5 js-color"></span>
+                                              <span class="label-color6 js-color"></span>
+                                          </div>
+                                          <div class="btn-wrapper">
+                                              <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                              <button class="btn btn-primary save" type="button">Save</button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <a href="#" class="mailbox-link">+ Create New Reply Form</a>
+                          </div>
+                          <button class="btn btn-default btn--compose js-contacts" type="button">Contacts</button>
+                      </div>
+                      <div class="mail-list">
+                          <div class="mail-preview mail-preview-new">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+  
+                          <div class="mail-preview mail-preview-new">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview mail-preview-new">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+                          <div class="mail-preview">
+                              <div class="mail-preview__header">
+                                  <i class="zmdi zmdi-flag js-mail-cat"></i>
+                                  <div class="select-category">
+                                      Select category
+                                      <ul class="select-category__list">
+                                          <li>
+                                              <span class="cat1" data-category="category1">Category 1</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat2" data-category="category2">Category 2</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat3" data-category="category3">Category 3</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat4" data-category="category4">Category 4</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat5" data-category="category5">Category 5</span>
+                                          </li>
+                                          <li>
+                                              <span class="cat6" data-category="category6">Category 6</span>
+                                          </li>
+                                      </ul>
+                                      <div class="cat-btn">
+                                          <button class="btn js-close-cat">Cancel</button>
+                                          <button class="btn cat-remove">Delete</button>
+                                      </div>
+                                  </div>
+                                  <span class="from">Robert Smith</span>
+                                  <span class="date">26.04.2016 14:40</span>
+                                  <span class="mail-subject">I'm on my way</span>
+                              </div>
+                              <div class="mail-preview__content">
+                                  <p>
+                                      Hi Peter, Thanks for the e-mail. It is always nice to hear from people, especially…
+                                  </p>
+                              </div>
+                              <div class="attachment">
+                                  <i class="zmdi zmdi-attachment-alt"></i>
+                              </div>
+                          </div><!-- end mail-preview -->
+  
+                           <nav class="mail-pager">
+                                <ul class="pagination">
+                                              <li>
+                                                <a href="#" aria-label="Previous">
+                                                  <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                              </li>
+                                              <li class="active"><a href="#">1</a></li>
+                                              <li><a href="#">2</a></li>
+                                              <li><a href="#">3</a></li>
+                                              <li><a href="#">4</a></li>
+                                              <li><a href="#">5</a></li>
+                                              <li>
+                                                <a href="#" aria-label="Next">
+                                                  <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                              </li>
+                                            </ul>
+                           </nav><!-- mail-pager -->
+                      </div><!-- end mail-list -->
+  
+             
+                    <ul id="edit-field-popup" class="dropdown-menu" role="menu">
+                        <li>
+                            <form action="#">
+                                <input type="text" placeholder="Enter the name of the folder">
+                            </form>
+                            <div class="btn-wrapper">
+                                <button class="btn btn-primary cancel" type="button">Cancel</button>
+                                <button class="btn btn-primary save" type="button">Save</button>
+                            </div>
+                        </li>
+                    </ul>
+
+  
+                  
+                  </div><!-- end mail-container -->
+              </div><!-- end mail-wrapper -->
+  
+      </div>
+  
+      <footer class="footer footer--mail">
+        <a href="#" class="options-btn"><i class="zmdi zmdi-settings"></i></a>
+        <div class="copy">
+          <p>&copy; 2014 Copyrights here</p>
+        </div><!-- copy -->
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parsley.min.js"></script>
+  <script src="js/jquery.selectbox.js"></script>
+  <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script src="js/set-access.js"></script>
+  <script src="js/jquery.tokenize.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+
+      $dropdown = $("#edit-field-popup");
+
+      $(".edit-tr-dropdown").on("click.bs.dropdown", function(){
+        $(this).before($dropdown);
+        $(this).dropdown();
+      });
+
+      $('.edit-tr').click(function(e){
+        e.stopPropagation();
+        $(this).parents('tr').find('.edit-tr-dropdown').trigger('click.bs.dropdown');;
+      });
+  </script>
+</html>
