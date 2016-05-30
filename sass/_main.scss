@@ -553,6 +553,7 @@ label {
 		background: #fff;
 		border-left: 1px solid #969c9c;
 		min-height: 60px;
+		
 	}
 	thead {
 		td {
@@ -563,6 +564,7 @@ label {
 		padding: 20px;
 		display: table-cell;
 		float: none;
+		vertical-align: middle;
 	}
 	.tr {
 		display: table-row;
