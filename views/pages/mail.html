@@ -11,12 +11,11 @@
               </ol>
               <span class="mailboxes-btn visible-xs">open boxes</span>
                 <div class="mail-container clearfix">
-                    <div class="mail-select visible-xs">
-                        <select class="form-control">
+                    <div class="mail-select">
+                        <select class="form-control" id="select-operation">
                             <option>Select operation</option>
-                            <option>Copy</option>
+                            <option name="move">Move</option>
                             <option>Delete</option>
-                            <option>Paste</option>
                         </select>
                     </div><!-- mail-select -->
 
@@ -663,6 +662,31 @@
 
 
     </div><!-- end content -->
+
+    <!-- Modal -->
+                                    <div class="modal fade" id="selectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Select folder</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                           <select class="form-control">
+                                            <option>Folder 1</option>
+                                            <option>Folder 2</option>
+                                            <option>Folder 3</option>
+                                            <option>Folder 4</option>
+                                            <option>Folder 5</option>
+                                           </select>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-primary">Done</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div><!--  modal  -->
 
     {{> footer}}
   </div>

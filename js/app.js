@@ -5,7 +5,13 @@ $(document).ready(function(){
   $('.menu-btn').click(function(){
     $('.sidebar').slideToggle();
   });
-
+//////////////// mail-select /////////////////
+  $('#select-operation').change(function(){
+    if($(this).val() == 'Move') {
+      $('#selectModal').modal();
+    }
+  });
+//////////////// mail-select /////////////////
   $('.btn-preloader').click(function(){
     $('.preloader-wrapper').fadeIn();
   });
