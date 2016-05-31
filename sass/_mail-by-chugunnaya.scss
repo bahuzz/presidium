@@ -21,11 +21,11 @@ div.mail-files-attachment ul { list-style: none; padding: 0; margin: 0; }
 
 div.mail-files-attachment ul li { white-space: nowrap; }
 
-div.mail-files-attachment ul.attach-container { cursor: text; padding: 0 5px 5px 0; height: auto; overflow-y: auto; background-color: white; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block; width: 100%; }
+div.mail-files-attachment ul.attach-container { min-height: 28px; cursor: text; padding: 0 5px 5px 0; height: auto; overflow-y: auto; background-color: white; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block; width: 100%; }
 
 div.mail-files-attachment ul.attach-container li.attached-file { border: 1px solid #ccd5e3; background-color: #eff2f7; padding: 0 5px; line-height: 18px; margin: 5px 0 0 5px; height: 18px; float: left; }
 
-div.mail-files-attachment ul.attach-container li.attached-file a {color: #333333; line-height: 18px; float: right; margin: 1px 0 0 5px; padding: 0; cursor: pointer;font-family: Arial, Helvetica, sans-serif !important; font-size: 14px !important;}
+div.mail-files-attachment ul.attach-container li.attached-file a {color: #333333; line-height: 18px; float: right; margin: 1px 0 0 5px; padding: 0; font-family: Arial, Helvetica, sans-serif !important; font-size: 14px !important;}
 div.mail-files-attachment ul.attach-container li.attached-file a i{margin:0px; padding: 0px;}
 div.mail-files-attachment ul.attach-container li.attached-file a:hover { background: transparent; text-decoration: none; }
 div.mail-files-attachment ul.attach-container li.attached-file a img{ width: 10px; height: 10px; }
