@@ -687,8 +687,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .active-mail { background: rgba(221, 221, 221, 0.35); border-left: 3px solid #007CC1; padding-left: 15px; }
 
-.mail-full { width: 100%; height: calc(100vh - 50px); overflow-y: auto; top: 95px; left: 0; padding: 24px 24px 0; background: #FFF; z-index: 3; }
-@media screen and (min-width: 768px) { .mail-full { width: calc(100vw - 64px); left: 64px; } }
+.mail-full { padding: 24px 24px 0; background: #FFF; z-index: 3; }
 
 .mail-full__header { border-bottom: 1px solid #E5E6E6; padding-bottom: 5px; }
 
@@ -767,11 +766,11 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .mail-pager { padding-top: 30px; text-align: center; margin: auto; }
 
-.mail-category-select { width: 36%; padding-top: 20px; }
+.mail-category-select { width: 36%; padding-top: 20px; margin-bottom: 30px; }
 
 .mail-label { margin-bottom: 10px; display: block; }
 
-.atach-docs { width: 70%; display: inline-block; position: relative; top: 8px; left: 0; padding-bottom: 9px; }
+.atach-docs { width: 68%; display: inline-block; position: relative; top: 8px; left: 0; padding-bottom: 9px; }
 .atach-docs div.Tokenize ul.TokensContainer { height: 24px; }
 .atach-docs div.Tokenize ul.TokensContainer, .atach-docs div.Tokenize ul.Dropdown { border: none; }
 
@@ -796,7 +795,8 @@ i.if-edit-vendor-true { display: inline-block; }
   .pt-bot { overflow: hidden; clear: both; }
   .login-block { top: 150px; }
   .table-vp .vp-th { width: 155px; }
-  .utb-sm-w64p { width: 64%; } }
+  .utb-sm-w64p { width: 64%; }
+  .atach-docs { width: 55%; } }
 @media (max-width: 767px) { .header { padding-bottom: 10px; }
   .wrapper { position: relative; display: block; }
   .search-form { padding-bottom: 10px; }
@@ -843,7 +843,10 @@ i.if-edit-vendor-true { display: inline-block; }
   .adtn-cont-top .adtn-select { float: none; margin-bottom: 20px; }
   .search-form { padding-top: 75px; padding-left: 10px; }
   .search-form .form-control { width: 60%; }
-  .search-form-adv { top: 119px; } }
+  .search-form-adv { top: 119px; }
+  .atach-docs div.Tokenize ul.TokensContainer { min-height: 34px; border: 1px solid #ccc; border-top: none; }
+  .atach-docs { position: absolute; left: 0; width: 100%; top: 41px; }
+  .mfr-data--bottom { position: relative; } }
 @media screen and (min-width: 768px) { .sidebar { display: block !important; } }
 .fake-table { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #969C9C; }
 

@@ -84,6 +84,9 @@
 	.utb-sm-w64p {
 		width: 64%;
 	}
+	.atach-docs {
+		width: 55%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -301,6 +304,21 @@
 	}
 	.search-form-adv {
 		top: 119px;
+	}
+	.atach-docs div.Tokenize ul.TokensContainer {
+		min-height: 34px;
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+	.atach-docs {
+		
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 41px;
+	}
+	.mfr-data--bottom {
+		position: relative;
 	}
 }
 

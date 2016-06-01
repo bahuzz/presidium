@@ -4,7 +4,7 @@
 
     {{> sidebar }}
 
-    <div class="mail-wrapper js-mail-wrapper">
+    <div class="content mail-wrapper js-mail-wrapper">
        <ol class="breadcrumb">
             <li><a href="#">Vendors</a></li>
             <li class="active">Main</li>
@@ -17,7 +17,7 @@
             <div class="mail-subject">
               <input class="form-control" type="text" placeholder="Subject">
             </div><!-- mail-subject -->
-            <div class="mfr-data">
+            <div class="mfr-data clearfix">
                               <div class="token-wrapper">
                                 <label class="mail-label">Email addresses</label>
                                 <select id="tokenize" multiple="multiple" class="tokenize-sample">
@@ -39,8 +39,8 @@
                                 </select>
                             </div><!-- category select -->
             </div>
-            <textarea name="" id="mail-reply" class="editor-source">
-            </textarea>
+           <textarea name="" id="mail-reply" class="editor-source"></textarea>
+           
             <div class="mfr-data mfr-data--bottom">
               <button type="button" class="btn">Send</button>
               <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple>
@@ -49,14 +49,14 @@
                   <span></span>
               </label>
                <span class="atach-docs">
-                                  <select id="token-doc" multiple="multiple" class="tokenize-sample">
-                                    <option value="1">Doc1</option>
-                                    <option value="2">Doc2</option>
-                                    <option value="3">Doc3</option>
-                                    <option value="4">Doc4</option>
-                                    <option value="5">Doc5</option>
-                                </select>
-                            </span>
+                  <select id="token-doc" multiple="multiple" class="tokenize-sample">
+                    <option value="1">Doc1</option>
+                    <option value="2">Doc2</option>
+                    <option value="3">Doc3</option>
+                    <option value="4">Doc4</option>
+                    <option value="5">Doc5</option>
+                  </select>
+                </span>
               <button type="button" class="btn mfr-draft">Cancel</button>
               <button type="button" class="btn mfr-draft">Save</button>
             </div>

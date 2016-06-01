@@ -445,10 +445,11 @@ $('#myModal').on('shown.bs.modal', function (e) {
 ////// MAIL PAGE //////
 
 if($('.mail-wrapper').length) {
-  mailPanels();
+  //mailPanels();
   $(window).on('resize', function() {
     mailPanels();
   });
+
   $('.mailboxes li').on('click', function() {
     if($(window).width() >= 724) {
       return false;
@@ -457,6 +458,7 @@ if($('.mail-wrapper').length) {
       $('.mail-back-mailboxes').fadeIn();
     }
   });
+
   // $('.mail-preview').on('click', function() {
   //   if(parseInt($('.mail-full').css('left'), 10) != 724) {
   //     $('.mail-full').css('left', '64px');
