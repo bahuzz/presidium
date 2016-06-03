@@ -152,7 +152,7 @@ body { font-size: 16px; font-family: "Roboto", sans-serif; background: #e5e6e6; 
 
 .sidebar { background: #2B323A; min-height: 100vh; position: fixed; left: 0; top: 0; }
 
-.footer { position: relative; height: 64px; background-color: #ffffff; box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.3); text-align: center; z-index: 11; }
+.footer { position: relative; height: 64px; background-color: #ffffff; box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.3); text-align: center; z-index: 500; }
 
 .footer-fixed { margin-top: -64px; }
 
@@ -744,7 +744,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .contacts-back a { color: #007DC3; }
 .contacts-back i { font-size: 36px; vertical-align: middle; position: relative; top: -2px; }
 
-.footer--mail { left: 0; bottom: 0; width: 100%; z-index: 9; }
+.footer--mail { left: 0; bottom: 0; width: 100%; }
 
 .positive { min-width: 99px; }
 
@@ -861,7 +861,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .preloader-wrapper { background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; position: fixed; z-index: 1000; top: 0; left: 0; display: none; }
 
-.preloader-wrapper-local { position: absolute; left: 0; top: 0; }
+.preloader-wrapper-local { position: absolute; left: 0; top: 0; z-index: 100; }
 
 .sk-fading-circle .sk-circle { width: 100%; height: 100%; position: absolute; left: 0; top: 0; }
 
@@ -1014,3 +1014,13 @@ div.Tokenize ul.Dropdown li.Hover { color: white; text-decoration: none; backgro
 .mail-tokenize-send { float: left; }
 
 .um-table .t-th, .um-table .t-td { vertical-align: top; }
+
+.show-preloader-wrapper { display: block; }
+
+.notes-block { min-height: 240px; width: 100%; }
+
+.notes-text { display: block; min-height: 215px; padding-bottom: 5px; padding-top: 5px; width: 100%; }
+
+.add-notes-text { display: block; min-height: 300px; width: 100%; }
+
+.notes-text.border, .add-notes-text.border { border: solid 1px #cacaca; }

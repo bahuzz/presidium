@@ -8,3 +8,26 @@
 		vertical-align: top;
 	}
 }
+
+.show-preloader-wrapper { display: block; }
+
+.notes-block {
+    min-height: 240px;
+    width: 100%;
+}
+
+.notes-text {
+    display: block;
+    min-height: 215px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.add-notes-text {
+    display: block;
+    min-height: 300px;
+    width: 100%;
+}
+
+.notes-text.border, .add-notes-text.border { border: solid 1px #cacaca; }
