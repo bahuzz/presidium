@@ -693,8 +693,7 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .active-mail { background: rgba(221, 221, 221, 0.35); border-left: 3px solid #007CC1; padding-left: 15px; }
 
-.mail-full { width: 100%; height: calc(100vh - 50px); overflow-y: auto; top: 95px; left: 0; padding: 24px 24px 0; background: #FFF; z-index: 3; }
-@media screen and (min-width: 768px) { .mail-full { width: calc(100vw - 64px); left: 64px; } }
+.mail-full { padding: 24px; background: #FFF; z-index: 3; }
 
 .mail-full__header { border-bottom: 1px solid #E5E6E6; padding-bottom: 5px; }
 
@@ -763,8 +762,6 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .tr.edit-buttons { text-align: right; display: none; }
 
-.new-mail { padding: 24px; }
-
 .edit-folder-buttons .btn + .btn { margin-right: 24px; }
 
 .mailbox-link.field-value-hidden { display: none; }
@@ -780,6 +777,8 @@ i.if-edit-vendor-true { display: inline-block; }
 .atach-docs div.Tokenize ul.TokensContainer, .atach-docs div.Tokenize ul.Dropdown { border: none; }
 
 .mailcheck { position: absolute; left: -15px; top: 30px; display: none; }
+
+.mail-container { background: #fff; }
 
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
