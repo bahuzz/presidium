@@ -745,11 +745,10 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .positive { min-width: 99px; }
 
-.mail-contacts { width: 100%; left: 0; top: 95px; height: 100%; padding: 0 18px; overflow-y: auto; background: #FFF; padding-bottom: 25px; }
-@media screen and (min-width: 768px) { .mail-contacts { width: calc(100% - 64px); left: 64px; } }
+.mail-contacts { width: 100%; padding: 0 18px; background: #FFF; padding-bottom: 25px; }
 .mail-contacts .btn-contact { float: right; margin-top: 24px; }
 @media screen and (max-width: 360px) { .mail-contacts .btn-contact { float: none; display: block; margin: 0 auto 20px; width: 90%; } }
-.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; padding: 24px; margin-bottom: 156px; overflow-x: auto; }
+.mail-contacts .forms-wrapper { width: 100%; max-width: 650px; padding: 24px; overflow-x: auto; }
 .mail-contacts .forms-wrapper form { width: 602px; }
 .mail-contacts h1 { float: left; padding: 30px 0; }
 @media screen and (max-width: 360px) { .mail-contacts h1 { padding: 20px 0; } }
@@ -777,8 +776,6 @@ i.if-edit-vendor-true { display: inline-block; }
 .atach-docs div.Tokenize ul.TokensContainer, .atach-docs div.Tokenize ul.Dropdown { border: none; }
 
 .mailcheck { position: absolute; left: -15px; top: 30px; display: none; }
-
-.mail-container { background: #fff; }
 
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
