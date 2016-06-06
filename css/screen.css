@@ -657,7 +657,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .mail__search { padding: 30px 18px 7px 18px; color: #969C9C; border-bottom: 1px solid #DDDDDD; }
 .mail__search input { font-size: 12px; border: none; outline: none; }
 
-.mail-preview { padding: 20px 18px 20px; border-bottom: 1px solid #DDDDDD; position: relative; cursor: pointer; }
+.mail-preview { padding: 20px 18px 20px; border-bottom: 1px solid #DDDDDD; position: relative; cursor: pointer; z-index: 50; }
 .mail-preview:last-child { margin-bottom: 280px; }
 .mail-preview:hover { background: rgba(221, 221, 221, 0.35); }
 .mail-preview .from { font-size: 14px; float: left; }
@@ -775,7 +775,7 @@ i.if-edit-vendor-true { display: inline-block; }
 .atach-docs div.Tokenize ul.TokensContainer { height: 24px; }
 .atach-docs div.Tokenize ul.TokensContainer, .atach-docs div.Tokenize ul.Dropdown { border: none; }
 
-.mailcheck { position: absolute; left: -15px; top: 30px; display: none; }
+.mailcheck { position: absolute; left: 5px; top: 45px; z-index: 100; }
 
 @media (max-width: 1260px) { .some-title { font-size: 21px; }
   .search-form .form-control { width: 60%; padding-right: 35px; padding-left: 5px; font-size: 12px; position: relative; top: 2px; }
@@ -1018,3 +1018,5 @@ div.Tokenize ul.Dropdown li.Hover { color: white; text-decoration: none; backgro
 .add-notes-text { display: block; min-height: 300px; width: 100%; }
 
 .notes-text.border, .add-notes-text.border { border: solid 1px #cacaca; }
+
+.mail-form-list { position: relative; }
