@@ -453,6 +453,14 @@ $(document).ready(function(){
       $('.del-tr').click(function(){
         $(this).parents('.tr').remove();
       });
+
+  $('.add-subclass').click(function(){
+    $('.form-add-um').slideUp();
+    $('.class-table .tr:last-child').clone().appendTo('.class-table');
+    var subclass = $("#subclass-name").val();
+    $('.class-table .tr:last-child .t-th').html('Subclass');
+    $('.class-table .tr:last-child .t-td').html(subclass);
+  });
 });/* end of doc ready */
 
 $("body").click(function(event){
