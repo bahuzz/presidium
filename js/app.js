@@ -461,6 +461,11 @@ $(document).ready(function(){
     $('.class-table .tr:last-child .t-th').html('Subclass');
     $('.class-table .tr:last-child .t-td').html(subclass);
   });
+
+  if($('#class-email').length) {
+    tinymce.init({ selector:'#class-email', resize: false });
+  }
+
 });/* end of doc ready */
 
 $("body").click(function(event){
