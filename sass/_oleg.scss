@@ -35,3 +35,13 @@
 .mail-form-list {
     position: relative;
 }
+
+#mainContent {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.position-relative {
+    position: relative;
+}
