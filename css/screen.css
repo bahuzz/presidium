@@ -1023,4 +1023,4 @@ div.Tokenize ul.Dropdown li.Hover { color: white; text-decoration: none; backgro
 
 .mail-form-list { position: relative; }
 
-#mainContent { flex: 1; }
+#mainContent { -ms-flex: 1; -webkit-flex: 1; flex: 1; }
