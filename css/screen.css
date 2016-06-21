@@ -925,6 +925,10 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .passwd-form-wrapper { border: 1px solid #9D9E9E; box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3); display: table; width: 100%; }
 
+.signature-image-div { display: none; margin-right: 10px; vertical-align: bottom !important; }
+
+.signature-image { display: block; }
+
 .mailboxes__table { text-align: left; width: 100%; border-spacing: 0px 10px; border-collapse: separate; }
 
 #edit-field-popup { margin-left: -30px; }
