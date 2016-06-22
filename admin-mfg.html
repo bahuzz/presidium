@@ -130,12 +130,6 @@
 							<div class="table table-add-mfg">
 
 								<div class="tr">
-									<div class="t-th col-md-2">
-										<span class="field-value" id="mfg-id">
-											<span class="fv-val">MFG Term</span>
-										</span>
-									</div><!-- th -->
-
 									<div class="t-td col-md-7">
 										<input type="text" id="mfg-value" class="form-control" placeholder="Text">
 									</div>
@@ -151,15 +145,6 @@
 							<div class="table mfg-table">
 
 								<div class="tr">
-									<div class="t-th col-md-2">
-										<span class="field-value">
-											<span class="fv-val">MFG Term</span>
-										</span>
-										<span class="edit-field">
-											<span class="fv-val">MFG Term</span>
-										</span>
-									</div><!-- th -->
-
 									<div class="t-td col-md-7">
 										<span class="field-value">
 											<span class="fv-val">Some text</span>
@@ -271,9 +256,7 @@ $('.save-mfg').click(function(){
 	} else {
 		$('.mfg-table').prepend(usualRowCode);
 	}
-	var umId = $("#mfg-id").text();
 	var umValue = $("#mfg-value").val();
-	$('.mfg-table .tr:first-child .t-th .fv-val').html(umId);
 	$('.mfg-table .tr:first-child .t-td .fv-val').html(umValue);
 
 	//it's for new elem in table
@@ -290,6 +273,8 @@ function setListeners(path){
       });
 
 	$(path + '.save-tr').click(function(){
+		var val = $(this).parents('.tr').find('.edit-field .form-control').val();
+		$(this).parents('.tr').find('.field-value').text(val);
 	    $(this).parents('.tr').find('.edit-field').hide();
 	    $(this).parents('.tr').find('.field-value').show();
 	    $(this).hide();
