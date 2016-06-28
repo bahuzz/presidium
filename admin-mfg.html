@@ -124,25 +124,25 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="adtn-cont-top clearfix">
-                            	<a href="#" class="btn btn-primary add-mfg">Add MFG Type</a>
+                            	<a href="#" class="btn btn-primary add-item">Add MFG Type</a>
                             </div><!-- adtn-cont-top -->
 
-							<div class="table table-add-mfg">
+							<div class="table table-add-item">
 
 								<div class="tr">
 									<div class="t-td col-md-7">
-										<input type="text" id="mfg-value" class="form-control" placeholder="Text">
+										<input type="text" id="new-item-value" class="form-control" placeholder="Text">
 									</div>
 
 									<div class="t-td col-md-3">
-										<button class="btn btn-primary save-mfg">Save</button>
-										<button type="reset" class="btn btn-primary cancel-mfg">Cancel</button>
+										<button class="btn btn-primary save-new-item">Save</button>
+										<button type="reset" class="btn btn-primary cancel-new-item">Cancel</button>
 									</div><!-- td -->
 								</div><!-- tr -->
 							</div><!-- table -->
 
 
-							<div class="table mfg-table">
+							<div class="table item-table">
 
 								<div class="tr">
 									<div class="t-td col-md-7">
@@ -232,35 +232,37 @@
 <script src="js/jquery.selectbox.js"></script>
 <script src="js/app.js"></script>
 <script>
-
 setListeners('');
 //for inserting new row when user deletes all rows
-var usualRowCode = $('.mfg-table .tr:first-child')[0].outerHTML;
+var usualRowCode = $('.item-table .tr:first-child')[0].outerHTML;
 
-$('.add-mfg').click(function(){
-	$('.table-add-mfg').slideDown();
-	$('.table-add-mfg input').val('');
-	$('.table-add-mfg')[0].style.display = 'table';
+$('.add-item').click(function(){
+	$('.table-add-item').slideDown();
+	$('.table-add-item input').val('');
+	$('.table-add-item')[0].style.display = 'table';
 });
 
 
-$('.cancel-mfg').click(function(){
-  $('.table-add-mfg').slideUp();
+$('.cancel-new-item').click(function(){
+  $('.table-add-item').slideUp();
 });
 
 
-$('.save-mfg').click(function(){
-	$('.table-add-mfg').slideUp();
-	if ($('.mfg-table .tr').length > 0) {
-		$('.mfg-table .tr:first-child').clone().prependTo('.mfg-table');
+$('.save-new-item').click(function(){
+	$('.table-add-item').slideUp();
+	if ($('.item-table .tr').length > 0) {
+		$('.item-table .tr:first-child').clone().prependTo('.item-table');
 	} else {
-		$('.mfg-table').prepend(usualRowCode);
+		$('.item-table').prepend(usualRowCode);
 	}
-	var umValue = $("#mfg-value").val();
-	$('.mfg-table .tr:first-child .t-td .fv-val').html(umValue);
+    
+    var umValue = $("#new-item-value").val();
+    var umName = $("#new-item-name").val();
+    $('.item-table .tr:first-child .t-td .fv-val').html(umValue);
+    $('.item-table .tr:first-child .t-th .fv-val').html(umName);
 
 	//it's for new elem in table
-	setListeners('.mfg-table .tr:first-child ');
+	setListeners('.item-table .tr:first-child ');
 });
 
 //we will add listeners to buttons in new row, so, we need to have universal function
@@ -275,6 +277,9 @@ function setListeners(path){
 	$(path + '.save-tr').click(function(){
 		var val = $(this).parents('.tr').find('.edit-field .form-control').val();
 		$(this).parents('.tr').find('.field-value').text(val);
+        var name = $(this).parents('.tr').find('.t-th .edit-field .form-control').val();
+        $(this).parents('.tr').find('.t-th .field-value').text(name);
+
 	    $(this).parents('.tr').find('.edit-field').hide();
 	    $(this).parents('.tr').find('.field-value').show();
 	    $(this).hide();

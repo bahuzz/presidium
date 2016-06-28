@@ -269,6 +269,7 @@ $('.save-new-item').click(function(){
     } else {
         $('.item-table').prepend(usualRowCode);
     }
+    
     var umValue = $("#new-item-value").val();
     var umName = $("#new-item-name").val();
     $('.item-table .tr:first-child .t-td .fv-val').html(umValue);
@@ -288,11 +289,11 @@ function setListeners(path){
       });
 
     $(path + '.save-tr').click(function(){
-
         var val = $(this).parents('.tr').find('.t-td .edit-field .form-control').val();
         $(this).parents('.tr').find('.t-td .field-value').text(val);
         var name = $(this).parents('.tr').find('.t-th .edit-field .form-control').val();
         $(this).parents('.tr').find('.t-th .field-value').text(name);
+
         $(this).parents('.tr').find('.edit-field').hide();
         $(this).parents('.tr').find('.field-value').show();
         $(this).hide();
