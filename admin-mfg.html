@@ -129,7 +129,7 @@
 
 							<div class="table table-add-item">
 
-								<div class="tr">
+								<form class="tr">
 									<div class="t-td col-md-7">
 										<input type="text" id="new-item-value" class="form-control" placeholder="Text">
 									</div>
@@ -138,13 +138,13 @@
 										<button class="btn btn-primary save-new-item">Save</button>
 										<button type="reset" class="btn btn-primary cancel-new-item">Cancel</button>
 									</div><!-- td -->
-								</div><!-- tr -->
+								</form><!-- tr -->
 							</div><!-- table -->
 
 
 							<div class="table item-table">
 
-								<div class="tr">
+								<form class="tr">
 									<div class="t-td col-md-7">
 										<span class="field-value">
 											<span class="fv-val">Some text</span>
@@ -159,7 +159,7 @@
 										<button class="btn btn-primary save-tr">Save</button>
 										<button class="btn btn-primary del-tr">Delete</button>
 									</div><!-- td -->
-								</div><!-- tr -->
+								</form><!-- tr -->
 							</div><!-- table -->
 
                             <ul class="pagination">
@@ -248,46 +248,50 @@ $('.cancel-new-item').click(function(){
 });
 
 
-$('.save-new-item').click(function(){
-	$('.table-add-item').slideUp();
-	if ($('.item-table .tr').length > 0) {
-		$('.item-table .tr:first-child').clone().prependTo('.item-table');
-	} else {
-		$('.item-table').prepend(usualRowCode);
-	}
-    
+
+$('.save-new-item').click(function(event){
+    event.preventDefault();
+    $('.table-add-item').slideUp();
+    if ($('.item-table .tr').length > 0) {
+        $('.item-table .tr:first-child').clone().prependTo('.item-table');
+    } else {
+        $('.item-table').prepend(usualRowCode);
+    }
     var umValue = $("#new-item-value").val();
     var umName = $("#new-item-name").val();
     $('.item-table .tr:first-child .t-td .fv-val').html(umValue);
     $('.item-table .tr:first-child .t-th .fv-val').html(umName);
 
-	//it's for new elem in table
-	setListeners('.item-table .tr:first-child ');
+    //it's for new elem in table
+    setListeners('.item-table .tr:first-child ');
 });
 
 //we will add listeners to buttons in new row, so, we need to have universal function
 function setListeners(path){
-    $(path + '.edit-tr').click(function(){
+    $(path + '.edit-tr').click(function(event){
+        event.preventDefault();
         $(this).parents('.tr').find('.field-value').hide();
         $(this).parents('.tr').find('.edit-field').show();
         $(this).hide();
         $(this).parents('.tr').find('.save-tr').show();
       });
 
-	$(path + '.save-tr').click(function(){
-		var val = $(this).parents('.tr').find('.edit-field .form-control').val();
-		$(this).parents('.tr').find('.field-value').text(val);
+    $(path + '.save-tr').click(function(event){
+        event.preventDefault();
+        var val = $(this).parents('.tr').find('.t-td .edit-field .form-control').val();
+        $(this).parents('.tr').find('.t-td .field-value').text(val);
         var name = $(this).parents('.tr').find('.t-th .edit-field .form-control').val();
         $(this).parents('.tr').find('.t-th .field-value').text(name);
 
-	    $(this).parents('.tr').find('.edit-field').hide();
-	    $(this).parents('.tr').find('.field-value').show();
-	    $(this).hide();
-	    $(this).parents('.tr').find('.edit-tr').show();
-	});
+        $(this).parents('.tr').find('.edit-field').hide();
+        $(this).parents('.tr').find('.field-value').show();
+        $(this).hide();
+        $(this).parents('.tr').find('.edit-tr').show();
+    });
 
-    $(path + '.del-tr').click(function(){ 
-    	$(this).parents('.tr').remove(); 
+    $(path + '.del-tr').click(function(event){
+        event.preventDefault(); 
+        $(this).parents('.tr').remove(); 
     });
 }
 
