@@ -925,6 +925,8 @@ i.if-edit-vendor-true { display: inline-block; }
 
 .signature-image-div, .uploaded-file-preview { display: none; margin-right: 10px; vertical-align: bottom !important; }
 
+.uploaded-file-preview { margin: 0; }
+
 .signature-image { display: block; }
 
 .table-add-item { display: none; }
