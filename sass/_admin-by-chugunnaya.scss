@@ -37,10 +37,13 @@
 .uploaded-file-preview {
     display: none;
     margin-right: 10px;
-    vertical-align: bottom !important;
+    vertical-align: bottom !important;    
 }
 .uploaded-file-preview {
     margin: 0;
+    height: 38px;
+    width: 38px;
+    float: left;
 }
 .signature-image {
     display: block;
@@ -53,4 +56,4 @@
 .download-img-flex-block {
   display: flex;
   align-items: center;
-  }
+}
