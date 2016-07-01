@@ -840,11 +840,11 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 768px) { .sidebar { display: block !important; } }
 .fake-table { display: flex; flex-direction: column; border-bottom: 1px solid #969C9C; }
 
-.thead { background: #F4F5F3; border-bottom: 2px solid #dddddd; line-height: 1.42857; }
+.thead { background: #F4F5F3; border-bottom: 2px solid #dddddd; line-height: 1.42857143; }
 
 .tr { display: flex; flex-direction: row; }
 
-.th, .table-cell { padding: 8px; line-height: 1.42857; float: none; }
+.th, .table-cell { padding: 8px; line-height: 1.42857143; float: none; }
 .th:not(:last-child), .table-cell:not(:last-child) { border-right: 1px solid #969C9C; }
 
 .sk-fading-circle { margin: 100px auto; width: 40px; height: 40px; position: relative; }
@@ -932,6 +932,10 @@ i.if-edit-vendor-true { display: inline-block; }
 .table-add-item { display: none; }
 
 .download-img-flex-block { display: flex; align-items: center; }
+
+.table-user-overview tbody tr { cursor: pointer; }
+
+.table.table-user-overview tr:hover td { background: #f4f5f5; }
 
 .mailboxes__table { text-align: left; width: 100%; border-spacing: 0px 10px; border-collapse: separate; }
 
