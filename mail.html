@@ -129,85 +129,278 @@
                           <button class="btn btn-default btn--compose" type="button">Compose</button>
                           <ul class="mailboxes__list">
                               <li class="mailbox"><i class="zmdi zmdi-download"></i><span class="field-value">Inbox</li>
-                              <li class="mailbox--inner mailbox--active"><span class="field-value">Reports</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              <span class="field-value">(1)</span></li>
-                              <li class="mailbox--inner"><span class="field-value">Acknowledgements</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              <span class="field-value">(18)</span></li>
-                              <li class="mailbox--inner"><span class="field-value">Requests</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              <span class="field-value">(10)</span></li>
-                              <li class="mailbox--inner"><span class="field-value">Expedites</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              <span class="field-value">(18)</span>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Kickouts</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Problem Orders</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Modification Checklists</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Quality Support</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Quality Material</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Quality Received</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Quality Nonconformity</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Quality CPARs</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
-                              <li class="mailbox--inner"><span class="field-value">Quality Product Nonconformity</span>
-                              <div class="edit-field">
-                                  <input type="text">
-                                  <i class="zmdi zmdi-delete"></i>
-                              </div>
-                              </li>
+                                <li class="mailbox--inner">
+                            <table class="mailboxes__table">
+                              <tr class="mailbox--inner mailbox--active">
+                              <td>
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Reports</span>
+                                    <span class="edit-field">
+                                      <input type="text" class="form-control" placeholder="Text">
+                                    </span>
+                                  </td>
+                                  <td>
+                                   
+                                   <span class="field-value">(1)</span>
+                                  </td>
+                                  <td>
+                                    <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Acknowledgements</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value">(18)</span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Requests</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value">(10)</span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Expedites</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value">(18)</span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Kickouts</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Problem Orders</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Modification Checklists</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Support</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Material</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Received</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Nonconformity</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality CPARs</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              <tr class="mailbox--inner">
+                              <td>
+                                    
+                                  <div class="dropup">
+                                      <span  class="dropdown-toggle edit-tr-dropdown" data-toggle="dropdown"></span>
+                                  </div>
+                                  <span class="field-value">Quality Product Nonconformity</span>
+                                  </td>
+                                  <td>
+                                   <span class="field-value"></span>
+                                  </td>
+                                  <td>
+                                      <span class="mybtn edit-tr"><i class="zmdi zmdi-edit"></i></span>
+                                      
+                                  </td>
+                                  <td>
+                                    <span class="mybtn red del-tr"><i class="zmdi zmdi-delete"></i></span>
+                                    
+                                  </td>
+                                </tr><!-- tr -->
+                              
+                            </table><!-- table -->
+                            </li>
                               <li class="mailbox"><i class="zmdi zmdi-upload"></i>Sent</li>
                               <li class="mailbox"><i class="zmdi zmdi-format-align-center"></i>Drafts</li>
                               <li class="mailbox"><i class="zmdi zmdi-delete"></i>Deleted</li>
@@ -717,6 +910,18 @@
                            </nav><!-- mail-pager -->
                       </div><!-- end mail-list -->
   
+             
+                  <ul id="edit-field-popup" class="dropdown-menu" role="menu">
+                      <li>
+                          <form action="#">
+                              <input type="text" placeholder="Enter the name of the folder">
+                          </form>
+                          <div class="btn-wrapper">
+                              <button class="btn btn-primary cancel" type="button">Cancel</button>
+                              <button class="btn btn-primary save" type="button">Save</button>
+                          </div>
+                      </li>
+                  </ul>
   
                   
                   </div><!-- end mail-container -->
@@ -744,13 +949,18 @@
   <script src="js/jquery.tokenize.js"></script>
   <script src="js/app.js"></script>
   <script>
-     $('.edit-tr').click(function(){
-        $(this).parents('.tr').find('.field-value').addClass('field-value-hidden');
-        $(this).parents('.tr').find('.edit-field').addClass('edit-field-show');
+
+      $dropdown = $("#edit-field-popup");
+
+      $(".edit-tr-dropdown").on("click.bs.dropdown", function(){
+        $(this).before($dropdown);
+        $(this).dropdown();
       });
 
-      $('.del-tr').click(function(){
-        $(this).parents('.tr').remove();
+      $('.edit-tr').click(function(e){
+        e.stopPropagation();
+        $('.edit-tr').show();
+        $(this).parents('tr').find('.edit-tr-dropdown').trigger('click.bs.dropdown');
       });
   </script>
 </html>
