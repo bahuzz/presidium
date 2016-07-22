@@ -971,9 +971,12 @@ label.mail-attach-left-top-block { margin-top: 10px !important; }
 
 .inventory-manager__page-wrapper { margin: 20px; }
 
-.inventory-manager__params-table { margin: 30px auto; border-collapse: separate; border-spacing: 10px 10px; font-size: 19px; }
+.inventory-manager-page-border { border-top: 1px solid #BBBBBB; }
+.inventory-manager-page-border .breadcrumb { border: none; }
+
+.inventory-manager__params-table { margin: 30px auto; float: left; border-collapse: separate; border-spacing: 10px 10px; font-size: 19px; }
 @media screen and (max-width: 1000px) { .inventory-manager__params-table { float: none; } }
-.inventory-manager__params-table tr td:first-child { text-align: right; }
+.inventory-manager__params-table tr td:first-child { text-align: right; white-space: nowrap; }
 .inventory-manager__params-table tr td:last-child { margin-left: 10px; text-align: left; color: #1E8DCA; }
 
 .btn-under-carousel { float: right; }
@@ -987,10 +990,13 @@ label.mail-attach-left-top-block { margin-top: 10px !important; }
 .radius_15 { border-radius: 20px; }
 
 .inventory-manager-label { font-size: 19px; margin: 20px 0; }
+.inventory-manager-label .inventory-manager__bold-text { font-weight: 600; }
+.inventory-manager-label .inventory-manager__bold-text:last-child { margin-left: 20px; }
 
 .info-list-before-table { list-style-type: none; margin: 20px auto 0px auto; display: table; font-size: 19px; text-align: center; }
-.info-list-before-table li { display: table-cell; padding: 0 15px; }
-@media screen and (max-width: 350px) { .info-list-before-table li { padding: 0; } }
+.info-list-before-table li { display: table-cell; padding: 0 35px; }
+@media screen and (max-width: 1200px) { .info-list-before-table li { padding: 0 15px; } }
+@media screen and (max-width: 500px) { .info-list-before-table li { padding: 0; font-size: 17px; } }
 
 .tablesaw-wrapper { margin: 10px 0px 30px 0px; overflow: visible; }
 
@@ -1031,6 +1037,7 @@ label.mail-attach-left-top-block { margin-top: 10px !important; }
 
 /*carousel*/
 .carousel { position: relative; float: right; width: auto; max-width: 470px; padding: 10px; margin: 10px auto; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+@media screen and (min-width: 1150px) { .carousel { max-width: 600px; } }
 @media screen and (max-width: 1000px) { .carousel { float: none; } }
 
 .carousel li img { width: 140px; height: 100px; display: block; margin: 0px 5px; cursor: pointer; border: 2px solid transparent; }
