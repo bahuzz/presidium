@@ -33,16 +33,31 @@
     width: 100%;
 }
 
-.signature-image-div {
+.signature-image-div,
+.uploaded-file-preview {
     display: none;
-    margin-right: 10px;
-    vertical-align: bottom !important;
+    float: left;
+    margin-right: 5px;
+    vertical-align: bottom !important;    
 }
-
+.uploaded-file-preview {
+    margin: 0;
+    height: 38px;
+    width: 38px;
+}
 .signature-image {
     display: block;
 }
 
-.table-add-mfg {
-	display:none;
+.table-add-item {
+    display:none;
 }
+
+.download-img-flex-block {
+  display: flex;
+  align-items: center;
+}
+
+
+.table-user-overview tbody tr { cursor: pointer; }
+.table.table-user-overview tr:hover td { background: #f4f5f5; }

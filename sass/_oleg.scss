@@ -40,8 +40,19 @@
     -ms-flex: 1;
     -webkit-flex: 1;
     flex: 1;
+    padding-bottom: 64px;
 }
 
 .position-relative {
     position: relative;
+}
+
+.preview-image-excel {
+    background: url('../img/excel.png') center center no-repeat;
+    background-size: 38px 38px;
+}
+
+.preview-image-word {
+    background: url('../img/word.png') center center no-repeat;
+    background-size: 38px 38px;
 }
