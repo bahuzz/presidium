@@ -840,11 +840,11 @@ i.if-edit-vendor-true { display: inline-block; }
 @media screen and (min-width: 768px) { .sidebar { display: block !important; } }
 .fake-table { display: flex; flex-direction: column; border-bottom: 1px solid #969C9C; }
 
-.thead { background: #F4F5F3; border-bottom: 2px solid #dddddd; line-height: 1.42857143; }
+.thead { background: #F4F5F3; border-bottom: 2px solid #dddddd; line-height: 1.42857; }
 
 .tr { display: flex; flex-direction: row; }
 
-.th, .table-cell { padding: 8px; line-height: 1.42857143; float: none; }
+.th, .table-cell { padding: 8px; line-height: 1.42857; float: none; }
 .th:not(:last-child), .table-cell:not(:last-child) { border-right: 1px solid #969C9C; }
 
 .sk-fading-circle { margin: 100px auto; width: 40px; height: 40px; position: relative; }
@@ -976,6 +976,7 @@ label.mail-attach-left-top-block { margin-top: 10px !important; }
 
 .inventory-manager__params-table { margin: 30px auto; float: left; border-collapse: separate; border-spacing: 10px 10px; font-size: 19px; }
 @media screen and (max-width: 1000px) { .inventory-manager__params-table { float: none; } }
+.inventory-manager__params-table tr td { vertical-align: middle; }
 .inventory-manager__params-table tr td:first-child { text-align: right; white-space: nowrap; }
 .inventory-manager__params-table tr td:last-child { margin-left: 10px; text-align: left; color: #1E8DCA; }
 
@@ -984,7 +985,7 @@ label.mail-attach-left-top-block { margin-top: 10px !important; }
 .double-contain-field * { display: table-cell; width: 70%; max-width: calc( 100% - 75px); }
 .double-contain-field *:last-child { float: right; width: 28%; min-width: 70px; }
 
-.inventory-manager-btn { clear: both; margin-top: 15px; border-radius: 10px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
+.inventory-manager-btn { clear: both; margin-top: 15px; border-radius: 10px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); border: none; outline: none; }
 @media screen and (max-width: 1000px) { .inventory-manager-btn { float: none; } }
 
 .radius_15 { border-radius: 20px; }
@@ -1032,6 +1033,8 @@ label.mail-attach-left-top-block { margin-top: 10px !important; }
 .inventory-notes-table-wrapper table .note-info { margin-top: 8px; }
 .inventory-notes-table-wrapper table .note-info label { display: inline-block; font-size: 17px; }
 .inventory-notes-table-wrapper .mybtn { display: table-cell; }
+
+.add-new-note-block { display: none; }
 
 .tablesaw-columntoggle-popup .btn-group > label input[type='checkbox'] { display: inline-block; }
 

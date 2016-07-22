@@ -680,14 +680,19 @@
 									</ul>
 								</nav>
 
-					<div class='inventory-manager-label'>Add New Note</div>
+						            <div class='text-center'>
+						            	<button class="btn btn-primary inventory-manager-btn add-note-btn">Add New Note</button>
+						            </div>
 
-                            <textarea name=""  class="add-new-comment">
-                            </textarea>
+	                            <div class='add-new-note-block'>
+									<div class='inventory-manager-label'>Add New Note</div>
+		                            <textarea name=""  class="add-new-comment">
+		                            </textarea>
 
-                            <div class="btns tar clearfix">
-                                <button class="btn btn-primary save">Save</button>
-                            </div>
+		                            <div class="btns tar clearfix">
+		                                <button class="btn btn-primary save">Save</button>
+		                            </div>
+	                            </div>
                     </div>
 							</div><!-- col-md-12 -->
 
@@ -723,7 +728,12 @@
 	<script src="tablesaw/tablesaw-init.js"></script>
 
 	<script>
+
+	$('.add-note-btn').click(function() {
+		$('.add-new-note-block').show();
 		tinymce.init({ selector:'textarea.add-new-comment', resize: false });
+	})
+		
 
 	 $('.edit-btn').click(function(){
 	    $(this).parents('tr').find('.field-value').addClass('field-value-hidden');

@@ -22,6 +22,10 @@
       float: none;
     }
 
+    & tr td{
+        vertical-align: middle;
+    }
+
     & tr td:first-child {
         text-align: right;
         white-space: nowrap;
@@ -55,6 +59,8 @@
   margin-top: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
 
   @media screen and (max-width: 1000px) {
     float: none;
@@ -220,6 +226,9 @@
   }
 }
 
+.add-new-note-block {
+  display: none;
+}
 .tablesaw-columntoggle-popup .btn-group > label input[type='checkbox'] {
   display: inline-block;
 }
