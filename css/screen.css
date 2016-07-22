@@ -969,6 +969,89 @@ div.mail-files-attachment ul.attach-container li.attached-file a.load i { displa
 
 label.mail-attach-left-top-block { margin-top: 10px !important; }
 
+.inventory-manager__page-wrapper { margin: 20px; }
+
+.inventory-manager__params-table { margin: 30px auto; border-collapse: separate; border-spacing: 10px 10px; font-size: 19px; }
+@media screen and (max-width: 1000px) { .inventory-manager__params-table { float: none; } }
+.inventory-manager__params-table tr td:first-child { text-align: right; }
+.inventory-manager__params-table tr td:last-child { margin-left: 10px; text-align: left; color: #1E8DCA; }
+
+.btn-under-carousel { float: right; }
+
+.double-contain-field * { display: table-cell; width: 70%; max-width: calc( 100% - 75px); }
+.double-contain-field *:last-child { float: right; width: 28%; min-width: 70px; }
+
+.inventory-manager-btn { clear: both; margin-top: 15px; border-radius: 10px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
+@media screen and (max-width: 1000px) { .inventory-manager-btn { float: none; } }
+
+.radius_15 { border-radius: 20px; }
+
+.inventory-manager-label { font-size: 19px; margin: 20px 0; }
+
+.info-list-before-table { list-style-type: none; margin: 20px auto 0px auto; display: table; font-size: 19px; text-align: center; }
+.info-list-before-table li { display: table-cell; padding: 0 15px; }
+@media screen and (max-width: 350px) { .info-list-before-table li { padding: 0; } }
+
+.tablesaw-wrapper { margin: 10px 0px 30px 0px; overflow: visible; }
+
+.inventory-manager__contract-table { max-height: 250px; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); border-radius: 20px; }
+
+.inventory-manager__contract-table.tablesaw tbody tr:last-child td:first-child { -webkit-border-bottom-left-radius: 20px; -moz-border-radius-bottomleft: 20px; border-bottom-left-radius: 20px; }
+
+.inventory-manager__contract-table.tablesaw tbody tr:last-child td:last-child { -webkit-border-bottom-right-radius: 20px; -moz-border-radius-bottomright: 20px; border-bottom-right-radius: 20px; }
+
+.inventory-manager__contract-table.tablesaw thead tr:first-child th:first-child { -webkit-border-top-left-radius: 20px; -moz-border-radius-topleft: 20px; border-top-left-radius: 20px; }
+
+.inventory-manager__contract-table.tablesaw thead tr:first-child th:last-child { -webkit-border-top-right-radius: 20px; -moz-border-radius-topright: 20px; border-top-right-radius: 20px; }
+
+.inventory-manager__contract-table td:not(:first-child) { border-left: 1px solid #999999; }
+
+.inventory-manager__contract-table.tablesaw tbody tr { border-bottom: 1px solid #999999; }
+.inventory-manager__contract-table.tablesaw tbody tr:last-child { border-bottom: none; }
+
+.inventory-manager__contract-table tr:hover { background-color: #EFF9FE; }
+
+.inventory-manager__contract-table thead { border: none; background-color: #F4F5F5; background-image: none; }
+.inventory-manager__contract-table thead tr { border-bottom: none; }
+.inventory-manager__contract-table thead tr:hover { background-color: #F4F5F5; }
+.inventory-manager__contract-table thead tr:first-child th { border-right: 1px solid #999999; }
+.inventory-manager__contract-table thead tr:first-child th:last-child { border-right: none; }
+
+.inventory-manager-title { font-size: 32px; padding-top: 15px; float: left; }
+
+.inventory-notes-table-wrapper { margin: 0px 10px 10px 0px; overflow: auto; max-height: 600px; width: 70%; display: inline-block; font-size: 19px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
+@media screen and (max-width: 800px) { .inventory-notes-table-wrapper { width: 100%; } }
+.inventory-notes-table-wrapper table tbody tr td { padding: 20px 20px 15px 20px; vertical-align: middle; border-bottom: 1px solid #999999; }
+.inventory-notes-table-wrapper table tbody tr td:last-child { padding: 0px; }
+.inventory-notes-table-wrapper table .note-info { margin-top: 8px; }
+.inventory-notes-table-wrapper table .note-info label { display: inline-block; font-size: 17px; }
+.inventory-notes-table-wrapper .mybtn { display: table-cell; }
+
+.tablesaw-columntoggle-popup .btn-group > label input[type='checkbox'] { display: inline-block; }
+
+/*carousel*/
+.carousel { position: relative; float: right; width: auto; max-width: 470px; padding: 10px; margin: 10px auto; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+@media screen and (max-width: 1000px) { .carousel { float: none; } }
+
+.carousel li img { width: 140px; height: 100px; display: block; margin: 0px 5px; cursor: pointer; border: 2px solid transparent; }
+
+.carousel li img:hover, .carousel li img.selected { border-color: #1E8DCA; }
+
+.gallery { width: auto; overflow: hidden; }
+
+.gallery ul { width: 9999px; margin: 0; padding: 0; list-style: none; transition: margin-left 250ms; }
+
+.gallery li { display: inline-block; }
+
+/*arrows for carousel*/
+.arrow { display: inline-block; cursor: pointer; padding: 10px; margin: 20px 10px; color: black; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+
+.arrow:focus { outline: none; }
+
+.prev { opacity: 0.3; }
+
+.carousel-tools { display: flex; justify-content: center; }
+
 .error-block { margin-top: 100px; border: 1px solid #2B323A; background-color: #ffffff; display: inline-block; padding: 20px; }
 
 .error-block div { margin-bottom: 20px; }
