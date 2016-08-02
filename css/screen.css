@@ -482,6 +482,10 @@ textarea.form-control { resize: none; width: 100%; }
 
 .save-tr { display: none; }
 
+.form-table { margin-bottom: 1em; }
+
+.form-table__label { text-align: right; padding-right: 1em; }
+
 em { font-style: italic; }
 
 .sidebar { z-index: 9; }
