@@ -56,3 +56,16 @@
     background: url('../img/word.png') center center no-repeat;
     background-size: 38px 38px;
 }
+
+.label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    color: #000;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: #FFF;
+}
